@@ -1,0 +1,19 @@
+//variables
+
+$mobile: "375px";
+$tablet: "744px";
+$laptop: "1280px";
+// $desktop: "1440px";
+
+// @media screen and (min-width: variables.$mobile)
+// @media screen and (min-width: variables.$tablet)
+// @media screen and (min-width: variables.$laptop)
+// @media screen and (min-width: variables.$desktop)
+
+$bgColor: #0B0B0D;
+$textColor: #CCCCCC;
+$accentColor: #A4D728;
+$navLinksColor: #FFFFFF;
+
+//usage example
+//  @include variables.bgColor;

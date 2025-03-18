@@ -2,20 +2,26 @@
   "name": "wooden-things",
   "version": "0.1.0",
   "private": true,
+  "figma": "https://www.figma.com/design/wLc6nQ990mnDkoCZtRhzuj/wood?node-id=0-1&t=VXhWNadTrEWRuTbV-1",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "i18next": "^24.2.3",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "i18next-http-backend": "^3.0.2",
+    "next": "15.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.2"
+    "react-i18next": "^15.4.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "eslint": "^9",
     "eslint-config-next": "15.2.2",
-    "@eslint/eslintrc": "^3"
+    "sass": "^1.85.1"
   }
 }

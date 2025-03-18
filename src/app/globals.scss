@@ -1,0 +1,129 @@
+@use "./variables";
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("./fonts/Montserrat-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("./fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("./fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("./fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KoHo-Regular";
+  src: url("./fonts/KoHo-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KoHo-Medium";
+  src: url("./fonts/KoHo-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KoHo-SemiBold";
+  src: url("./fonts/KoHo-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Montserrat-Regular;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: variables.$bgColor;
+  color: variables.$textColor;
+}
+
+.stopBodyScroll {
+  overflow-y: hidden;
+}
+
+main {
+  flex: 1;
+}
+
+header,
+footer {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  // max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+svg {
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
