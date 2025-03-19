@@ -99,11 +99,25 @@ header,
 footer {
   width: 100%;
   max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section {
+  padding: 16px 20px;
+
+  @media screen and (min-width: variables.$tablet) {
+    padding: 32px;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    padding: 40px 80px;
+  }
 }
 
 .container {
   width: 100%;
-  // max-width: 960px;
+  max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
 }
