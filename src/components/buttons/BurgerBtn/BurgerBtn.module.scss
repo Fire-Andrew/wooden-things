@@ -1,0 +1,20 @@
+@use "../../../app/variables";
+
+.burgerBtn {
+  background: none;
+  outline: none;
+  border: none;
+
+  width: 40px;
+  height: 28px;
+  overflow: hidden;
+  position: relative;
+
+  & svg {
+    width: 72px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
