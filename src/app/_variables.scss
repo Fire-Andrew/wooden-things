@@ -10,10 +10,13 @@ $laptop: "1280px";
 // @media screen and (min-width: variables.$laptop)
 // @media screen and (min-width: variables.$desktop)
 
-$bgColor: #0B0B0D;
-$textColor: #CCCCCC;
-$accentColor: #A4D728;
-$navLinksColor: #FFFFFF;
+$bgColor: #0b0b0d;
+$textColor: #cccccc;
+$accentColor: #a4d728;
+$navLinksColor: #ffffff;
+
+$headerHeightMobile: 48px;
+$headerHeightTablet: 80px;
 
 //usage example
 //  @include variables.bgColor;

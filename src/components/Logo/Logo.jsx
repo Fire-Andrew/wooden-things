@@ -1,12 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "./Logo.module.scss";
 
-const Logo = () => {
+const Logo = ({ onClick }) => {
   return (
-    <Link href="/" className={styles.logo}>
-      <Image src="/images/logo.webp" fill />
+    <Link href="/" className={styles.logo} onClick={onClick}>
+      <Image src="/images/logo.webp" fill alt="Galen 1 LLC" sizes="33vw" />
     </Link>
   );
 };

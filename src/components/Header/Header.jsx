@@ -1,31 +1,30 @@
 "use client";
 
-import { navigationData } from "@/data/navigationData";
 import { useWindowResize } from "@/hooks/windowResize";
-import Link from "next/link";
-import React from "react";
+import React,  from "react";
 import styles from "./Header.module.scss";
 import BurgerBtn from "../buttons/BurgerBtn/BurgerBtn";
 import Logo from "../Logo/Logo";
+import Navigation from "../Navigation/Navigation";
+import MobileMenu from "./MobileMenu/MobileMenu";
+import { useCloseMenu } from "@/hooks/closeMenu";
 
 const Header = () => {
-  const { isMobile, isTablet, isLaptop, isDesktop } = useWindowResize();
+  const { isLaptop } = useWindowResize();
+
+  const { handleClick } = useCloseMenu();
 
   return (
     <header className={styles.header}>
       <div className={`container ${styles.container}`}>
-        <Logo />
+        <Logo onClick={handleClick} />
 
-        {isDesktop && (
-          <nav>
-            {navigationData.map((el) => {
-              return <Link href={el.href}>{el.titleUa}</Link>;
-            })}
-          </nav>
-        )}
+        {isLaptop && <Navigation />}
 
-        {!isDesktop && <BurgerBtn />}
+        {!isLaptop && <BurgerBtn />}
       </div>
+
+      {!isLaptop && <MobileMenu />}
     </header>
   );
 };
