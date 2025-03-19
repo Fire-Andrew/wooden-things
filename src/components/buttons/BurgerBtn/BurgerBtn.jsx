@@ -5,10 +5,27 @@ import styles from "./BurgerBtn.module.scss";
 import { SiteContext } from "@/context/SiteContext";
 
 const BurgerBtn = () => {
-  const { isMobileMenu, setIsMobileMenu } = useContext(SiteContext);
+  const { mobileMenu, setMobileMenu, setmobileMenuContent } =
+    useContext(SiteContext);
+
+  const toggleMobileMenu = () => {
+    if (mobileMenu) {
+      setmobileMenuContent(false);
+
+      setTimeout(() => {
+        setMobileMenu(false);
+      }, 500);
+    } else {
+      setMobileMenu(true);
+
+      setTimeout(() => {
+        setmobileMenuContent(true);
+      }, 500);
+    }
+  };
 
   return (
-    <button className={styles.burgerBtn}>
+    <button className={styles.burgerBtn} onClick={toggleMobileMenu}>
       <svg>
         <use href="/sprite.svg#icon-burgerbtn"></use>
       </svg>

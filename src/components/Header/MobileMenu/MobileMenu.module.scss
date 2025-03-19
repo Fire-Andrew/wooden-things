@@ -1,0 +1,74 @@
+@use "../../../app/variables";
+
+.mobMenu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: variables.$headerHeightMobile;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+}
+
+.mobMenuNone {
+  display: none;
+}
+
+.content {
+  font-size: 24px;
+  color: variables.$bgColor;
+
+  background-color: variables.$navLinksColor;
+
+  padding: 20px 20px 40px;
+  height: 100%;
+
+  transform: translateX(110%);
+  opacity: 0;
+
+  @media screen and (min-width: 500px) {
+    width: 80%;
+    max-width: 400px;
+  }
+}
+
+.contentVisible {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.languages {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  & li {
+    cursor: pointer;
+    color: variables.$accentColor;
+    &:focus,
+    &:hover {
+      font-weight: 900;
+      text-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+
+  & a {
+    &:hover,
+    &:focus {
+      margin-left: 54px;
+      font-weight: 900;
+
+      text-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
