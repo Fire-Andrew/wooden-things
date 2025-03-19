@@ -1,0 +1,20 @@
+@use '../../app/variables';
+
+.btn {
+  font-weight: inherit;
+  font-weight: 300;
+  font-size: 32px;
+  color: variables.$accentColor;
+  border: 1px solid variables.$accentColor;
+  padding: 10px 10px;
+  transition: 0.3s;
+  @media screen and (min-width: variables.$tablet) {
+    padding: 10px 20px;
+  }
+  &:hover,
+  &:focus {
+    background-color: variables.$accentColor;
+    border: 1px solid variables.$accentColor;
+    color: variables.$bgColor;
+  }
+}
