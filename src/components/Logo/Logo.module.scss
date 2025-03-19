@@ -1,0 +1,11 @@
+@use "../../app/variables";
+
+.logo {
+  position: relative;
+  width: 116px;
+  height: 28px;
+
+  & img {
+    object-fit: contain;
+  }
+}
