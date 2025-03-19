@@ -1,0 +1,181 @@
+@use '../../app/variables';
+
+.hero {
+  position: relative;
+  padding-bottom: 24px;
+  &::before {
+    content: '';
+    display: block;
+    height: 275px;
+    background-image: url('../../../public/hero.webp');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: lazy;
+    -webkit-box-shadow: inset 0px -9px 18px 2px rgba(11, 11, 13, 0.91);
+    box-shadow: inset 0px -9px 18px 2px rgba(11, 11, 13, 0.91);
+    @media screen and (min-width: variables.$tablet) {
+      height: 547px;
+    }
+    @media screen and (min-width: variables.$laptop) {
+      background-position: center;
+      height: 100vh;
+    }
+  }
+}
+
+.boardContainer {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 8px 20px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  &:last-child {
+    align-items: flex-end;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    padding: 34px 40px 0px 20px;
+  }
+  @media screen and (min-width: variables.$laptop) {
+    padding: 50px 0px 0px 0px;
+  }
+}
+
+.imgBoard {
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  width: 154px;
+  height: 134px;
+  & img {
+    object-fit: contain;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    top: -60px;
+    left: -14px;
+    width: 286px;
+    height: 253px;
+  }
+  @media screen and (min-width: variables.$laptop) {
+    top: -160px;
+    left: -60px;
+    width: 650px;
+    height: 564px;
+  }
+}
+
+.imgArrow {
+  position: absolute;
+  top: 65px;
+  left: 10px;
+  width: 132px;
+  height: 226px;
+  & img {
+    object-fit: contain;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    top: 30px;
+    left: 70px;
+    width: 258px;
+    height: 355px;
+  }
+  @media screen and (min-width: 1024px) {
+    top: 40px;
+    left: 120px;
+    width: 230px;
+    height: 302px;
+  }
+  @media screen and (min-width: variables.$laptop) {
+    top: 110px;
+    left: 400px;
+    width: 330px;
+    height: 402px;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  color: variables.$accentColor;
+  text-align: end;
+  margin-bottom: 24px;
+  @media screen and (min-width: variables.$tablet) {
+    font-size: 40px;
+    margin-right: 20%;
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: variables.$laptop) {
+    font-size: 64px;
+    margin-right: 10%;
+    margin-bottom: 59px;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  font-weight: 400;
+  font-size: 14px;
+  width: 100%;
+  color: variables.$textColor;
+  margin-bottom: 24px;
+  & li:first-child {
+    width: 63%;
+    text-align: right;
+    margin: 0 0 0 auto;
+  }
+  & li {
+    width: 85%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  & li:last-child {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    font-size: 18px;
+    row-gap: 40px;
+    & li:first-child {
+      width: 60%;
+    }
+    & li {
+      width: 70%;
+    }
+    & li:last-child {
+      width: 60%;
+    }
+  }
+  @media screen and (min-width: variables.$laptop) {
+    font-size: 24px;
+    row-gap: 50px;
+    & li:first-child {
+      width: 40%;
+    }
+    & li {
+      width: 50%;
+      margin: 0 0 0 40%;
+    }
+    & li:last-child {
+      width: 50%;
+    }
+  }
+}
+
+#btn {
+  font-size: 24px;
+  @media screen and (min-width: variables.$tablet) {
+    position: absolute;
+    bottom: 24px;
+    right: 40px;
+    font-size: 32px;
+  }
+  @media screen and (min-width: variables.$laptop) {
+    font-size: 40px;
+  }
+}
