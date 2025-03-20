@@ -6,6 +6,10 @@
 
   height: 48px;
   background-color: rgba(0, 0, 0, 0.2);
+
+  @media screen and (min-width: variables.$tablet) {
+    height: 80px;
+  }
 }
 
 .container {
