@@ -60,6 +60,7 @@
     height: 40px;
     padding: 10px;
     color: variables.$accentColor;
+    font-size: 16px;
     border: 1px solid variables.$accentColor;
     border-radius: 24px;
     overflow: hidden;
@@ -81,6 +82,7 @@
 
   & li {
     cursor: pointer;
+    text-transform: capitalize;
     &:hover,
     &:focus {
       -webkit-text-stroke: 1px variables.$accentColor;

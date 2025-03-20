@@ -4,7 +4,7 @@ import React from "react";
 import { languagesData } from "@/data/languagesData";
 
 const Languages = ({ className }) => {
-  const languages = Object.keys(languagesData);
+  const languages = Object.values(languagesData);
 
   return (
     <ul className={className}>

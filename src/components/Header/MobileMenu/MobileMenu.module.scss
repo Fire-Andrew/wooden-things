@@ -55,6 +55,8 @@
   & li {
     cursor: pointer;
     color: variables.$accentColor;
+    text-transform: uppercase;
+
     &:focus,
     &:hover {
       font-weight: 900;
