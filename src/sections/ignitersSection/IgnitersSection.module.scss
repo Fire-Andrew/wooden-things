@@ -1,0 +1,34 @@
+@use '../../app/variables';
+
+.sectionContainer {
+    padding-top: 68px;
+
+    @media screen and (min-width: variables.$tablet) {
+        padding-top: 78px;
+        padding-bottom: 40px;
+    }
+  
+    @media screen and (min-width: variables.$laptop) {
+      padding: 142px 60px 80px;
+    }
+}
+
+.title {
+    text-align: center;
+}
+
+.igniterPropertyList,
+.igniterPropertyText {
+    @media screen and (min-width: variables.$tablet) {
+        font-size: 20px;
+    }
+  
+    @media screen and (min-width: variables.$laptop) {
+        font-size: 32px;
+    }
+}
+
+.igniterPropertyList span,
+.igniterPropertyText span {
+    color: variables.$accentColor;
+}
