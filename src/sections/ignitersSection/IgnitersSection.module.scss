@@ -16,3 +16,19 @@
 .title {
     text-align: center;
 }
+
+.igniterPropertyList,
+.igniterPropertyText {
+    @media screen and (min-width: variables.$tablet) {
+        font-size: 20px;
+    }
+  
+    @media screen and (min-width: variables.$laptop) {
+        font-size: 32px;
+    }
+}
+
+.igniterPropertyList span,
+.igniterPropertyText span {
+    color: variables.$accentColor;
+}
