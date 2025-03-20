@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+// import styles from './HomeIgnitersSection.module.scss';
 
 const HomeIgnitersSection = () => {
-  return (
-    <section>HomeIgnitersSection</section>
-  )
-}
+  return <section className={`section`}></section>;
+};
 
-export default HomeIgnitersSection
+export default HomeIgnitersSection;

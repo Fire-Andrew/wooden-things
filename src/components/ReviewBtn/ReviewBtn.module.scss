@@ -1,8 +1,7 @@
 @use '../../app/variables';
 
 .btn {
-  font-weight: inherit;
-  font-weight: 300;
+  font-family: Montserrat-Light;
   font-size: 32px;
   color: variables.$accentColor;
   border: 1px solid variables.$accentColor;
