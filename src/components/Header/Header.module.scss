@@ -22,6 +22,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 
 .logo {
@@ -40,5 +41,49 @@
 
   & a:not(:last-child) {
     margin-right: 24px;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    margin-right: 200px;
+  }
+}
+
+.langSwitch {
+  display: none;
+
+  @media screen and (min-width: variables.$tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 72px;
+    height: 40px;
+    padding: 10px;
+    color: variables.$accentColor;
+    border: 1px solid variables.$accentColor;
+    border-radius: 24px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 24px;
+    right: 90px;
+    transition-timing-function: ease-in-out;
+
+    &:focus,
+    &:hover {
+      height: 128px;
+    }
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    right: 0px;
+  }
+
+  & li {
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      -webkit-text-stroke: 1px variables.$accentColor;
+    }
   }
 }
