@@ -94,18 +94,13 @@
 }
 
 .title {
-  font-weight: 500;
-  font-size: 32px;
-  color: variables.$accentColor;
   text-align: end;
   margin-bottom: 24px;
   @media screen and (min-width: variables.$tablet) {
-    font-size: 40px;
     margin-right: 20%;
     margin-bottom: 34px;
   }
   @media screen and (min-width: variables.$laptop) {
-    font-size: 64px;
     margin-right: 10%;
     margin-bottom: 59px;
   }
