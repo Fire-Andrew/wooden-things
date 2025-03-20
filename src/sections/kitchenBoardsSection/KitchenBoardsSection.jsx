@@ -10,7 +10,7 @@ const KitchenBoardsSection = () => {
  
 
   return (
-    <section className={styles.section}>
+    <section className={`section ${styles.section}`}>
       <div className='container'>
         <h2 className={`sectionTitle ${styles.title}`}>Дощечки</h2>
 
