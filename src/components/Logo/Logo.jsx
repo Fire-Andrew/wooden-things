@@ -5,9 +5,9 @@ import Link from "next/link";
 import React from "react";
 import styles from "./Logo.module.scss";
 
-const Logo = ({ onClick }) => {
+const Logo = ({ onClick, className }) => {
   return (
-    <Link href="/" className={styles.logo} onClick={onClick}>
+    <Link href="/" className={`${styles.logo} ${className}`} onClick={onClick}>
       <Image
         src="/images/logo.webp"
         fill

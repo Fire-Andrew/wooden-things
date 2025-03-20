@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 
-
 export function useWindowResize() {
   const [isMobile, setMobile] = useState(false);
   const [isTablet, setTablet] = useState(false);
@@ -41,7 +40,8 @@ export function useWindowResize() {
   }, [handleResizeTablet]);
 
   const handleResizeLaptop = useCallback(() => {
-    if (window.innerWidth >= 1024 && window.innerWidth < 1440) {
+    // if (window.innerWidth >= 1280 && window.innerWidth < 1440) {
+    if (window.innerWidth >= 1280) {
       setLaptop(true);
     } else {
       setLaptop(false);
@@ -56,21 +56,21 @@ export function useWindowResize() {
     };
   }, [handleResizeLaptop]);
 
-  const handleResizeDesktop = useCallback(() => {
-    if (window.innerWidth >= 1440) {
-      setDesktop(true);
-    } else {
-      setDesktop(false);
-    }
-  }, [setDesktop]);
+  // const handleResizeDesktop = useCallback(() => {
+  //   if (window.innerWidth >= 1440) {
+  //     setDesktop(true);
+  //   } else {
+  //     setDesktop(false);
+  //   }
+  // }, [setDesktop]);
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResizeDesktop);
-    handleResizeDesktop();
-    return () => {
-      window.removeEventListener("resize", handleResizeDesktop);
-    };
-  }, [handleResizeDesktop]);
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResizeDesktop);
+  //   handleResizeDesktop();
+  //   return () => {
+  //     window.removeEventListener("resize", handleResizeDesktop);
+  //   };
+  // }, [handleResizeDesktop]);
 
-  return { isMobile, isTablet, isLaptop, isDesktop };
+  return { isMobile, isTablet, isLaptop };
 }
