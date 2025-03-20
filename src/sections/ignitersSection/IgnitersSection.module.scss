@@ -15,7 +15,68 @@
 
 .title {
     text-align: center;
+    margin-bottom: 35px;
 }
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: variables.$tablet) {
+        flex-direction: row;
+        &:nth-of-type(even) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.igniterImg {
+    position: relative;
+    width: 258px;
+    height: 417px;
+    & img {
+      object-fit: contain;
+    }
+    @media screen and (min-width: variables.$tablet) {
+      width: 228px;
+      height: 369px;
+    }
+    @media screen and (min-width: variables.$laptop) {
+      width: 272px;
+      height: 497px;
+    }
+  }
+
+  .ignitersImg {
+    position: relative;
+    width: 337px;
+    height: 223px;
+    & img {
+      object-fit: contain;
+    }
+    @media screen and (min-width: variables.$tablet) {
+      width: 360px;
+      height: 239px;
+    }
+    @media screen and (min-width: variables.$laptop) {
+      width: 660px;
+      height: 436px;
+    }
+  }
+
+  .ignitersPackImg {
+    position: relative;
+    width: 249px;
+    height: 314px;
+    & img {
+      object-fit: contain;
+    }
+
+    @media screen and (min-width: variables.$laptop) {
+      width: 380px;
+      height: 505px;
+    }
+  }
 
 .igniterPropertyList,
 .igniterPropertyText {
@@ -32,3 +93,4 @@
 .igniterPropertyText span {
     color: variables.$accentColor;
 }
+

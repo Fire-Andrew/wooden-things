@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 import styles from './IgnitersSection.module.scss'
 
 const IgnitersSection = () => {
@@ -6,8 +7,10 @@ const IgnitersSection = () => {
     <section className={styles.sectionContainer}>
       <h2 className={`sectionTitle ${styles.title}`}>Розпалювачі</h2>
 
-      <div>
-        <figure></figure>
+      <div className={styles.descriptionContainer}>
+        <figure className={styles.igniterImg}>
+          <Image src="/png/lighter-igniter-pg.png" alt="board" fill={true} />
+        </figure>
         <div>
           <ul>
             <li className={styles.igniterPropertyList}>містять глибоко очищений віск - майже <span>не виділяють запаху та диму</span></li>
@@ -17,7 +20,10 @@ const IgnitersSection = () => {
         </div>
       </div>
 
-      <div>
+      <div className={`${styles.descriptionContainer} reverse`}>
+        <figure className={styles.ignitersImg}>
+          <Image src="/png/lighters-igniter-pg.png" alt="board" fill={true} />
+        </figure>
         <div>
           <ul>
             <li className={styles.igniterPropertyList}>не сипляться частини струж</li>
@@ -25,11 +31,12 @@ const IgnitersSection = () => {
             <li className={styles.igniterPropertyList}>не липкі</li> 
           </ul>
         </div>
-        <figure></figure>
       </div>
 
-      <div>
-        <figure></figure>
+      <div className={styles.descriptionContainer}>
+        <figure className={styles.ignitersPackImg}>
+          <Image  src="/png/lightersPacked-igniter-pg.png" alt="board" fill={true} />
+        </figure>
         <p className={styles.igniterPropertyText}><span>Пропонуємо</span> різні типи пакування по кількості штук в упаковці та за типом пакування </p>
       </div>
 
