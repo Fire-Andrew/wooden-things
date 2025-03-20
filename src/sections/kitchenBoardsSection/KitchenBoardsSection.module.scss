@@ -15,45 +15,35 @@
 
 .title{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 8px;
 
     @media screen and (min-width: variables.$tablet){
-            margin-bottom: 48px;
+            margin-bottom: 0px;
     }
 
     @media screen and (min-width: variables.$laptop){
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
 }
 
-.productsList{
-    display: flex;
-    flex-direction: column;
-    row-gap: 64px; // убрать после добавления полоски под карточкой
-
-    @media screen and (min-width: variables.$tablet) {
-        row-gap: 96px; // убрать после добавления полоски под карточкой
-    }
-
-    @media screen and (min-width: variables.$laptop) {
-       row-gap: 80px; // убрать после добавления полоски под карточкой 
-    }
-}
-
 .productCard {
+    position: relative;
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+    padding: 32px 0px;
 
     @media screen and (min-width: variables.$tablet) {
         flex-direction: row;
         row-gap: 0;
         column-gap: 16px;
+        padding: 48px 0px;
     }
     
     @media screen and (min-width: variables.$laptop) {
         justify-content: space-between;
         column-gap: 0;
+        padding: 40px 0px;
     }
 }
 
@@ -61,6 +51,37 @@
 
     @media screen and (min-width: variables.$tablet) {
         flex-direction: row-reverse;
+    }
+}
+
+.productCard:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: 100vw;
+    height: 1px;
+    background-color: variables.$navLinksColor;
+
+    @media screen and (min-width: variables.$tablet) {
+        right: -32px;
+        width: 70vw;
+    }
+
+    @media screen and (min-width: variables.$laptop) {
+        right: -80px;
+        width: 1020px;
+    }
+}
+
+.productCard:nth-child(2n).productCard:not(:last-child)::after{
+    @media screen and (min-width: variables.$tablet) {
+        left: -32px;
+    }
+
+    @media screen and (min-width: variables.$laptop) {
+        left: -80px;
+        width: 1020px;
     }
 }
 
@@ -80,21 +101,26 @@
     width: 100%;
     aspect-ratio: 580/387;
     margin-bottom: 20px;
-
-
-    // @media screen and (min-width: variables.$tablet) {
-    //     aspect-ratio: 334/251;
-    // }
-
-    // @media screen and (min-width: variables.$laptop) {
-    //     width: 468px;
-    //     height: 352px;
-    // }
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 58.6px 0 rgba(255, 255, 255, 0.05);
 }
 
 .img {
+    display: block;
     max-width: 100%;
     height: auto;
+}
+
+.productCard:nth-child(6) .imgWrapper,
+.productCard:nth-child(7) .imgWrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.productCard:nth-child(6) .imgWrapper>.img,
+.productCard:nth-child(7) .imgWrapper>.img {
+    position: absolute;
+    top: -60%;
 }
 
 .sizes{
@@ -140,6 +166,7 @@
 .material {
     font-size:20px;
 }
+
 #btn {
 
     @media screen and (min-width: variables.$tablet) {
