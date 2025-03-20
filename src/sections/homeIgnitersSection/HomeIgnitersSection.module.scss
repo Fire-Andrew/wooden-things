@@ -1,15 +1,164 @@
 @use '../../app/variables';
 
-.title {
+.container {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 81px;
+    left: -20px;
+    width: 96px;
+    height: 328px;
+    background-image: linear-gradient(
+        rgba(11, 11, 13, 0.301),
+        rgba(11, 11, 13, 0.301)
+      ),
+      url('../../../public/png/Lighter-home.png');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: lazy;
+    -webkit-box-shadow: inset 0px -34px 25px -10px rgba(11, 11, 13, 0.93);
+    box-shadow: inset 0px -34px 25px -10px rgba(11, 11, 13, 0.93);
+    z-index: -1;
+    @media screen and (min-width: variables.$tablet) {
+      bottom: 0px;
+      left: -12px;
+      width: 155px;
+      height: 529px;
+      background-image: url('../../../public/png/Lighter-home.png');
+    }
+    @media screen and (min-width: variables.$laptop) {
+      width: 229px;
+      height: 778px;
+      left: 45px;
+      bottom: 82px;
+    }
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 81px;
+    right: -20px;
+    width: 146px;
+    height: 231px;
+    background-image: linear-gradient(
+        rgba(11, 11, 13, 0.301),
+        rgba(11, 11, 13, 0.301)
+      ),
+      url('../../../public/png/LighterWithHand-home.png');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: lazy;
+    z-index: -1;
+    @media screen and (min-width: variables.$tablet) {
+      bottom: 0px;
+      right: -32px;
+      width: 304px;
+      height: 449px;
+      background-image: url('../../../public/png/LighterWithHand-home.png');
+    }
+    @media screen and (min-width: variables.$laptop) {
+      width: 446px;
+      height: 705px;
+      bottom: 102px;
+      right: -32px;
+    }
+  }
+}
+
+.ignitersContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media screen and (min-width: variables.$tablet) {
+    align-items: flex-start;
   }
   @media screen and (min-width: variables.$laptop) {
   }
 }
 
-.text {
+.title {
+  width: 100%;
+  margin-bottom: 84px;
+  @media screen and (min-width: variables.$laptop) {
+    margin-bottom: 133px;
+  }
+}
+
+.content {
+  display: flex;
+  width: 257px;
+  flex-direction: column;
+  row-gap: 72px;
+  margin-bottom: 32px;
+
+  & li {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    color: variables.$navLinksColor;
+    @media screen and (min-width: variables.$tablet) {
+      font-size: 18px;
+    }
+    @media screen and (min-width: variables.$laptop) {
+      font-size: 24px;
+    }
+  }
+
+  & li:nth-child(2n) {
+    text-align: start;
+    @media screen and (min-width: variables.$tablet) {
+      margin-left: 32px;
+    }
+    @media screen and (min-width: variables.$laptop) {
+      width: 55%;
+      margin-left: 15%;
+    }
+  }
+  & li:nth-child(3n) {
+    width: 60%;
+    text-align: center;
+    @media screen and (min-width: variables.$tablet) {
+      width: 80%;
+      margin-left: 24px;
+    }
+    @media screen and (min-width: variables.$laptop) {
+      width: 100%;
+      text-align: start;
+      margin-top: 190px;
+      margin-left: 42px;
+    }
+  }
+
   @media screen and (min-width: variables.$tablet) {
+    width: 387px;
+    row-gap: 104px;
+    margin: 0 0 107px 15%;
   }
   @media screen and (min-width: variables.$laptop) {
+    row-gap: 149px;
+    width: 100%;
+    margin: 0 0 97px 10%;
+  }
+}
+
+#btn {
+  margin-left: auto;
+  font-size: 24px;
+  @media screen and (min-width: variables.$tablet) {
+    margin-left: 25%;
+    font-size: 32px;
+    padding: 10px;
+  }
+  @media screen and (min-width: variables.$laptop) {
+    position: absolute;
+    bottom: 280px;
+    margin-left: 35%;
+    font-size: 40px;
+    padding: 10px 20px;
   }
 }
