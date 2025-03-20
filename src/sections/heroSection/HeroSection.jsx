@@ -26,7 +26,7 @@ const HeroSection = () => {
             fill={true}
           />
         </figure>
-        <h2 className={styles.title}>Дошки</h2>
+        <h2 className={`sectionTitle ${styles.title}`} >Дошки</h2>
         <ul className={styles.textContainer}>
           <li>
             Зважаючи на велику кількість виробників ми приділяємо особливу увагу
