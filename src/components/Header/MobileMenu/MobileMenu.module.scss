@@ -4,13 +4,17 @@
   position: absolute;
   width: 100%;
   height: 100vh;
-  top: variables.$headerHeightMobile;
+  top: 48px;
   left: 0;
 
   display: flex;
   flex-direction: column;
 
   overflow-x: hidden;
+
+  @media screen and (min-width: variables.$tablet) {
+    top: 80px;
+  }
 }
 
 .mobMenuNone {
@@ -24,9 +28,11 @@
   background-color: variables.$navLinksColor;
 
   padding: 20px 20px 40px;
+  margin-left: auto;
+
   height: 100%;
 
-  transform: translateX(110%);
+  transform: translateX(100%);
   opacity: 0;
 
   @media screen and (min-width: 500px) {
@@ -43,7 +49,7 @@
 .languages {
   margin-bottom: 40px;
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 
   & li {
     cursor: pointer;

@@ -6,6 +6,7 @@ import styles from "./MobileMenu.module.scss";
 import { SiteContext } from "@/context/SiteContext";
 import Navigation from "@/components/Navigation/Navigation";
 import { useCloseMenu } from "@/hooks/closeMenu";
+import Languages from "@/components/Languages/Languages";
 
 const MobileMenu = () => {
   const { mobileMenu, mobileMenuContent } = useContext(SiteContext);
@@ -30,12 +31,7 @@ const MobileMenu = () => {
             : styles.content
         }
       >
-        <ul className={styles.languages}>
-          <li>UA</li>
-          <li>EN</li>
-          <li>UA</li>
-          <li>EN</li>
-        </ul>
+        <Languages className={styles.languages} />
 
         <Navigation className={styles.nav} onClick={handleClick} />
       </div>

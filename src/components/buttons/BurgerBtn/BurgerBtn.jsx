@@ -26,9 +26,15 @@ const BurgerBtn = () => {
 
   return (
     <button className={styles.burgerBtn} onClick={toggleMobileMenu}>
-      <svg>
-        <use href="/sprite.svg#icon-burgerbtn"></use>
-      </svg>
+      {mobileMenu ? (
+        <svg>
+          <use href="/sprite.svg#icon-burgerbtn"></use>
+        </svg>
+      ) : (
+        <svg>
+          <use href="/sprite.svg#icon-burgerbtn"></use>
+        </svg>
+      )}
     </button>
   );
 };

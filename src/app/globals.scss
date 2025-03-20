@@ -103,7 +103,7 @@ footer {
   padding-right: 20px;
 }
 
-section {
+.section {
   padding: 16px 20px;
 
   @media screen and (min-width: variables.$tablet) {
@@ -140,4 +140,16 @@ ol {
 
 button {
   cursor: pointer;
+}
+
+.sectionTitle {
+  font-weight: 500;
+  font-size: 32px;
+  color: variables.$accentColor;
+  @media screen and (min-width: variables.$tablet) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: variables.$laptop) {
+    font-size: 64px;
+  }
 }
