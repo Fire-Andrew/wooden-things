@@ -1,0 +1,11 @@
+@use "../../app/variables";
+
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: variables.$navLinksColor;
+}
+
+.allRights {
+  text-align: center;
+}
