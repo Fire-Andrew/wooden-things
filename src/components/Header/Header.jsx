@@ -17,9 +17,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.container}`}>
-        <Logo onClick={handleClick} />
+        <Logo onClick={handleClick} className={styles.logo}/>
 
-        {isLaptop && <Navigation />}
+        {isLaptop && <Navigation  className={styles.nav}/>}
 
         {!isLaptop && <BurgerBtn />}
       </div>

@@ -5,7 +5,7 @@ import styles from "./BurgerBtn.module.scss";
 import { SiteContext } from "@/context/SiteContext";
 
 const BurgerBtn = () => {
-  const { mobileMenu, setMobileMenu, setmobileMenuContent } =
+  const { mobileMenu, setMobileMenu, mobileMenuContent, setmobileMenuContent } =
     useContext(SiteContext);
 
   const toggleMobileMenu = () => {
@@ -26,12 +26,10 @@ const BurgerBtn = () => {
 
   return (
     <button className={styles.burgerBtn} onClick={toggleMobileMenu}>
-      {mobileMenu ? (
-        <svg>
-          <use href="/sprite.svg#icon-burgerbtn"></use>
-        </svg>
+      {mobileMenuContent ? (
+        <div className={styles.cross}></div>
       ) : (
-        <svg>
+        <svg className={styles.burger}>
           <use href="/sprite.svg#icon-burgerbtn"></use>
         </svg>
       )}

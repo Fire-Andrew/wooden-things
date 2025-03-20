@@ -15,5 +15,20 @@ $textColor: #cccccc;
 $accentColor: #a4d728;
 $navLinksColor: #ffffff;
 
-//usage example
-//  @include variables.bgColor;
+// variables usage example
+// background-color: variables.$bgColor;
+
+// ===
+
+// mixin usage example
+
+// @mixin qwe{
+//     color: red;
+// }
+
+//module.scss
+
+// someStyle {
+//     qwe: qwe;
+//     @include variables.bgColor;
+//   }
