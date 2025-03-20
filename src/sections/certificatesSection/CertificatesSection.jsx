@@ -10,7 +10,10 @@ const CertificatesSection = () => {
 
     return (
         <section className={styles.section}>
-            {isDesktop && <h1 className={styles.title}>Сертифікати</h1>}
+            {isDesktop && (
+                <h2 className={`sectionTitle ${styles.title}`}>Сертифікати</h2>
+            )}
+
             <div className={styles.documentWrap}>
                 <div>
                     <a

@@ -9,6 +9,11 @@
     }
 }
 
+.title {
+    text-align: center;
+    margin-top: 78px;
+}
+
 .documentWrap {
     margin: 0 auto;
     display: -webkit-box;
@@ -21,6 +26,9 @@
     @media (min-width: variables.$tablet) {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    }
+    @media (min-width: variables.$laptop) {
+        margin-top: 95px;
     }
 }
 
