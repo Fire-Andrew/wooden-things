@@ -7,10 +7,12 @@ import { SiteContext } from "@/context/SiteContext";
 import Navigation from "@/components/Navigation/Navigation";
 import { useCloseMenu } from "@/hooks/closeMenu";
 import Languages from "@/components/Languages/Languages";
+import { useWindowResize } from "@/hooks/windowResize";
 
 const MobileMenu = () => {
   const { mobileMenu, mobileMenuContent } = useContext(SiteContext);
   const { handleClick } = useCloseMenu();
+  const { isMobile } = useWindowResize();
 
   useEffect(() => {
     if (window !== undefined && mobileMenu) {
@@ -31,7 +33,7 @@ const MobileMenu = () => {
             : styles.content
         }
       >
-        <Languages className={styles.languages} />
+        {isMobile && <Languages className={styles.languages} />}
 
         <Navigation className={styles.nav} onClick={handleClick} />
       </div>
