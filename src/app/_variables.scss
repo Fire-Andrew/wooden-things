@@ -17,6 +17,9 @@ $navLinksColor: #ffffff;
 
 $headerHeightMobile: 48px;
 $headerHeightTablet: 80px;
+$pageSectionTopPaddingMobile: 68px;
+$pageSectionTopPaddingTablet: 112px;
+$pageSectionTopPaddingLaptop: 144px;
 
 //usage example
-//  @include variables.bgColor;
+//  @include variables.$bgColor;
