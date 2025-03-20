@@ -1,0 +1,106 @@
+@use "../../app/variables";
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 77px;
+    @media (min-width: variables.$tablet) {
+        padding-top: 111px;
+    }
+}
+
+.documentWrap {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 24px;
+
+    @media (min-width: variables.$tablet) {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+.innerBox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @media (min-width: variables.$tablet) {
+        flex-direction: row;
+        column-gap: 16px;
+    }
+    @media (min-width: variables.$laptop) {
+        column-gap: 24px;
+    }
+}
+
+.documentLink {
+    // margin-top: 24px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    word-wrap: break-word;
+
+    -webkit-transition: 250ms;
+
+    -o-transition: 250ms;
+
+    transition: 250ms;
+    &:hover,
+    &:focus {
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        transform: scale(1.04);
+    }
+}
+
+.imageWrapFirst {
+    width: 335px;
+    height: 237px;
+    overflow: hidden;
+    position: relative;
+
+    @media (min-width: variables.$tablet) {
+        width: 615px;
+        height: 435px;
+    }
+
+    @media (min-width: variables.$laptop) {
+        width: 1076px;
+        height: 761px;
+    }
+}
+
+.imageWrap {
+    width: 335px;
+    height: 472px;
+    overflow: hidden;
+    position: relative;
+
+    @media (min-width: variables.$tablet) {
+        width: 300px;
+        height: 422px;
+    }
+
+    @media (min-width: variables.$laptop) {
+        width: 520px;
+        height: 733px;
+    }
+}
+
+.image {
+    border: 1px solid #999999;
+
+    -o-object-fit: cover;
+
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+}
