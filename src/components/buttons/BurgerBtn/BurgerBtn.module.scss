@@ -9,12 +9,35 @@
   height: 28px;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
-  & svg {
-    width: 72px;
-    height: 100%;
+.burger {
+  width: 72px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.cross {
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: variables.$navLinksColor;
     position: absolute;
-    right: 0;
-    top: 0;
+    left: 0;
+    top: 50%;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
