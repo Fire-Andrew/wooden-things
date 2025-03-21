@@ -11,7 +11,7 @@ const HomeAboutUsSection = () => {
           // width="100%"
           // height="100%"
           src="https://www.youtube.com/embed/B1umblCgNm4"
-          // loading="lazy"
+          loading="lazy"
           title="ТУТ БУДЕ ВІДЕО"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
