@@ -42,7 +42,7 @@
         column-gap: 16px;
     }
     @media (min-width: variables.$laptop) {
-        column-gap: 24px;
+        justify-content: space-between;
     }
 }
 
