@@ -12,7 +12,7 @@ const KitchenBoardsSection = () => {
   return (
     <section className={`section ${styles.section}`}>
       <div className='container'>
-        <h2 className={`sectionTitle ${styles.title}`}>Дощечки</h2>
+        <h2 className={`sectionTitle ${styles.title}`}>Kitchen Chopping Boards</h2>
 
         <ul>
           {productsData.map((product) =>
@@ -32,8 +32,8 @@ const KitchenBoardsSection = () => {
               </div>
 
               <div className={styles.infoWrap}>
-                  <p className={styles.description}>{product.descriptionUa}</p>        
-                  <p className={styles.material}>Матеріал: {product.materialUa}</p>
+                  <p className={styles.description}>{product.descriptionEn}</p>        
+                  <p className={styles.material}>Material: {product.materialEn}</p>
                   <ReviewBtn href={`/kitchen-boards/${product.slug}`} id={styles.btn}/>
               </div>                   
           </li>)}
