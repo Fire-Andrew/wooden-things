@@ -10,33 +10,55 @@ const HomeAboutUsSection = () => {
           className={styles.aboutUsVideo}
           // width="100%"
           // height="100%"
-          src="https://drive.google.com/file/d/1dA1GyyLmHAgiXOOcOHaJppnmXqYnQBBW/preview"
+          src="https://www.youtube.com/embed/B1umblCgNm4"
           loading="lazy"
           title="ТУТ БУДЕ ВІДЕО"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         />
+        <h3 className={styles.aboutUsSubTitle}>
+          GALEN-1: Excellence in Woodcraft
+        </h3>
         <p className={styles.aboutUsText}>
-          Зважаючи на велику кількість виробників{" "}
+          We are committed to innovation, quality, and sustainability, crafting
+          premium wood products with precision and expertise.{" "}
           <span className={styles.aboutUsAccent}>
-            Ми приділяємо увагу якості
+            We export 100% of our products to the U.S., U.K., Germany and other
+            markets.
           </span>{" "}
-          нашої продукції.
         </p>
         <p className={styles.aboutUsText}>
-          Саме тому{" "}
+          {" "}
+          From fire starters to kitchen chopping boards and wooden furniture
+          panels, our products are designed for durability, functionality, and
+          eco-friendliness, serving both homes and businesses worldwide.
+        </p>
+        <h3 className={styles.aboutUsSubTitle}>Our Journey</h3>
+        <p className={styles.aboutUsText}>
+          1999 –{" "}
+          <span className={styles.aboutUsAccent}>Founded in Cherkasy</span>,
+          specializing in high-quality wooden parquet.
+        </p>
+        <p className={styles.aboutUsText}>
+          2013 – Expanded into{" "}
+          <span className={styles.aboutUsAccent}>solid wood</span> furniture
+          panels for{" "}
+          <span className={styles.aboutUsAccent}>premium surfaces.</span>
+        </p>
+        <p className={styles.aboutUsText}>
+          2019 –{" "}
+          <span className={styles.aboutUsAccent}>Launched eco-friendly</span>{" "}
+          wood wool fire starters, now internationally popular.
+        </p>
+        <p className={styles.aboutUsText}>
+          2024 – Introduced oak kitchen chopping boards, blending durability
+          with timeless design.
+        </p>
+        <p className={styles.aboutUsText}>
           <span className={styles.aboutUsAccent}>
-            100% наших виробів експортується{" "}
+            We continue to expand and innovate
           </span>
-          до Сполучених Штатів Америки, Великої Британії, Німеччини,
-          Нідерландів, Данії та Франції.
-        </p>
-        <p className={styles.aboutUsText}>
-          У виробничих процесах ми використовуємо{" "}
-          <span className={styles.aboutUsAccent}>
-            найсучасніші машини та обладнання
-          </span>{" "}
-          провідних світових виробників.
+          , ensuring top-tier craftsmanship in every product.
         </p>
       </div>
     </section>
