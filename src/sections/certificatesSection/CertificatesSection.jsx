@@ -6,11 +6,11 @@ import { useWindowResize } from "@/hooks/windowResize";
 import styles from "./CertificatesSection.module.scss";
 
 const CertificatesSection = () => {
-    const { isDesktop } = useWindowResize();
+    const { isLaptop } = useWindowResize();
 
     return (
         <section className={styles.section}>
-            {isDesktop && (
+            {isLaptop && (
                 <h2 className={`sectionTitle ${styles.title}`}>Сертифікати</h2>
             )}
 
