@@ -1,45 +1,158 @@
 @use '../../app/variables';
 
 .sectionContainer {
-    padding-top: 68px;
+  max-width: 100%;
+  background-image: url('../../../public/images/fire-wood-ligters-bg.webp');  
+  background-attachment: lazy;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    @media screen and (min-width: variables.$tablet) {
-        padding-top: 78px;
-        padding-bottom: 40px;
-    }
-  
-    @media screen and (min-width: variables.$laptop) {
-      padding: 142px 60px 80px;
-    }
+  @media screen and (min-width: variables.$tablet) {
+    background-size: cover;
+    background-position: top center;
+  }
 }
 
-.title {
+.contentWrapper {
+  margin: 0 auto;
+  padding: 68px 20px 24px;
+  max-width: 510px;
+
+  @media screen and (min-width: variables.$tablet) {
+    padding-top: 110px;
+    padding-bottom: 40px;
+    max-width: 1024px;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    padding: 142px 60px 80px;
+    max-width: 1280px;
+   }
+}
+
+.sectionTitle {
+  text-align: center;
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 36px;
+   }
+}
+
+.blockTitle {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 300px;
+  margin-left: 30px;
+  text-align: left;
+
+
+  @media screen and (min-width: variables.$tablet) {
+    font-size: 24px;
+    margin-bottom: 48px;
     text-align: center;
-    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    font-size: 36px;
+    margin-bottom: 48px;
+  }
 }
 
-.descriptionContainer {
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+      flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+      flex-direction: row;
+
+      &:first-of-type {
+          margin-bottom: 32px;
+      }
+
+      &:last-child {
+          flex-direction: row;
+          justify-content: center;
+          gap: 44px;
+          margin-top: -70px;
+      }
+
+      &:nth-of-type(even) { 
+          flex-direction: row-reverse;
+      }
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    &:first-of-type {
+      margin-bottom: 44px;
+      gap: 103px;
+    }
+
+    &:last-child {
+      gap: 114px;
+      margin-top: -200px;
+    }
+  }
+
+    
+}
+
+.descContainerIgnitor {
+  @media screen and (min-width: variables.$tablet) {
     display: flex;
     flex-direction: column;
-
-    @media screen and (min-width: variables.$tablet) {
-        flex-direction: row;
-        &:nth-of-type(even) {
-            flex-direction: row-reverse;
-        }
-    }
+    width: 66%;
+    justify-content: center;
+    padding-left: 10px;
+  }
 }
 
+.descContainerIgnitors {
+  @media screen and (min-width: variables.$tablet) {
+    display: flex;
+    width: 46%;
+    justify-content: end;
+    margin-right: -50px;
+  }
+}
+
+.descContainerIgnitorsPack {
+  @media screen and (min-width: variables.$tablet) {
+    display: flex;
+    width: 45%;
+    align-items: end;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    width: 54%;
+    padding-bottom: 60px;
+  }
+}
+
+
+
 .igniterImg {
-    position: relative;
+    position: absolute;
     width: 258px;
     height: 417px;
+    margin-top: -30px;
+    align-self: center;
+    margin-bottom: 32px;
     & img {
       object-fit: contain;
     }
     @media screen and (min-width: variables.$tablet) {
-      width: 228px;
-      height: 369px;
+      position: relative;
+      width: 30%;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
     @media screen and (min-width: variables.$laptop) {
       width: 272px;
@@ -51,6 +164,8 @@
     position: relative;
     width: 337px;
     height: 223px;
+    align-self: center;
+    margin-bottom: 32px;
     & img {
       object-fit: contain;
     }
@@ -68,8 +183,15 @@
     position: relative;
     width: 249px;
     height: 314px;
+    align-self: center;
+    margin-top: -32px;
+
     & img {
       object-fit: contain;
+    }
+    
+    @media screen and (min-width: variables.$tablet) {
+      width: 34%;
     }
 
     @media screen and (min-width: variables.$laptop) {
@@ -80,6 +202,9 @@
 
 .igniterPropertyList,
 .igniterPropertyText {
+  justify-self: center;
+  margin-bottom: 32px;
+
     @media screen and (min-width: variables.$tablet) {
         font-size: 20px;
     }
@@ -87,6 +212,26 @@
     @media screen and (min-width: variables.$laptop) {
         font-size: 32px;
     }
+}
+
+.igniterPropertyList li:not(:last-child) {
+  margin-bottom: 20px;
+  @media screen and (min-width: variables.$laptop) {
+    margin-bottom: 24px;
+  }
+}
+
+.igniterPropertyList li::marker {
+  font-size: 12px;
+  vertical-align: top;
+
+  @media screen and (min-width: variables.$tablet) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    font-size: 22px;
+  }
 }
 
 .igniterPropertyList span,
