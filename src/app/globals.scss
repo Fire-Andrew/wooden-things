@@ -101,6 +101,16 @@ footer {
   max-width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media screen and (min-width: variables.$tablet) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .section {
