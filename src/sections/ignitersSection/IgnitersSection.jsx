@@ -5,6 +5,7 @@ import styles from './IgnitersSection.module.scss'
 const IgnitersSection = () => {
   return (
     <section className={styles.sectionContainer}>
+      <div className={styles.contentWrapper}>
       <h2 className={`sectionTitle ${styles.sectionTitle}`}>Розпалювачі</h2>
 
       <div className={styles.productContainer}>
@@ -43,7 +44,7 @@ const IgnitersSection = () => {
         </div>
     
       </div>
-
+      </div>
     </section>
   )
 }
