@@ -1,25 +1,32 @@
 @use '../../app/variables';
 
 .sectionContainer {
-  margin: 0 auto;
-  padding: 68px 20px 24px;
+  max-width: 100%;
   background-image: url('../../../public/images/fire-wood-ligters-bg.webp');  
   background-attachment: lazy;
+  background-size: cover;
   background-repeat: no-repeat;
-  
+
+  @media screen and (min-width: variables.$tablet) {
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+.contentWrapper {
+  margin: 0 auto;
+  padding: 68px 20px 24px;
+  max-width: 510px;
 
   @media screen and (min-width: variables.$tablet) {
     padding-top: 110px;
     padding-bottom: 40px;
     max-width: 1024px;
-    background-size: cover;
-    background-position: top center;
   }
-  
+
   @media screen and (min-width: variables.$laptop) {
     padding: 142px 60px 80px;
     max-width: 1280px;
-    background-size: contain;
    }
 }
 
@@ -163,7 +170,8 @@
       object-fit: contain;
     }
     @media screen and (min-width: variables.$tablet) {
-      width: 52%;
+      width: 360px;
+      height: 239px;
     }
     @media screen and (min-width: variables.$laptop) {
       width: 660px;
