@@ -39,6 +39,27 @@
   }
 }
 
+.aboutUsSubTitle {
+  color: variables.$accentColor;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+  }
+}
+
 .aboutUsText {
   font-weight: 400;
   font-size: 14px;
