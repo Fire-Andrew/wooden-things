@@ -7,11 +7,13 @@
     @media (min-width: variables.$tablet) {
         padding-top: 111px;
     }
+    @media (min-width: variables.$laptop) {
+        padding-top: 144px;
+    }
 }
 
 .title {
     text-align: center;
-    margin-top: 78px;
 }
 
 .documentWrap {
@@ -47,7 +49,6 @@
 }
 
 .documentLink {
-    // margin-top: 24px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
