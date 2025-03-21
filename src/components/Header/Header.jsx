@@ -1,25 +1,30 @@
 "use client";
 
 import { useWindowResize } from "@/hooks/windowResize";
-import React,  from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.scss";
 import BurgerBtn from "../buttons/BurgerBtn/BurgerBtn";
 import Logo from "../Logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import { useCloseMenu } from "@/hooks/closeMenu";
+import Languages from "../Languages/Languages";
 
 const Header = () => {
-  const { isLaptop } = useWindowResize();
+  const { isMobile, isLaptop } = useWindowResize();
 
   const { handleClick } = useCloseMenu();
+
+  const [showLang, setShowLang] = useState(false);
 
   return (
     <header className={styles.header}>
       <div className={`container ${styles.container}`}>
-        <Logo onClick={handleClick} />
+        <Logo onClick={handleClick} className={styles.logo} />
 
-        {isLaptop && <Navigation />}
+        {isLaptop && <Navigation className={styles.nav} />}
+
+        {!isMobile && <Languages className={styles.langSwitch} />}
 
         {!isLaptop && <BurgerBtn />}
       </div>

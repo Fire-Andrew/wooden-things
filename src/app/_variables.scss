@@ -15,5 +15,25 @@ $textColor: #cccccc;
 $accentColor: #a4d728;
 $navLinksColor: #ffffff;
 
-//usage example
-//  @include variables.bgColor;
+$pageSectionTopPaddingMobile: 68px;
+$pageSectionTopPaddingTablet: 112px;
+$pageSectionTopPaddingLaptop: 144px;
+
+
+// variables usage example
+// background-color: variables.$bgColor;
+
+// ===
+
+// mixin usage example
+
+// @mixin qwe{
+//     color: red;
+// }
+
+//module.scss
+
+// someStyle {
+//     qwe: qwe;
+//     @include variables.bgColor;
+//   }

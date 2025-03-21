@@ -111,7 +111,7 @@
   flex-direction: column;
   row-gap: 24px;
 
-  font-weight: 400;
+  font-family: Montserrat-Regular;
   font-size: 14px;
   width: 100%;
   color: variables.$textColor;
@@ -169,8 +169,10 @@
     bottom: 24px;
     right: 40px;
     font-size: 32px;
+    padding: 10px;
   }
   @media screen and (min-width: variables.$laptop) {
     font-size: 40px;
+    padding: 10px 20px;
   }
 }

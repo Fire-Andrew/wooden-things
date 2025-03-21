@@ -1,15 +1,14 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 
-
 export function useWindowResize() {
   const [isMobile, setMobile] = useState(false);
   const [isTablet, setTablet] = useState(false);
   const [isLaptop, setLaptop] = useState(false);
-  const [isDesktop, setDesktop] = useState(false);
+  // const [isDesktop, setDesktop] = useState(false);
 
   const handleResizeMobile = useCallback(() => {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 744) {
       setMobile(true);
     } else {
       setMobile(false);
@@ -25,7 +24,7 @@ export function useWindowResize() {
   }, [handleResizeMobile]);
 
   const handleResizeTablet = useCallback(() => {
-    if (window.innerWidth >= 768 && window.innerWidth < 1024) {
+    if (window.innerWidth >= 744 && window.innerWidth < 1280) {
       setTablet(true);
     } else {
       setTablet(false);
@@ -41,7 +40,8 @@ export function useWindowResize() {
   }, [handleResizeTablet]);
 
   const handleResizeLaptop = useCallback(() => {
-    if (window.innerWidth >= 1024 && window.innerWidth < 1440) {
+    // if (window.innerWidth >= 1280 && window.innerWidth < 1440) {
+    if (window.innerWidth >= 1280) {
       setLaptop(true);
     } else {
       setLaptop(false);
@@ -56,21 +56,21 @@ export function useWindowResize() {
     };
   }, [handleResizeLaptop]);
 
-  const handleResizeDesktop = useCallback(() => {
-    if (window.innerWidth >= 1440) {
-      setDesktop(true);
-    } else {
-      setDesktop(false);
-    }
-  }, [setDesktop]);
+  // const handleResizeDesktop = useCallback(() => {
+  //   if (window.innerWidth >= 1440) {
+  //     setDesktop(true);
+  //   } else {
+  //     setDesktop(false);
+  //   }
+  // }, [setDesktop]);
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResizeDesktop);
-    handleResizeDesktop();
-    return () => {
-      window.removeEventListener("resize", handleResizeDesktop);
-    };
-  }, [handleResizeDesktop]);
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResizeDesktop);
+  //   handleResizeDesktop();
+  //   return () => {
+  //     window.removeEventListener("resize", handleResizeDesktop);
+  //   };
+  // }, [handleResizeDesktop]);
 
-  return { isMobile, isTablet, isLaptop, isDesktop };
+  return { isMobile, isTablet, isLaptop };
 }
