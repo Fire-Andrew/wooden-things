@@ -10,7 +10,7 @@ const HomeAboutUsSection = () => {
           className={styles.aboutUsVideo}
           // width="100%"
           // height="100%"
-          src="https://drive.google.com/file/d/1dA1GyyLmHAgiXOOcOHaJppnmXqYnQBBW/preview"
+          src="https://www.youtube.com/embed/B1umblCgNm4"
           loading="lazy"
           title="ТУТ БУДЕ ВІДЕО"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
