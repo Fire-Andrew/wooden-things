@@ -4,6 +4,12 @@
     display: flex;
     flex-direction: column;
     padding-top: 77px;
+    background-image: url("../../../public/images/cetificatesBgImage.webp");
+    background-attachment: lazy;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
     @media (min-width: variables.$tablet) {
         padding-top: 111px;
     }
