@@ -4,7 +4,8 @@ import styles from './ReviewBtn.module.scss';
 const ReviewBtn = ({ href, id }) => {
   return (
     <Link href={href} className={styles.btn} id={id}>
-      Переглянути
+      {/* Переглянути */}
+      More details
     </Link>
   );
 };
