@@ -3,16 +3,23 @@
 .sectionContainer {
   margin: 0 auto;
   padding: 68px 20px 24px;
+  background-image: url('../../../public/images/fire-wood-ligters-bg.webp');  
+  background-attachment: lazy;
+  background-repeat: no-repeat;
+  
 
   @media screen and (min-width: variables.$tablet) {
     padding-top: 110px;
     padding-bottom: 40px;
     max-width: 1024px;
+    background-size: cover;
+    background-position: top center;
   }
   
   @media screen and (min-width: variables.$laptop) {
     padding: 142px 60px 80px;
     max-width: 1280px;
+    background-size: contain;
    }
 }
 
@@ -28,12 +35,16 @@
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 300px;
+  margin-left: 30px;
+  text-align: left;
+
 
   @media screen and (min-width: variables.$tablet) {
     font-size: 24px;
     margin-bottom: 48px;
+    text-align: center;
   }
 
   @media screen and (min-width: variables.$laptop) {
@@ -121,7 +132,7 @@
 
 
 .igniterImg {
-    position: relative;
+    position: absolute;
     width: 258px;
     height: 417px;
     margin-top: -30px;
@@ -131,6 +142,7 @@
       object-fit: contain;
     }
     @media screen and (min-width: variables.$tablet) {
+      position: relative;
       width: 30%;
       margin-top: 0px;
       margin-bottom: 0px;
