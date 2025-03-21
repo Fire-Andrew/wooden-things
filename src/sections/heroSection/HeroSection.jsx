@@ -11,7 +11,12 @@ const HeroSection = () => {
     <section className={styles.hero}>
       <div className={styles.boardContainer}>
         <figure className={styles.imgBoard}>
-          <Image src="/png/board-home.png" alt="board" fill={true} />
+          <Image
+            src="/png/board-home.png"
+            alt="board"
+            fill={true}
+            sizes="(max-width: 744px) 286px, (max-width: 1280px) 650px"
+          />
         </figure>
         <figure className={styles.imgArrow}>
           <Image
@@ -24,21 +29,22 @@ const HeroSection = () => {
             }
             alt="arrow"
             fill={true}
+            sizes="(max-width: 744px) 258px, (max-width: 1280px) 330px"
           />
         </figure>
-        <h2 className={`sectionTitle ${styles.title}`} >Дошки</h2>
+        <h2 className={`sectionTitle ${styles.title}`}>Boards</h2>
         <ul className={styles.textContainer}>
           <li>
-            Зважаючи на велику кількість виробників ми приділяємо особливу увагу
-            якості нашої продукції.
+            Given the large number of manufacturers, we pay special attention to
+            the quality of our products.
           </li>
           <li>
-            Саме тому 100% наших виробів експортується до Сполучених Штатів
-            Америки, Великої Британії, Німеччини, Нідерландів, Данії та Франції.
+            That is why 100% of our products are exported to the United States,
+            Great Britain, Germany, the Netherlands, Denmark and France.
           </li>
           <li>
-            У виробничих процесах ми використовуємо найсучасніші машини та
-            обладнання провідних світових виробників.
+            In our production processes, we use the most modern machines and
+            equipment from leading world manufacturers.
           </li>
         </ul>
         <ReviewBtn href="kitchen-boards" id={styles.btn} />
