@@ -46,6 +46,12 @@
   @media screen and (min-width: variables.$laptop) {
     margin-right: 200px;
   }
+
+  & a:hover,
+  & a:focus {
+    color: variables.$accentColor;
+    -webkit-text-stroke: 1px variables.$accentColor;
+  }
 }
 
 .langSwitch {
