@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contacts">
       <CsrFooterSection />
 
       <section className={`container ${styles.ssrSection}`}>
@@ -43,10 +43,7 @@ const Footer = () => {
             </abbr>
             , а також підтримку інновацій та експорту.
           </p>
-          <p>
-            EU4Business – ініціатива Європейського Союзу, яка допомагає малим і
-            середнім підприємствам у країнах Східного партнерства.{" "}
-          </p>
+
           <p>
             EU4Business – ініціатива Європейського Союзу, яка допомагає малим і
             середнім підприємствам у країнах Східного партнерства. Детальніше:{" "}

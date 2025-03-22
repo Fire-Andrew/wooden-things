@@ -1,14 +1,20 @@
 "use client";
 
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./CsrFooterSection.module.scss";
 import Logo from "@/components/Logo/Logo";
 import { useWindowResize } from "@/hooks/windowResize";
 import { footerNavData } from "@/data/navigationData";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { SiteContext } from "@/context/SiteContext";
+import { useActiveLinks } from "@/hooks/activeLinks";
 
 const CsrFooterSection = () => {
   const { isMobile } = useWindowResize();
+  const pathName = usePathname();
+  const { setHash } = useContext(SiteContext);
+  const { homeLinkClassName, pageLinkClassName } = useActiveLinks();
 
   return (
     <section className={`container ${styles.csrSection}`}>
@@ -60,7 +66,18 @@ const CsrFooterSection = () => {
           <nav className={styles.nav}>
             {footerNavData.map((el) => {
               return (
-                <Link key={el.href} href={el.href}>
+                <Link
+                  key={el.href}
+                  href={el.href}
+                  onClick={() => {
+                    setHash(el.href);
+                  }}
+                  className={
+                    pathName === "/"
+                      ? homeLinkClassName(el)
+                      : pageLinkClassName(el)
+                  }
+                >
                   {el.titleUa}
                 </Link>
               );
