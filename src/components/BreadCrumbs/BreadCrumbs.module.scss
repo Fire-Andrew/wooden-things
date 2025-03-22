@@ -1,0 +1,25 @@
+@use "../../app/variables";
+
+
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    column-gap: 32px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: variables.$navLinksColor;     
+}
+
+.backIcon {
+    width: 32px;
+    height: 32px;
+    fill: variables.$accentColor;
+    stroke: variables.$accentColor;
+}
