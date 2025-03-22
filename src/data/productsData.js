@@ -1,6 +1,6 @@
 export const productsData = [
     {
-        slug: 1,
+        slug: "1",
         loading: "eager",
         images: [
             {    
@@ -29,7 +29,7 @@ export const productsData = [
     },
 
     {
-        slug: 2,
+        slug: "2",
         images: [
             {    
                 src: "/images/kitchen-board_2.webp",
@@ -45,7 +45,7 @@ export const productsData = [
     },
      
     {
-        slug: 3,
+        slug: "3",
         images: [
             {    
                 src: "/images/kitchen-board_3.webp",
@@ -61,7 +61,7 @@ export const productsData = [
     },
       
     {
-        slug: 4,
+        slug: "4",
         images: [
             {    
                 src: "/images/kitchen-board_4.webp",
@@ -89,7 +89,7 @@ export const productsData = [
     },
        
     {
-        slug: 5,
+        slug: "5",
         images: [
             {    
                 src: "/images/kitchen-board_5.webp",
@@ -117,7 +117,7 @@ export const productsData = [
     },
         
     {
-        slug: 6,
+        slug: "6",
         images: [
             {    
                 src: "/images/kitchen-board_6.webp",
@@ -133,7 +133,7 @@ export const productsData = [
     },
          
     {
-        slug: 7,
+        slug: "7",
         images: [
             {    
                 src: "/images/kitchen-board_7.webp",
@@ -149,7 +149,7 @@ export const productsData = [
     },
 
     {
-        slug: 8,
+        slug: "8",
         images: [
             {    
                 src: "/images/kitchen-board_8.webp",
@@ -169,7 +169,7 @@ export const productsData = [
     },
 
     {
-        slug: 9,
+        slug: "9",
         images: [
             {    
                 src: "/images/kitchen-board_9.webp",
@@ -193,7 +193,7 @@ export const productsData = [
     },
 
     {
-        slug: 10,
+        slug: "10",
         images: [
             {    
                 src: "/images/kitchen-board_10.webp",
@@ -221,7 +221,7 @@ export const productsData = [
     },
 
     {
-        slug: 11,
+        slug: "11",
         images: [
             {    
                 src: "/images/kitchen-board_11.webp",
