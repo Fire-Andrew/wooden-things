@@ -5,7 +5,7 @@ const HomeAboutUsSection = () => {
   return (
     <section className={`section ${styles.sectionAboutUs}`}>
       <div className="container">
-        <h2 className={`sectionTitle ${styles.aboutUsTitle}`}>Про Нас</h2>
+        <h2 className={`sectionTitle ${styles.aboutUsTitle}`}>About us</h2>
         <iframe
           className={styles.aboutUsVideo}
           // width="100%"
