@@ -163,3 +163,16 @@ button {
     font-size: 64px;
   }
 }
+
+.hoverLink {
+  &:focus,
+  &:hover {
+    color: variables.$accentColor;
+    -webkit-text-stroke: 1px variables.$accentColor;
+  }
+}
+
+.activeLink {
+  color: variables.$accentColor;
+  -webkit-text-stroke: 1px variables.$accentColor;
+}

@@ -3,7 +3,7 @@ import styles from "./HomeAboutUsSection.module.scss";
 
 const HomeAboutUsSection = () => {
   return (
-    <section className={`section ${styles.sectionAboutUs}`}>
+    <section className={`section ${styles.sectionAboutUs}`} id="about-us">
       <div className="container">
         <h2 className={`sectionTitle ${styles.aboutUsTitle}`}>About us</h2>
         <iframe

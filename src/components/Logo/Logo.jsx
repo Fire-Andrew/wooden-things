@@ -7,7 +7,11 @@ import styles from "./Logo.module.scss";
 
 const Logo = ({ onClick, className }) => {
   return (
-    <Link href="/" className={`${styles.logo} ${className}`} onClick={onClick}>
+    <Link
+      href="/#hero"
+      className={`${styles.logo} ${className}`}
+      onClick={onClick}
+    >
       <Image
         src="/images/logo.webp"
         fill

@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useWindowResize } from '@/hooks/windowResize';
-import ReviewBtn from '@/components/ReviewBtn/ReviewBtn';
-import styles from './HeroSection.module.scss';
+import Image from "next/image";
+import { useWindowResize } from "@/hooks/windowResize";
+import ReviewBtn from "@/components/ReviewBtn/ReviewBtn";
+import styles from "./HeroSection.module.scss";
 
 const HeroSection = () => {
   const { isTablet, isMobile } = useWindowResize();
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="hero">
       <div className={styles.boardContainer}>
         <h1 className={styles.titleHidden}>Gallen 1 LLC</h1>
         <figure className={styles.imgBoard}>
@@ -23,10 +23,10 @@ const HeroSection = () => {
           <Image
             src={
               isMobile
-                ? '/png/arrow-home-mobile.png'
+                ? "/png/arrow-home-mobile.png"
                 : isTablet
-                ? '/png/arrow-home-tablet.png'
-                : '/png/arrow-home-desk.png'
+                ? "/png/arrow-home-tablet.png"
+                : "/png/arrow-home-desk.png"
             }
             alt="arrow"
             fill={true}
