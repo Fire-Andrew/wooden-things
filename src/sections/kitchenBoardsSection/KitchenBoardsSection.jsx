@@ -17,7 +17,6 @@ const KitchenBoardsSection = () => {
         <ul>
           {productsData.map((product) =>
             <li key={product.slug} className={styles.productCard}>
-              {/* <div className={styles.imgAndSizesWrap}> */}
               <div className={styles.imgWrapper}>
                   <Image
                     className={styles.img}
@@ -29,11 +28,9 @@ const KitchenBoardsSection = () => {
                     loading={product.loading || "lazy"}
                   />
               </div>      
-              {/* </div> */}
 
               <div className={styles.infoWrap}>
                   <p className={styles.description}>{product.descriptionEn}</p>        
-                  {/* <ReviewBtn href={`/kitchen-boards/${product.slug}`} id={styles.btn}/> */}
                   <ReviewBtn href={`/kitchen-boards/${product.slug}`}/>
               </div>                   
           </li>)}
@@ -44,11 +41,7 @@ const KitchenBoardsSection = () => {
 }
 
 
-export default KitchenBoardsSection
-
-
-
-
+export default KitchenBoardsSection;
 
 
 

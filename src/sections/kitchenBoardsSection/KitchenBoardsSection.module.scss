@@ -69,13 +69,11 @@
     background-color: variables.$navLinksColor;
 
     @media screen and (min-width: variables.$tablet) {
-        // right: -32px;
         right: -64px;
         width: 70vw;
     }
 
     @media screen and (min-width: variables.$laptop) {
-        // right: -80px;
         right: -50px;
         width: 1020px;
     }
@@ -83,12 +81,10 @@
 
 .productCard:nth-child(2n).productCard:not(:last-child)::after {
     @media screen and (min-width: variables.$tablet) {
-        // left: -32px;
         left: -64px;
     }
 
     @media screen and (min-width: variables.$laptop) {
-        // left: -80px;
         left: -50px;
         width: 1020px;
     }
@@ -154,19 +150,9 @@
     }
 
     @media screen and (min-width: variables.$laptop) {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
-
-// #btn {
-
-//     @media screen and (min-width: variables.$tablet) {
-//         margin-top: auto;
-//     }
-// }
-
-
-
 
 
 
