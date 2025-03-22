@@ -2,6 +2,7 @@
 
 .burgerBtn {
   background: none;
+
   outline: none;
   border: none;
 
@@ -12,6 +13,9 @@
   display: flex;
   align-items: center;
   position: relative;
+  @media screen and (min-width: variables.$laptop) {
+    display: none;
+  }
 }
 
 .burger {

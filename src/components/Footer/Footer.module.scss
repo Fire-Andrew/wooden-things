@@ -1,0 +1,65 @@
+@use "../../app/variables";
+
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: variables.$navLinksColor;
+  color: variables.$bgColor;
+}
+
+.ssrSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.allRights {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  & a {
+    color: variables.$accentColor;
+
+    &:hover,
+    &:focus {
+      -webkit-text-stroke: 1px variables.$accentColor;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    font-size: 16px;
+  }
+}
+
+.imgWrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1316px;
+  aspect-ratio: 1280/130;
+  margin-bottom: 14px;
+
+  & img {
+    object-fit: cover;
+  }
+}
+
+.aboutSponsors {
+  text-align: justify;
+  font-size: 12px;
+
+  & p:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: variables.$laptop) {
+    font-size: 20px;
+  }
+}

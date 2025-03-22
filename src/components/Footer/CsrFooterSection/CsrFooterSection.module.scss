@@ -1,0 +1,112 @@
+@use "../../../app/variables";
+
+$mobileGap: 16px;
+
+.csrSection {
+  padding-bottom: $mobileGap;
+
+  @media screen and (min-width: variables.$tablet) {
+    padding-bottom: 32px;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    padding-bottom: 24px;
+  }
+}
+
+.contentWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $mobileGap;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 32px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $mobileGap;
+  font-size: 16px;
+
+  & h3 {
+    font-family: KoHo-SemiBold, sans-serif;
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    font-size: 20px;
+
+    & h3 {
+      font-size: 32px;
+    }
+  }
+}
+
+.logo {
+  width: 120px;
+  height: 28px;
+
+  filter: grayscale(1) brightness(0.2);
+
+  @media screen and (min-width: variables.$laptop) {
+    width: 200px;
+    height: 46px;
+  }
+}
+
+.contacts {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $mobileGap;
+
+  & th:first-child,
+  & td :first-child {
+    padding-bottom: $mobileGap;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    align-items: flex-start;
+  }
+}
+.tel {
+  padding-right: 4px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 16px;
+  font-size: 14px;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    font-size: 20px;
+  }
+}
+
+.abourUs {
+  text-align: center;
+  font-size: 14px;
+
+  @media screen and (min-width: variables.$tablet) {
+    font-size: 16px;
+  }
+}
