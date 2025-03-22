@@ -1,18 +1,12 @@
-"use client";
-
 import Image from "next/image";
-import { useWindowResize } from "@/hooks/windowResize";
+import SectionTitle from "./SectionTitle";
 
 import styles from "./CertificatesSection.module.scss";
 
 const CertificatesSection = () => {
-    const { isLaptop } = useWindowResize();
-
     return (
         <section className={styles.section}>
-            {isLaptop && (
-                <h2 className={`sectionTitle ${styles.title}`}>Сертифікати</h2>
-            )}
+            <SectionTitle />
 
             <div className={styles.documentWrap}>
                 <div>
