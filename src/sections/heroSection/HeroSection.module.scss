@@ -1,5 +1,15 @@
 @use '../../app/variables';
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .hero {
   position: relative;
   padding-bottom: 24px;
@@ -13,6 +23,7 @@
     background-attachment: lazy;
     -webkit-box-shadow: inset 0px -9px 18px 2px rgba(11, 11, 13, 0.91);
     box-shadow: inset 0px -9px 18px 2px rgba(11, 11, 13, 0.91);
+    animation: fadeIn 0.8s ease-in-out forwards;
     @media screen and (min-width: variables.$tablet) {
       height: 547px;
     }
@@ -23,12 +34,31 @@
   }
 }
 
+.titleHidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .boardContainer {
   position: relative;
   max-width: 1180px;
   margin: 0 auto;
   padding: 8px 20px 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   &:last-child {
     align-items: flex-end;
@@ -47,6 +77,7 @@
   left: 20px;
   width: 154px;
   height: 134px;
+  animation: fadeIn 0.8s ease-in-out forwards;
   & img {
     object-fit: contain;
   }
@@ -71,6 +102,7 @@
   width: 132px;
   height: 226px;
   transform: rotate(355deg);
+  animation: fadeIn 0.8s ease-in-out forwards;
   & img {
     object-fit: contain;
   }
@@ -141,7 +173,12 @@
 }
 
 .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 24px;
 

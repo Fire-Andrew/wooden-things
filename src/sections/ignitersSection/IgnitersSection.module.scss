@@ -3,12 +3,10 @@
 .sectionContainer {
   max-width: 100%;
   background-image: url('../../../public/images/fire-wood-ligters-bg.webp');  
-  background-attachment: lazy;
   background-size: cover;
   background-repeat: no-repeat;
 
   @media screen and (min-width: variables.$tablet) {
-    background-size: cover;
     background-position: top center;
   }
 }
@@ -65,7 +63,7 @@
   display: flex;
   flex-direction: column;
 
-  &:last-child {
+  &:nth-of-type(3) {
       flex-direction: column-reverse;
   }
 
@@ -76,7 +74,7 @@
           margin-bottom: 32px;
       }
 
-      &:last-child {
+      &:nth-of-type(3) {
           flex-direction: row;
           justify-content: center;
           gap: 44px;
@@ -94,13 +92,11 @@
       gap: 103px;
     }
 
-    &:last-child {
+    &:nth-of-type(3) {
       gap: 114px;
       margin-top: -200px;
     }
-  }
-
-    
+  } 
 }
 
 .descContainerIgnitor {
@@ -116,8 +112,8 @@
 .descContainerIgnitors {
   @media screen and (min-width: variables.$tablet) {
     display: flex;
-    width: 46%;
-    justify-content: end;
+    width: 50%;
+    justify-content: flex-end;
     margin-right: -50px;
   }
 }
@@ -126,7 +122,7 @@
   @media screen and (min-width: variables.$tablet) {
     display: flex;
     width: 45%;
-    align-items: end;
+    align-items: flex-end;
     padding-bottom: 20px;
   }
 
@@ -244,3 +240,21 @@
     padding-left: 14px;
 }
 
+.igniterInfoBlock {
+  margin-top: 30px;
+  font-size: 12px;
+  & span {
+    color: variables.$accentColor;;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    font-size: 16px;
+    padding: 0 44px;
+    margin-top: 48px;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    font-size: 20px;
+  }
+
+}

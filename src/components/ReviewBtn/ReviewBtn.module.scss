@@ -7,6 +7,7 @@
   border: 1px solid variables.$accentColor;
   padding: 10px 10px;
   transition: 0.3s;
+  animation: fadeIn 0.8s ease-in-out forwards;
   @media screen and (min-width: variables.$tablet) {
     padding: 10px 20px;
   }
@@ -15,5 +16,15 @@
     background-color: variables.$accentColor;
     border: 1px solid variables.$accentColor;
     color: variables.$bgColor;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

@@ -6,10 +6,11 @@ import ReviewBtn from '@/components/ReviewBtn/ReviewBtn';
 import styles from './HeroSection.module.scss';
 
 const HeroSection = () => {
-  const { isDesktop, isTablet, isMobile } = useWindowResize();
+  const { isTablet, isMobile } = useWindowResize();
   return (
     <section className={styles.hero}>
       <div className={styles.boardContainer}>
+        <h1 className={styles.titleHidden}>Gallen 1 LLC</h1>
         <figure className={styles.imgBoard}>
           <Image
             src="/png/board-home.png"
