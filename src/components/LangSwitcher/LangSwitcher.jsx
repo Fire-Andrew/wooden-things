@@ -1,5 +1,5 @@
 import { languagesData } from "@/data/languagesData";
-import styles from "./LangSwitcher.module.scss";
+// import styles from "./LangSwitcher.module.scss";
 
 
 const LangSwitcher = ({

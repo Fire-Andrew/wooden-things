@@ -2,8 +2,9 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import LangSwitcher from "../LangSwitcher/LangSwitcher";
-import Cookies from "js-cookie";
+// import Cookies from "js-cookie";
 import { languagesData } from "@/data/languagesData";
+import Languages from "../Languages/Languages";
 
 
 const TranslatorBtnBlock = ({ className }) => {
@@ -17,8 +18,8 @@ const TranslatorBtnBlock = ({ className }) => {
 
     useEffect(() => {
         const lang = localStorage.getItem("i18nextLng");
-        setLanguage(() => (lang ? lang : languagesData.UA));
-        Cookies.set('language', lang);
+        setLanguage(() => (lang ? lang : "ua"));
+    //     // Cookies.set('language', lang);
         setIsLoad(false);
     }, []);
 
@@ -28,14 +29,14 @@ const TranslatorBtnBlock = ({ className }) => {
         // const language = localStorage.getItem("i18nextLng");
         setLanguage(languageUser);
         i18n.changeLanguage(languageUser);
-        Cookies.set('language', languageUser);
+        // Cookies.set('language', languageUser);
     };
 
 
     return (
         <div className={className}>
             {!isLoad && (
-                <LangSwitcher
+                <Languages
                     changeLanguage={changeLanguage}
                     currentLanguage={language}
                 />

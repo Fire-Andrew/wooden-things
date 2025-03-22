@@ -8,7 +8,8 @@ import Logo from "../Logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import { useCloseMenu } from "@/hooks/closeMenu";
-import Languages from "../Languages/Languages";
+// import Languages from "../Languages/Languages";
+import TranslatorBtnBlock from "../TranslatorBtnBlock/TranslatorBtnBlock";
 
 const Header = () => {
   const { isMobile, isLaptop } = useWindowResize();
@@ -24,7 +25,7 @@ const Header = () => {
 
         {isLaptop && <Navigation className={styles.nav} />}
 
-        {!isMobile && <Languages className={styles.langSwitch} />}
+        {!isMobile && <TranslatorBtnBlock className={styles.langSwitch} />}
 
         {!isLaptop && <BurgerBtn />}
       </div>
