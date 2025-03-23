@@ -18,6 +18,20 @@ $pageSectionTopPaddingMobile: 68px;
 $pageSectionTopPaddingTablet: 112px;
 $pageSectionTopPaddingLaptop: 144px;
 
+@mixin imgAnimation {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 // variables usage example
 // background-color: variables.$bgColor;
 

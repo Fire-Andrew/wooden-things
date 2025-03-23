@@ -43,6 +43,8 @@
   aspect-ratio: 1280/130;
   margin-bottom: 14px;
 
+  @include variables.imgAnimation;
+
   & img {
     object-fit: cover;
   }

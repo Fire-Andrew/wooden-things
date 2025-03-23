@@ -26,7 +26,7 @@ const HomeOakParquetSection = () => {
           </ul>
           <figure className={styles.imgContainer}>
             <Image
-              src="/png/OakParquet.png"
+              src="/webp/OakParquet.webp"
               alt="Паркет дубовий"
               fill={true}
               sizes="(max-width: 744px) 50%"

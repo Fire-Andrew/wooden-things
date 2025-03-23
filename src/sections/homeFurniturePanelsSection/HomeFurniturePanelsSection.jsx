@@ -14,7 +14,7 @@ const HomeFurniturePanelsSection = () => {
         <div className={styles.content}>
           <figure className={styles.imgContainers}>
             <Image
-              src="/png/furniturePanels-laptop.png"
+              src="/webp/furniturePanels-laptop.webp"
               alt="Меблеві Щити"
               fill={true}
               sizes="(max-width: 768px) 50%"

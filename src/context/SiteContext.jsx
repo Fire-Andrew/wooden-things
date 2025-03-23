@@ -9,6 +9,7 @@ export const SiteProvider = ({ children }) => {
 
   const [modalFrame, setModalFrame] = useState(false);
   const [backDrop, setBackDrop] = useState(false);
+  const [hash, setHash] = useState("");
 
   return (
     <SiteContext.Provider
@@ -21,6 +22,8 @@ export const SiteProvider = ({ children }) => {
         setModalFrame,
         backDrop,
         setBackDrop,
+        hash,
+        setHash,
       }}
     >
       {children}

@@ -10,7 +10,7 @@ const IgnitersSection = () => {
 
       <div className={styles.productContainer}>
         <figure className={styles.igniterImg}>
-          <Image src="/png/lighter-igniter-pg.png" alt="board" fill={true} />
+          <Image src="/images/lighter-igniter-pg.webp" alt="board" fill={true} />
         </figure>
         <div className={styles.descContainerIgnitor}>
         <h3 className={styles.blockTitle}>Premium quality</h3>
@@ -24,7 +24,7 @@ const IgnitersSection = () => {
 
       <div className={styles.productContainer}>
         <figure className={styles.ignitersImg}>
-          <Image src="/png/lighters-igniter-pg.png" alt="board" fill={true} />
+          <Image src="/images/lighters-igniter-pg.webp" alt="board" fill={true} />
         </figure>
         <div className={styles.descContainerIgnitors}>
           <ul className={styles.igniterPropertyList}>
@@ -37,7 +37,7 @@ const IgnitersSection = () => {
 
       <div className={styles.productContainer}>
         <figure className={styles.ignitersPackImg}>
-          <Image  src="/png/lightersPacked-igniter-pg.png" alt="board" fill={true} />
+          <Image  src="/images/lightersPacked-igniter-pg.webp" alt="board" fill={true} />
         </figure>
         <div className={styles.descContainerIgnitorsPack}>
           <p className={styles.igniterPropertyText}><span>We offer</span> different types of packaging by the number of pieces in a package and by the type of packaging</p>
