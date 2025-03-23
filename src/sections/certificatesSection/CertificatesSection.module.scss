@@ -3,7 +3,8 @@
 .section {
     display: flex;
     flex-direction: column;
-    padding-top: 77px;
+    padding-top: variables.$pageSectionTopPaddingMobile;
+    padding-bottom: 32px;
     background-image: url("../../../public/images/cetificatesBgImage.webp");
     background-attachment: lazy;
     background-size: cover;
@@ -11,10 +12,12 @@
     background-position: top center;
 
     @media (min-width: variables.$tablet) {
-        padding-top: 111px;
+        padding-top: variables.$pageSectionTopPaddingTablet;
+        padding-bottom: 48px;
     }
     @media (min-width: variables.$laptop) {
-        padding-top: 144px;
+        padding-top: variables.$pageSectionTopPaddingLaptop;
+        padding-bottom: 108px;
     }
 }
 
@@ -30,17 +33,24 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 24px;
+    width: 85%;
 
     @media (min-width: variables.$tablet) {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        width: 77%;
     }
     @media (min-width: variables.$laptop) {
         margin-top: 95px;
     }
 }
 
+.firstBox {
+    width: 100%;
+}
+
 .innerBox {
+    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 24px;
@@ -50,11 +60,16 @@
         column-gap: 16px;
     }
     @media (min-width: variables.$laptop) {
-        justify-content: space-between;
+        // justify-content: space-between;
+        column-gap: 2%;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
 .documentLink {
+    width: 100%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -76,37 +91,66 @@
     }
 }
 
+// .imageWrapFirst {
+//     width: 335px;
+//     height: 237px;
+//     overflow: hidden;
+//     position: relative;
+
+//     @media (min-width: variables.$tablet) {
+//         width: 615px;
+//         height: 435px;
+//     }
+
+//     @media (min-width: variables.$laptop) {
+//         width: 1076px;
+//         height: 761px;
+//     }
+// }
+
+// .imageWrap {
+//     width: 335px;
+//     height: 472px;
+//     overflow: hidden;
+//     position: relative;
+
+//     @media (min-width: variables.$tablet) {
+//         width: 300px;
+//         height: 422px;
+//     }
+
+//     @media (min-width: variables.$laptop) {
+//         width: 520px;
+//         height: 733px;
+//     }
+// }
+
 .imageWrapFirst {
-    width: 335px;
-    height: 237px;
     overflow: hidden;
     position: relative;
 
-    @media (min-width: variables.$tablet) {
-        width: 615px;
-        height: 435px;
-    }
+    aspect-ratio: 3.1 / 2.2;
+    width: 100%;
+    height: auto;
 
     @media (min-width: variables.$laptop) {
-        width: 1076px;
-        height: 761px;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
 .imageWrap {
-    width: 335px;
-    height: 472px;
     overflow: hidden;
     position: relative;
 
-    @media (min-width: variables.$tablet) {
-        width: 300px;
-        height: 422px;
-    }
+    aspect-ratio: 2.2 / 3;
+    width: 100%;
+    height: auto;
 
     @media (min-width: variables.$laptop) {
-        width: 520px;
-        height: 733px;
+        // margin-right: auto;
+        // margin-left: auto;
     }
 }
 

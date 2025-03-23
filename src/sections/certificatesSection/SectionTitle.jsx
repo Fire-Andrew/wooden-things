@@ -9,7 +9,7 @@ const SectionTitle = () => {
     return (
         <>
             {isLaptop && (
-                <h2 className={`sectionTitle ${styles.title}`}>Сертифікати</h2>
+                <h2 className={`sectionTitle ${styles.title}`}>Certificates</h2>
             )}
         </>
     );
