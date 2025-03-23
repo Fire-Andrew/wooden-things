@@ -25,7 +25,11 @@ const BurgerBtn = () => {
   };
 
   return (
-    <button className={styles.burgerBtn} onClick={toggleMobileMenu}>
+    <button
+      className={styles.burgerBtn}
+      onClick={toggleMobileMenu}
+      aria-label="Menu"
+    >
       {mobileMenuContent ? (
         <div className={styles.cross}></div>
       ) : (
