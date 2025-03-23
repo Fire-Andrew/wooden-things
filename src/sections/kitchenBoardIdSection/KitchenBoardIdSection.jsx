@@ -4,6 +4,7 @@ import { useParams, useRouter } from "next/navigation";
 import BreadCrumbs from '@/components/BreadCrumbs/BreadCrumbs';
 import { productsData } from '@/data/productsData';
 import styles from './KitchenBoardIdSection.module.scss';
+import ItemSlider from '@/components/ItemSlider/ItemSlider';
 
 
 const KitchenBoardIdSection = () => {
@@ -22,7 +23,9 @@ const KitchenBoardIdSection = () => {
           externalClass={styles.backBtn}
         />
         <div className={styles.contentWrapper}>
-          <div className={styles.sliderWrap}>{`Slider for card ${slug} must be here.`}</div>
+          {/* <div className={styles.sliderWrap}>{`Slider for card ${slug} must be here.`}</div> */}
+          {/* <ItemSlider images={product?.images} customClass={styles.sliderWrap} />  */}
+          <ItemSlider images={product?.images} /> 
           <p className={styles.description}>{product.longDescriptionEn}</p>
         </div>
 
