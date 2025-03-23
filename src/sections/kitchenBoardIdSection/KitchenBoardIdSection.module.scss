@@ -49,21 +49,18 @@
     }
 }
 
-.sliderWrap {
-    padding: 100px;
-    aspect-ratio: 335 / 248;
-    border: 1px solid white;
-    text-align: center;
+// .sliderWrap {
+//     aspect-ratio: 335 / 248;
 
-    @media screen and (min-width: variables.$tablet) {       
-        aspect-ratio: 616 / 434;
-    }
+//     @media screen and (min-width: variables.$tablet) {       
+//         aspect-ratio: 616 / 435;
+//     }
 
-    @media screen and (min-width: variables.$laptop) {
-        width: 640px;
-        height: 448px;        
-    }
-}
+//     @media screen and (min-width: variables.$laptop) {
+//         width: 636px;
+//         height: 448px;        
+//     }
+// }
 
 .description {
 
