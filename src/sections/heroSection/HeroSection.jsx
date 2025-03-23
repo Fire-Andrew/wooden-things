@@ -16,7 +16,8 @@ const HeroSection = () => {
             src="/webp/board-home.webp"
             alt="board"
             fill={true}
-            sizes="(max-width: 744px) 286px, (max-width: 1280px) 650px"
+            // sizes="(max-width: 744px) 286px, (max-width: 1280px) 650px"
+            sizes="(max-width: 743px) 154px, (max-width: 1279px) 286px, 650px"
           />
         </figure>
         <figure className={styles.imgArrow}>
@@ -30,7 +31,8 @@ const HeroSection = () => {
             }
             alt="arrow"
             fill={true}
-            sizes="(max-width: 744px) 258px, (max-width: 1280px) 330px"
+            // sizes="(max-width: 744px) 258px, (max-width: 1280px) 330px"
+            sizes="(max-width: 743px) 132px, (max-width: 806px) 258px, (max-width: 919px) 228px, (max-width: 1279px) 188px, 330px"
           />
         </figure>
         <h2 className={`sectionTitle ${styles.title}`}>Boards</h2>

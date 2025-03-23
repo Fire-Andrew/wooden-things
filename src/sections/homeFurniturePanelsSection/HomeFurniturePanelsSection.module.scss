@@ -13,6 +13,7 @@
 .title {
   text-align: right;
   margin-bottom: 32px;
+  
   @media screen and (min-width: variables.$tablet) {
     margin-bottom: 56px;
   }
