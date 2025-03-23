@@ -5,6 +5,7 @@ import { v4 } from 'uuid';
 import { languagesData } from "@/data/languagesData";
 
 const Languages = ({ className, changeLanguage, currentLanguage }) => {
+  
   const languages = Object.values(languagesData);
 
   return (
