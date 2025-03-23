@@ -21,8 +21,8 @@ const KitchenBoardsSection = () => {
                   <Image
                     className={styles.img}
                     src={product.images[0].src}
-                    alt={product.images[0].src}
-                    sizes="(max-width: 743px) 100vw, (max-width: 1279p  50vw,   580px"
+                    alt={product.images[0].src}                    
+                    sizes="(max-width: 743px) 95vw, (max-width: 1279px) 45vw, 580px"
                     width={703}
                     height={468}
                     loading={product.loading || "lazy"}
