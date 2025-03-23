@@ -9,7 +9,7 @@ const CertificatesSection = () => {
             <SectionTitle />
 
             <div className={styles.documentWrap}>
-                <div>
+                <div className={styles.firstBox}>
                     <a
                         className={styles.documentLink}
                         href='/pdf/certificate.pdf'
