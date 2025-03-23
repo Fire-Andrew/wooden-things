@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer} id="contacts">
+    <footer className={styles.footer}>
       <CsrFooterSection />
 
-      <section className={`container ${styles.ssrSection}`}>
+      <section className={`container ${styles.ssrSection}`} id="contacts">
         <h3 className={styles.allRights}>
           © All rights reserved by{" "}
           <a href="https://www.webevery.dev/">Webevery.dev</a> 2025
@@ -23,30 +23,31 @@ const Footer = () => {
         </div>
         <article className={styles.aboutSponsors}>
           <p>
-            Вебсайт розроблено в межах програми міжнародної співпраці
-            «EU4Business: відновлення, конкурентоспроможність та
-            інтернаціоналізація МСП» спільно фінансується Європейським Союзом та
-            урядом Німеччини і реалізується німецькою федеральною компанією
-            Deutsche Gesellschaft für Internationale Zusammenarbeit{" "}
+            Website developed within the framework of international cooperation
+            program "EU4Business: recovery, competitiveness and
+            Internationalization of RCI" jointly funded by the European Union
+            and by the German government and implemented by a German federal
+            company Deutsche Gesellschaft für Internationale Zusammenarbeit
             <abbr
               title="Deutsche Gesellschaft für Internationale Zusammenarbeit"
               translate="yes"
             >
               (GIZ)
             </abbr>{" "}
-            GmbH. Програма спрямована на підтримку економічної стійкості,
-            відновлення та зростання України, створення кращих умов для розвитку
-            українських малих і середніх підприємств{" "}
+            GmbH. The program aims to support economic sustainability,
+            restoration and growth of Ukraine, creation of better conditions for
+            development Ukrainian Small and Medium Enterprises
             <abbr title="малих і середніх підприємств" translate="yes">
               {" "}
-              (МСП)
+              (SME)
             </abbr>
-            , а також підтримку інновацій та експорту.
+            , as well as support for innovation and export
           </p>
 
           <p>
-            EU4Business – ініціатива Європейського Союзу, яка допомагає малим і
-            середнім підприємствам у країнах Східного партнерства. Детальніше:{" "}
+            EU4Business is an initiative of the European Union that helps small
+            and medium-sized enterprises in the Eastern Partnership countries.
+            Details:{" "}
             <a
               href="http://www.eu4business.org.ua"
               target="_blank"
@@ -56,9 +57,9 @@ const Footer = () => {
             </a>{" "}
           </p>
           <p>
-            Зміст вебсайту є виключно відповідальністю найменування вашого
-            підприємства і не обов'язково відображає позицію Європейського Союзу
-            та уряду Німеччини.
+            The content of the website is solely the responsibility of the name
+            of your enterprises and does not necessarily reflect the position of
+            the European Union and the German government.
           </p>
         </article>
       </section>
