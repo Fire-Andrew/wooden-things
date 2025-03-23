@@ -1,6 +1,10 @@
 .ItemSliderTop {
     width: 100%;
-    aspect-ratio: 335 / 224;
+    aspect-ratio: 335 / 256;
+}
+
+.ItemSliderTop .swiper-wrapper {
+    height: calc(100% - 32px);
 }
 
 .ItemSliderTop .swiper-slide {
@@ -18,6 +22,7 @@
     -ms-transform: none;
     -o-transform: translate3d(0, 0, 0);
     transform: none;
+    box-shadow: 1px 1px 58.6px 0 rgba(255, 255, 255, 0.05);
 }
 
 .ItemSliderTop .swiper-button-prev,
@@ -26,7 +31,7 @@
     background-size: contain;
     background-position: center;
     width: 32px;
-    height: 24px;
+    height: 16px;
     color: transparent;
     bottom: 0;
     top: auto;
@@ -38,40 +43,33 @@
 }
 
 .ItemSliderTop .swiper-button-prev {
-    background-image: url("../../../public/images/arrow-left.webp");
-    /* left: 50%; */
+    background-image: url("../../../public/images/arrow-left.webp");   
     left: 0;
-    /* transform: translateX(-75px); */
 }
 
 .ItemSliderTop .swiper-button-next {
-    background-image: url("../../../public/images/arrow-right.webp");
-    /* left: 50%; */
-    left: 45px;
-    /* transform: translateX(50px); */
+    background-image: url("../../../public/images/arrow-right.webp");   
+    left: 44px;
 }
 
 
 @media screen and (min-width: 744px) {
     .ItemSliderTop {
-        aspect-ratio: 616 / 411;
+        aspect-ratio: 616 / 443;
     }
 
-    .ItemSliderTop .swiper-button-prev,
+    .ItemSliderTop.swiper .swiper-button-prev { 
+        left: calc(100% - 78px); 
+    }
+
     .ItemSliderTop .swiper-button-next {
-        bottom: 34px;
+        left: calc(100% - 32px); 
     }
 }
 
 
 @media screen and (min-width: 1280px) {
     .ItemSliderTop {
-        aspect-ratio: 636 / 424;
-        max-height: 424px;
-    }
-
-    .ItemSliderTop .swiper-button-prev,
-    .ItemSliderTop .swiper-button-next {
-        bottom: 14px;
+        aspect-ratio: 636 / 456;
     }
 }

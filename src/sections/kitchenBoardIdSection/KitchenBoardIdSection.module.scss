@@ -3,20 +3,13 @@
 
 .section {
     padding-top: variables.$pageSectionTopPaddingMobile;
-    // padding-bottom: 32px;
 
     @media screen and (min-width: variables.$tablet) {
         padding-top: variables.$pageSectionTopPaddingTablet;
-        // padding-left: 64px;
-        // padding-right: 64px;
-        // padding-bottom: 48px;
     }
 
     @media screen and (min-width: variables.$laptop) {
         padding-top: variables.$pageSectionTopPaddingLaptop;
-        // padding-left: 50px;
-        // padding-right: 50px;
-        // padding-bottom: 80px;
     }
 }
 
@@ -35,10 +28,10 @@
 .contentWrapper {
     display: flex;
     flex-direction: column;
-    row-gap: 32px;
+    row-gap: 24px;
 
     @media screen and (min-width: variables.$tablet) {
-         row-gap: 40px;
+         row-gap: 32px;
     }
 
     @media screen and (min-width: variables.$laptop) {
@@ -49,19 +42,6 @@
     }
 }
 
-// .sliderWrap {
-//     aspect-ratio: 335 / 248;
-
-//     @media screen and (min-width: variables.$tablet) {       
-//         aspect-ratio: 616 / 435;
-//     }
-
-//     @media screen and (min-width: variables.$laptop) {
-//         width: 636px;
-//         height: 448px;        
-//     }
-// }
-
 .description {
 
     @media screen and (min-width: variables.$tablet) {
@@ -71,5 +51,4 @@
     @media screen and (min-width: variables.$laptop) {
         width: 500px;
     }
-
 }
