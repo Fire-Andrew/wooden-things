@@ -1,5 +1,15 @@
 @use '../../app/variables';
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .container {
   position: relative;
   overflow: hidden;
@@ -7,7 +17,7 @@
     content: '';
     display: block;
     position: absolute;
-    bottom: 81px;
+    bottom: 91px;
     left: -20px;
     width: 96px;
     height: 328px;
@@ -15,19 +25,20 @@
         rgba(11, 11, 13, 0.301),
         rgba(11, 11, 13, 0.301)
       ),
-      url('../../../public/png/Lighter-home.png');
+      url('../../../public/webp/Lighter-home.webp');
     background-size: cover;
     background-position: bottom;
     background-attachment: lazy;
     -webkit-box-shadow: inset 0px -34px 25px -10px rgba(11, 11, 13, 0.93);
     box-shadow: inset 0px -34px 25px -10px rgba(11, 11, 13, 0.93);
+    animation: fadeIn 0.8s ease-in-out forwards;
     z-index: -1;
     @media screen and (min-width: variables.$tablet) {
-      bottom: 0px;
+      bottom: 27px;
       left: -12px;
       width: 155px;
       height: 529px;
-      background-image: url('../../../public/png/Lighter-home.png');
+      background-image: url('../../../public/webp/Lighter-home.webp');
     }
     @media screen and (min-width: variables.$laptop) {
       width: 229px;
@@ -40,7 +51,7 @@
     content: '';
     display: block;
     position: absolute;
-    bottom: 81px;
+    bottom: 110px;
     right: -20px;
     width: 146px;
     height: 231px;
@@ -48,17 +59,18 @@
         rgba(11, 11, 13, 0.301),
         rgba(11, 11, 13, 0.301)
       ),
-      url('../../../public/png/LighterWithHand-home.png');
+      url('../../../public/webp/LighterWithHand-home.webp');
     background-size: cover;
     background-position: bottom;
     background-attachment: lazy;
+    animation: fadeIn 0.8s ease-in-out forwards;
     z-index: -1;
     @media screen and (min-width: variables.$tablet) {
-      bottom: 0px;
+      bottom: 37px;
       right: -32px;
       width: 304px;
       height: 449px;
-      background-image: url('../../../public/png/LighterWithHand-home.png');
+      background-image: url('../../../public/webp/LighterWithHand-home.webp');
     }
     @media screen and (min-width: variables.$laptop) {
       width: 446px;
@@ -71,8 +83,16 @@
 
 .ignitersContent {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 
   @media screen and (min-width: variables.$tablet) {
@@ -91,9 +111,14 @@
 }
 
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  width: 257px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  width: 257px;
   row-gap: 72px;
   margin-bottom: 32px;
 
@@ -156,8 +181,8 @@
   }
   @media screen and (min-width: variables.$laptop) {
     position: absolute;
-    bottom: 280px;
-    margin-left: 35%;
+    bottom: 230px;
+    margin-left: 43%;
     font-size: 40px;
     padding: 10px 20px;
   }

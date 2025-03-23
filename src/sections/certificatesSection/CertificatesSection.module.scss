@@ -4,14 +4,22 @@
     display: flex;
     flex-direction: column;
     padding-top: 77px;
+    background-image: url("../../../public/images/cetificatesBgImage.webp");
+    background-attachment: lazy;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
     @media (min-width: variables.$tablet) {
         padding-top: 111px;
+    }
+    @media (min-width: variables.$laptop) {
+        padding-top: 144px;
     }
 }
 
 .title {
     text-align: center;
-    margin-top: 78px;
 }
 
 .documentWrap {
@@ -47,7 +55,6 @@
 }
 
 .documentLink {
-    // margin-top: 24px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

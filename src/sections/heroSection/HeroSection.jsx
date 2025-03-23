@@ -6,13 +6,14 @@ import ReviewBtn from '@/components/ReviewBtn/ReviewBtn';
 import styles from './HeroSection.module.scss';
 
 const HeroSection = () => {
-  const { isDesktop, isTablet, isMobile } = useWindowResize();
+  const { isTablet, isMobile } = useWindowResize();
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="hero">
       <div className={styles.boardContainer}>
+        <h1 className={styles.titleHidden}>Gallen 1 LLC</h1>
         <figure className={styles.imgBoard}>
           <Image
-            src="/png/board-home.png"
+            src="/webp/board-home.webp"
             alt="board"
             fill={true}
             sizes="(max-width: 744px) 286px, (max-width: 1280px) 650px"
@@ -22,10 +23,10 @@ const HeroSection = () => {
           <Image
             src={
               isMobile
-                ? '/png/arrow-home-mobile.png'
+                ? '/webp/arrow-home-mobile.webp'
                 : isTablet
-                ? '/png/arrow-home-tablet.png'
-                : '/png/arrow-home-desk.png'
+                ? '/webp/arrow-home-tablet.webp'
+                : '/webp/arrow-home-desk.webp'
             }
             alt="arrow"
             fill={true}

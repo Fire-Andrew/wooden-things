@@ -4,13 +4,13 @@ export const navigationData = [
     titleDe: "",
     titleEn: "",
     href: "/kitchen-boards",
-    },
+  },
   {
     titleUa: "Розпалювачі",
     titleDe: "",
     titleEn: "",
     href: "/igniters",
-    },
+  },
   {
     titleUa: "Сертифікати",
     titleDe: "",
@@ -22,7 +22,7 @@ export const navigationData = [
     titleDe: "",
     titleEn: "",
     href: "/#about-us",
-  },  
+  },
   {
     titleUa: "Контакти",
     titleDe: "",
@@ -30,3 +30,9 @@ export const navigationData = [
     href: "/#contacts",
   },
 ];
+
+export const footerNavData = navigationData.filter(
+  (el) => el.href !== "/#contacts"
+);
+
+[footerNavData[2], footerNavData[3]] = [footerNavData[3], footerNavData[2]];

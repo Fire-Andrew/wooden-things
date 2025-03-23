@@ -6,44 +6,48 @@ const IgnitersSection = () => {
   return (
     <section className={styles.sectionContainer}>
       <div className={styles.contentWrapper}>
-      <h2 className={`sectionTitle ${styles.sectionTitle}`}>Розпалювачі</h2>
+      <h2 className={`sectionTitle ${styles.sectionTitle}`}>Igniters</h2>
 
       <div className={styles.productContainer}>
         <figure className={styles.igniterImg}>
-          <Image src="/png/lighter-igniter-pg.png" alt="board" fill={true} />
+          <Image src="/images/lighter-igniter-pg.webp" alt="board" fill={true} />
         </figure>
         <div className={styles.descContainerIgnitor}>
-        <h3 className={styles.blockTitle}>Преміальна якість</h3>
+        <h3 className={styles.blockTitle}>Premium quality</h3>
           <ul className={styles.igniterPropertyList}>
-            <li>містять глибоко очищений віск - майже <span>не виділяють запаху та диму</span></li>
-            <li>внутрішній отвір забезпечує <span>краще горіння</span></li>
-            <li>мають привабливу форму та дизайн</li> 
+            <li>contain deeply refined wax - almost <span>no odor and smoke</span></li>
+            <li>inner hole provides <span>better combustion</span></li>
+            <li>have an attractive shape and design</li> 
           </ul>
         </div>
       </div>
 
       <div className={styles.productContainer}>
         <figure className={styles.ignitersImg}>
-          <Image src="/png/lighters-igniter-pg.png" alt="board" fill={true} />
+          <Image src="/images/lighters-igniter-pg.webp" alt="board" fill={true} />
         </figure>
         <div className={styles.descContainerIgnitors}>
           <ul className={styles.igniterPropertyList}>
-            <li>не сипляться частини стружки</li>
-            <li>тривалість горіння - до <span>8-10 хв</span></li>
-            <li>не липкі</li> 
+            <li>no chips fall out</li>
+            <li>burning time - up to <span>8-10 minutes</span></li>
+            <li>not sticky</li> 
           </ul>
         </div>
       </div>
 
       <div className={styles.productContainer}>
         <figure className={styles.ignitersPackImg}>
-          <Image  src="/png/lightersPacked-igniter-pg.png" alt="board" fill={true} />
+          <Image  src="/images/lightersPacked-igniter-pg.webp" alt="board" fill={true} />
         </figure>
         <div className={styles.descContainerIgnitorsPack}>
-          <p className={styles.igniterPropertyText}><span>Пропонуємо</span> різні типи пакування по кількості штук в упаковці та за типом пакування </p>
+          <p className={styles.igniterPropertyText}><span>We offer</span> different types of packaging by the number of pieces in a package and by the type of packaging</p>
         </div>
-    
       </div>
+
+      <div className={styles.igniterInfoBlock}>
+        <p>Made from <span>dry wood</span> shavings and purified wax, our chemical-free, eco-friendly fire starters burn for 8–10 minutes, ensuring strong, reliable ignition in any weather. We <span>hold patents</span> and utility model rights, securing exclusive, high-performance technology.</p>
+      </div>
+
       </div>
     </section>
   )
