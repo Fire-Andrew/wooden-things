@@ -2,16 +2,16 @@
 
 import React from "react";
 import { v4 } from 'uuid';
-import styles from "./LangSwitch.module.scss";
 import { languagesData } from "@/data/languagesData";
 
 const Languages = ({ className, changeLanguage, currentLanguage }) => {
   const languages = Object.values(languagesData);
 
   return (
-    <ul className={styles.langSwitch}>
+    <ul className={className}>
       {languages.map((el) => {
-      return <li key={v4()} onClick={()=>changeLanguage(el)}>{el}</li>;
+      return <li key={v4()}
+      onClick={()=>changeLanguage(el)}>{el}</li>;
       })}
     </ul>
   );
