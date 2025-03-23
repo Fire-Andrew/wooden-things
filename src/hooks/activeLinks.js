@@ -2,7 +2,7 @@
 
 import { SiteContext } from "@/context/SiteContext";
 import { usePathname } from "next/navigation";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 export const useActiveLinks = () => {
   const pathName = usePathname();

@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer} id="contacts">
+    <footer className={styles.footer}>
       <CsrFooterSection />
 
-      <section className={`container ${styles.ssrSection}`}>
+      <section className={`container ${styles.ssrSection}`} id="contacts">
         <h3 className={styles.allRights}>
           © All rights reserved by{" "}
           <a href="https://www.webevery.dev/">Webevery.dev</a> 2025
