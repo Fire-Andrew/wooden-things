@@ -24,6 +24,8 @@ const CertificatesSection = () => {
                                 priority={true}
                                 fill={true}
                                 title='Перехід до документа'
+                                loading='eager'
+                                sizes='(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 40vw'
                             />
                         </div>
                     </a>
@@ -41,8 +43,9 @@ const CertificatesSection = () => {
                                 src='/certificates/declaration_OSMO.webp'
                                 alt='Додатково про документ'
                                 fill={true}
-                                loading='lazy'
+                                loading='eager'
                                 title='Перехід до документа'
+                                sizes='(max-width: 768px) 90vw, (max-width: 1200px) 85vw, 70vw'
                             />
                         </div>
                     </a>
@@ -59,8 +62,9 @@ const CertificatesSection = () => {
                                 src='/certificates/Zertifikat_OSMO.webp'
                                 alt='Додатково про документ'
                                 fill={true}
-                                loading='lazy'
+                                loading='eager'
                                 title='Перехід до документа'
+                                sizes='(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 40vw'
                             />
                         </div>
                     </a>
