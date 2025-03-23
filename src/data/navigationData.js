@@ -1,32 +1,32 @@
 export const navigationData = [
   {
     titleUa: "Дощечки",
-    titleDe: "",
-    titleEn: "",
+    titleDe: "Дощечки",
+    titleEn: "Boards",
     href: "/kitchen-boards",
   },
   {
     titleUa: "Розпалювачі",
-    titleDe: "",
-    titleEn: "",
+    titleDe: "Розпалювачі",
+    titleEn: "Firestarters",
     href: "/igniters",
   },
   {
     titleUa: "Сертифікати",
-    titleDe: "",
-    titleEn: "",
+    titleDe: "Сертифікати",
+    titleEn: "Certificates",
     href: "/certificates",
   },
   {
     titleUa: "Про нас",
-    titleDe: "",
-    titleEn: "",
+    titleDe: "Про нас",
+    titleEn: "About us",
     href: "/#about-us",
   },
   {
     titleUa: "Контакти",
-    titleDe: "",
-    titleEn: "",
+    titleDe: "Kontaktdaten",
+    titleEn: "Contacts",
     href: "/#contacts",
   },
 ];

@@ -14,10 +14,10 @@ const Navigation = ({ className, onClick, data }) => {
 
   return (
     <nav className={`${className}`}>
-      {data.map((el) => {
+      {data.map((el, i) => {
         return (
           <Link
-            key={el.titleUa}
+            key={i}
             href={el.href}
             onClick={() => {
               setHash(el.href);
@@ -29,7 +29,7 @@ const Navigation = ({ className, onClick, data }) => {
               pathName === "/" ? homeLinkClassName(el) : pageLinkClassName(el)
             }
           >
-            {el.titleUa}
+            {el.titleEn}
           </Link>
         );
       })}
