@@ -8,6 +8,7 @@ import Navigation from "@/components/Navigation/Navigation";
 import { useCloseMenu } from "@/hooks/closeMenu";
 import Languages from "@/components/Languages/Languages";
 import { useWindowResize } from "@/hooks/windowResize";
+import { navigationData } from "@/data/navigationData";
 
 const MobileMenu = () => {
   const { mobileMenu, mobileMenuContent } = useContext(SiteContext);
@@ -35,7 +36,11 @@ const MobileMenu = () => {
       >
         {isMobile && <Languages className={styles.languages} />}
 
-        <Navigation className={styles.nav} onClick={handleClick} />
+        <Navigation
+          className={styles.nav}
+          onClick={handleClick}
+          data={navigationData}
+        />
       </div>
     </div>
   );

@@ -2,9 +2,9 @@
 import React from 'react';
 import { useParams, useRouter } from "next/navigation";
 import BreadCrumbs from '@/components/BreadCrumbs/BreadCrumbs';
+import ItemSlider from '@/components/ItemSlider/ItemSlider';
 import { productsData } from '@/data/productsData';
 import styles from './KitchenBoardIdSection.module.scss';
-import ItemSlider from '@/components/ItemSlider/ItemSlider';
 
 
 const KitchenBoardIdSection = () => {
@@ -22,10 +22,8 @@ const KitchenBoardIdSection = () => {
           title='Back' 
           externalClass={styles.backBtn}
         />
-        <div className={styles.contentWrapper}>
-          {/* <div className={styles.sliderWrap}>{`Slider for card ${slug} must be here.`}</div> */}
-          {/* <ItemSlider images={product?.images} customClass={styles.sliderWrap} />  */}
-          <ItemSlider images={product?.images} /> 
+        <div className={styles.contentWrapper}>         
+          <ItemSlider images={product?.images} customClass=''/> 
           <p className={styles.description}>{product.longDescriptionEn}</p>
         </div>
 

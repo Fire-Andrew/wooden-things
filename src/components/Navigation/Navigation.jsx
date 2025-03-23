@@ -1,13 +1,12 @@
 "use client";
 
 import { SiteContext } from "@/context/SiteContext";
-import { navigationData } from "@/data/navigationData";
 import { useActiveLinks } from "@/hooks/activeLinks";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 
-const Navigation = ({ className, onClick }) => {
+const Navigation = ({ className, onClick, data }) => {
   const pathName = usePathname();
   const { setHash } = useContext(SiteContext);
 
@@ -15,10 +14,10 @@ const Navigation = ({ className, onClick }) => {
 
   return (
     <nav className={`${className}`}>
-      {navigationData.map((el) => {
+      {data.map((el, i) => {
         return (
           <Link
-            key={el.titleUa}
+            key={i}
             href={el.href}
             onClick={() => {
               setHash(el.href);
@@ -30,7 +29,7 @@ const Navigation = ({ className, onClick }) => {
               pathName === "/" ? homeLinkClassName(el) : pageLinkClassName(el)
             }
           >
-            {el.titleUa}
+            {el.titleEn}
           </Link>
         );
       })}

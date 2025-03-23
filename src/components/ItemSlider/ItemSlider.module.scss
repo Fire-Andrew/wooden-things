@@ -14,19 +14,8 @@
   align-items: center;
   width: 100%;
   min-width: 280px;
-  aspect-ratio: 335 / 248;
-  // border: 1px solid white;
-
-  @media screen and (min-width: variables.$tablet) {
-    aspect-ratio: 616 / 435;  
-  }
-
-  @media screen and (orientation: landscape) {
-    // flex: 1;
-  }
 
   @media screen and (min-width: variables.$laptop) {
     width: 636px;
-    height: 448px;
   }
 }

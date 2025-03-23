@@ -6,14 +6,10 @@
 
     @media screen and (min-width: variables.$tablet) {
         padding-top: variables.$pageSectionTopPaddingTablet;
-        // padding-left: 64px;
-        // padding-right: 64px;
     }
 
     @media screen and (min-width: variables.$laptop) {
         padding-top: variables.$pageSectionTopPaddingLaptop;
-        // padding-left: 50px;
-        // padding-right: 50px;
     }
 }
 
