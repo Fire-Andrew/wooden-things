@@ -6,6 +6,7 @@ import LangSwitcher from "./LangSwitcher/LangSwitcher";
 // import { languagesData } from "@/data/languagesData";
 
 
+
 const TranslatorBtnBlock = ({ className }) => {
     const { i18n } = useTranslation();
     const [language, setLanguage] = useState(
