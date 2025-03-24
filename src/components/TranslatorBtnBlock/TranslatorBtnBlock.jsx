@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import styles from "./TranslatorBtnBlock.module.scss";
 import LangSwitcher from "./LangSwitcher/LangSwitcher";
 import { languagesData } from "@/data/languagesData";
-import Languages from "./LangSwitcher/LangSwitcher";
 
 
 const TranslatorBtnBlock = ({ className }) => {
