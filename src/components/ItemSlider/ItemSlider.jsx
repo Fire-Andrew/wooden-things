@@ -37,7 +37,7 @@ const ItemSlider = ({ images, customClass }) => {
               alt="Kitchen board"
               fill={true}
               loading={imgLoading}
-              sizes="(max-width: 1365px) 90vw, 1222px"
+              sizes="(max-width: 743px) 95vw, (max-width: 1279px) 90vw, 636px"
               priority={imgPriority}
             />
           </SwiperSlide>
