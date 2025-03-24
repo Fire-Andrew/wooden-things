@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from 'next/image';
-import styles from './IgnitersSection.module.scss'
+import styles from './FireStartersSection.module.scss';
 
-const IgnitersSection = () => {
+
+const FireStartersSection = () => {
   return (
     <section className={styles.sectionContainer}>
       <div className={styles.contentWrapper}>
-      <h2 className={`sectionTitle ${styles.sectionTitle}`}>Igniters</h2>
+      <h2 className={`sectionTitle ${styles.sectionTitle}`}>Fire Starters</h2>
 
       <div className={styles.productContainer}>
         <figure className={styles.igniterImg}>
@@ -53,4 +54,4 @@ const IgnitersSection = () => {
   )
 }
 
-export default IgnitersSection
+export default FireStartersSection;

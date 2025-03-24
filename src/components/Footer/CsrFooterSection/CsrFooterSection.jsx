@@ -52,13 +52,13 @@ const CsrFooterSection = () => {
           )}
         </div>
         <div className={styles.content}>
-          <h3>Контакти</h3>
+          <h3>Contacts</h3>
           <p>Ukraine – Cherkasy region</p>
           <p>20251, Bahacheve</p>
           <p>3a Yevhena Ivanchenka St.</p>
         </div>
         <div className={styles.content}>
-          <h3>Меню</h3>
+          <h3>Menu</h3>
 
           <Navigation
             className={styles.nav}

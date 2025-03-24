@@ -1,7 +1,9 @@
-import React from 'react'
-import KitchenBoardsSection from '@/sections/kitchenBoardsSection/KitchenBoardsSection'
+import React from 'react';
+import KitchenBoardsSection from '@/sections/kitchenBoardsSection/KitchenBoardsSection';
+
 
 const page = () => {
+
   return (
     <>
       <KitchenBoardsSection/>
@@ -9,4 +11,5 @@ const page = () => {
   )
 }
 
-export default page
+
+export default page;
