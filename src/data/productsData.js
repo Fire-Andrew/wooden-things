@@ -1,7 +1,7 @@
 export const productsData = [
     {
         slug: "1",
-        loading: "eager",
+        priority: true,
         images: [
             {    
                 src: "/images/kitchen-board_1.webp",
