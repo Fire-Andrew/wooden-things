@@ -11,7 +11,7 @@ export const metadata = {
   keywords: [
     "Kitchen Chopping Boards",
     "Boards",
-    "Igniters",
+    "Fire Starters",
     "Galen 1",
   ],
   
