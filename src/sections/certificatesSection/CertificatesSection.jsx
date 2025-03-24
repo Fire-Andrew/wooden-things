@@ -25,7 +25,7 @@ const CertificatesSection = () => {
                                 fill={true}
                                 title='Перехід до документа'
                                 loading='eager'
-                                sizes='(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 40vw'
+                                sizes='(max-width: 744px) 90vw, (max-width: 1280px) 85vw, 70vw'
                             />
                         </div>
                     </a>
@@ -45,7 +45,7 @@ const CertificatesSection = () => {
                                 fill={true}
                                 loading='eager'
                                 title='Перехід до документа'
-                                sizes='(max-width: 768px) 90vw, (max-width: 1200px) 85vw, 70vw'
+                                sizes='(max-width: 744px) 90vw, (max-width: 1280px) 45vw, 40vw'
                             />
                         </div>
                     </a>
@@ -64,7 +64,7 @@ const CertificatesSection = () => {
                                 fill={true}
                                 loading='eager'
                                 title='Перехід до документа'
-                                sizes='(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 40vw'
+                                sizes='(max-width: 744px) 90vw, (max-width: 1280px) 45vw, 40vw'
                             />
                         </div>
                     </a>
