@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { v4 } from 'uuid';
+// import { v4 } from 'uuid';
 import { languagesData } from "@/data/languagesData";
 
 const LangSwitcher = ({ 
@@ -15,7 +15,9 @@ const LangSwitcher = ({
   return (
     <ul className={className}>
       {languages.map((el) => {
-      return <li key={v4()}
+      return <li
+       key={1n+1}
+
       onClick={()=>changeLanguage(el)}>{el}</li>;
       })}
     </ul>
