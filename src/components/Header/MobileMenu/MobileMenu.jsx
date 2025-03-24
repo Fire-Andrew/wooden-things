@@ -6,7 +6,8 @@ import styles from "./MobileMenu.module.scss";
 import { SiteContext } from "@/context/SiteContext";
 import Navigation from "@/components/Navigation/Navigation";
 import { useCloseMenu } from "@/hooks/closeMenu";
-import Languages from "@/components/TranslatorBtnBlock/LangSwitcher/LangSwitcher";
+// import Languages from "@/components/TranslatorBtnBlock/LangSwitcher/LangSwitcher";
+import TranslatorBtnBlock from "@/components/TranslatorBtnBlock/TranslatorBtnBlock";
 import { useWindowResize } from "@/hooks/windowResize";
 import { navigationData } from "@/data/navigationData";
 
@@ -34,7 +35,7 @@ const MobileMenu = () => {
             : styles.content
         }
       >
-        {isMobile && <Languages className={styles.languages} />}
+        {isMobile && <TranslatorBtnBlock className={styles.languages} />}
 
         <Navigation
           className={styles.nav}
