@@ -1,16 +1,21 @@
 import React from 'react'
 import Image from 'next/image';
-import styles from './IgnitersSection.module.scss'
+import styles from './FireStartersSection.module.scss';
 
-const IgnitersSection = () => {
+
+const FireStartersSection = () => {
   return (
     <section className={styles.sectionContainer}>
       <div className={styles.contentWrapper}>
-      <h2 className={`sectionTitle ${styles.sectionTitle}`}>Igniters</h2>
+      <h2 className={`sectionTitle ${styles.sectionTitle}`}>Fire Starters</h2>
 
       <div className={styles.productContainer}>
         <figure className={styles.igniterImg}>
-          <Image src="/images/lighter-igniter-pg.webp" alt="board" fill={true} />
+          <Image src="/images/lighter-igniter-pg.webp" 
+            alt="fire starter"
+            layout="fill"
+            priority
+            decoding="async" />
         </figure>
         <div className={styles.descContainerIgnitor}>
         <h3 className={styles.blockTitle}>Premium quality</h3>
@@ -24,7 +29,7 @@ const IgnitersSection = () => {
 
       <div className={styles.productContainer}>
         <figure className={styles.ignitersImg}>
-          <Image src="/images/lighters-igniter-pg.webp" alt="board" fill={true} />
+          <Image src="/images/lighters-igniter-pg.webp" alt="fire starters" fill={true} />
         </figure>
         <div className={styles.descContainerIgnitors}>
           <ul className={styles.igniterPropertyList}>
@@ -37,7 +42,7 @@ const IgnitersSection = () => {
 
       <div className={styles.productContainer}>
         <figure className={styles.ignitersPackImg}>
-          <Image  src="/images/lightersPacked-igniter-pg.webp" alt="board" fill={true} />
+          <Image  src="/images/lightersPacked-igniter-pg.webp" alt="fire starters in pack" fill={true} />
         </figure>
         <div className={styles.descContainerIgnitorsPack}>
           <p className={styles.igniterPropertyText}><span>We offer</span> different types of packaging by the number of pieces in a package and by the type of packaging</p>
@@ -53,4 +58,4 @@ const IgnitersSection = () => {
   )
 }
 
-export default IgnitersSection
+export default FireStartersSection;

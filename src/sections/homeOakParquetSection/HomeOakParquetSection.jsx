@@ -29,7 +29,8 @@ const HomeOakParquetSection = () => {
               src="/webp/OakParquet.webp"
               alt="Паркет дубовий"
               fill={true}
-              sizes="(max-width: 744px) 50%"
+              // sizes="(max-width: 744px) 50%"
+              sizes="(max-width: 743px) 95vw, (max-width: 1279px) 45vw, 580px"
             />
           </figure>
         </div>

@@ -8,8 +8,8 @@ export const navigationData = [
   {
     titleUa: "Розпалювачі",
     titleDe: "Розпалювачі",
-    titleEn: "Firestarters",
-    href: "/igniters",
+    titleEn: "Fire Starters",
+    href: "/fire-starters",
   },
   {
     titleUa: "Сертифікати",

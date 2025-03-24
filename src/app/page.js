@@ -1,16 +1,16 @@
 import HeroSection from "@/sections/heroSection/HeroSection";
-import HomeIgnitersSection from "@/sections/homeIgnitersSection/HomeIgnitersSection";
+import HomeFireStartersSection from "@/sections/homeFireStartersSection/HomeFireStartersSection";
 import HomeAboutUsSection from "@/sections/homeAboutUsSection/HomeAboutUsSection";
 import HomeFurniturePanelsSection from "@/sections/homeFurniturePanelsSection/HomeFurniturePanelsSection";
 import HomeOakParquetSection from "@/sections/homeOakParquetSection/HomeOakParquetSection";
 
-export default function Home() {
 
+export default function Home() {
 
   return (
     <>
       <HeroSection />
-      <HomeIgnitersSection/>
+      <HomeFireStartersSection />
       <HomeAboutUsSection />
       <HomeFurniturePanelsSection />
       <HomeOakParquetSection/>

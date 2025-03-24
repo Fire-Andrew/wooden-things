@@ -17,7 +17,8 @@ const HomeFurniturePanelsSection = () => {
               src="/webp/furniturePanels-laptop.webp"
               alt="Меблеві Щити"
               fill={true}
-              sizes="(max-width: 768px) 50%"
+              // sizes="(max-width: 768px) 50%"
+              sizes="(max-width: 743px) 95vw, (max-width: 1279px) 41vw, 496px"
             />
           </figure>
           <div>

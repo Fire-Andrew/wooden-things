@@ -4,6 +4,19 @@ import TranslatorProvider from "@/translator/TranslatorProvider";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
+export const metadata = {
+  title: "Galen 1 Wooden boards & Fire starters",
+  description:
+    "GALEN-1: Excellence in Woodcraft. We export 100% of our products to the U.S., U.K., Germany and other markets.",
+  keywords: [
+    "Kitchen Chopping Boards",
+    "Boards",
+    "Fire Starters",
+    "Galen 1",
+  ],
+  
+};
+
 
 export default function RootLayout({ children }) {
   return (
