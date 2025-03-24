@@ -10,7 +10,7 @@ import LangSwitcher from "./LangSwitcher/LangSwitcher";
 const TranslatorBtnBlock = ({ className }) => {
     const { i18n } = useTranslation();
     const [language, setLanguage] = useState(
-        // (prev) => !prev || prev === undefined ? languagesData.UA : prev
+    //     // (prev) => !prev || prev === undefined ? languagesData.UA : prev
         "ua"
     );
 
@@ -36,7 +36,7 @@ const TranslatorBtnBlock = ({ className }) => {
             {!isLoad && (
                 <LangSwitcher
                     changeLanguage={changeLanguage}
-                    // currentLanguage={language}
+                    currentLanguage={language}
                     className={className}
                 />
             )}
