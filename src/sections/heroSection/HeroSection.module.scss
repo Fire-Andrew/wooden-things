@@ -20,7 +20,6 @@
     background-image: url('../../../public/hero.webp');
     background-size: cover;
     background-position: bottom;
-    background-attachment: lazy;
     -webkit-box-shadow: inset 0px -9px 18px 2px rgba(11, 11, 13, 0.91);
     box-shadow: inset 0px -9px 18px 2px rgba(11, 11, 13, 0.91);
     animation: fadeIn 0.8s ease-in-out forwards;
@@ -97,8 +96,8 @@
 
 .imgArrow {
   position: absolute;
-  bottom: 105px;
-  left: 4px;
+  top: 55px;
+  left: 0px;
   width: 132px;
   height: 226px;
   transform: rotate(355deg);
@@ -115,46 +114,36 @@
     height: 226px;
     transform: rotate(0deg);
   }
-  @media screen and (min-width: 409px) {
-    left: 15px;
+  @media screen and (min-width: 393px) {
+    top: 40px;
   }
   @media screen and (min-width: 430px) {
     left: 30px;
-    transform: rotate(380deg);
+    transform: rotate(370deg);
   }
 
-  @media screen and (min-width: 550px) {
-    bottom: 85px;
-    left: 40px;
-    transform: rotate(380deg);
-  }
-  @media screen and (min-width: 647px) {
-    bottom: 65px;
+  @media screen and (min-width: 569px) {
+    top: 25px;
   }
   @media screen and (min-width: variables.$tablet) {
-    bottom: 40px;
     left: 70px;
     width: 258px;
     height: 355px;
     transform: rotate(0deg);
   }
-  @media screen and (min-width: 807px) {
+
+  @media screen and (min-width: 862px) {
+    top: 35px;
     width: 228px;
     height: 325px;
   }
-  @media screen and (min-width: 920px) {
-    width: 188px;
-    height: 285px;
+  @media screen and (min-width: 1024px) {
     left: 100px;
   }
-  @media screen and (min-width: 1024px) {
-    left: 120px;
-    bottom: 20px;
-  }
   @media screen and (min-width: variables.$laptop) {
-    bottom: 100px;
-    left: 400px;
-    width: 330px;
+    top: 100px;
+    left: 360px;
+    width: 350px;
     height: 402px;
   }
 }
@@ -191,9 +180,6 @@
     width: 63%;
     text-align: right;
     margin: 0 0 0 auto;
-    @media screen and (min-width: 430px) {
-      width: 53%;
-    }
     @media screen and (min-width: variables.$tablet) {
       width: 60%;
     }
@@ -202,12 +188,15 @@
     }
   }
   & li {
-    width: 85%;
+    width: 80%;
     text-align: center;
     align-items: center;
     margin: 0 auto;
     @media screen and (min-width: 409px) {
       width: 80%;
+    }
+    @media screen and (min-width: 430px) {
+      width: 75%;
     }
     @media screen and (min-width: variables.$tablet) {
       width: 70%;

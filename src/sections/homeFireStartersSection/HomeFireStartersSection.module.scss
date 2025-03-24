@@ -44,7 +44,7 @@
       width: 229px;
       height: 778px;
       left: 45px;
-      bottom: 82px;
+      bottom: 42px;
     }
   }
   &::after {
@@ -75,7 +75,7 @@
     @media screen and (min-width: variables.$laptop) {
       width: 446px;
       height: 705px;
-      bottom: 102px;
+      bottom: 72px;
       right: -32px;
     }
   }
@@ -118,7 +118,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 257px;
+  width: 70%;
   row-gap: 72px;
   margin-bottom: 32px;
 
@@ -126,21 +126,31 @@
     font-family: Montserrat-Regular;
     font-size: 14px;
     color: variables.$navLinksColor;
+    margin-left: 8%;
+    @media screen and (min-width: variables.$mobile) {
+      width: 85%;
+      margin-left: 0%;
+    }
     @media screen and (min-width: variables.$tablet) {
       font-size: 18px;
     }
     @media screen and (min-width: variables.$laptop) {
+      width: 45%;
+      margin-left: 10%;
       font-size: 24px;
     }
   }
 
   & li:nth-child(2n) {
     text-align: start;
+    margin-left: 15%;
+    @media screen and (min-width: variables.$mobile) {
+      margin-left: 10%;
+    }
     @media screen and (min-width: variables.$tablet) {
       margin-left: 32px;
     }
     @media screen and (min-width: variables.$laptop) {
-      width: 55%;
       margin-left: 15%;
     }
   }
@@ -160,7 +170,7 @@
   }
 
   @media screen and (min-width: variables.$tablet) {
-    width: 387px;
+    width: 65%;
     row-gap: 104px;
     margin: 0 0 107px 15%;
   }
@@ -180,8 +190,6 @@
     padding: 10px;
   }
   @media screen and (min-width: variables.$laptop) {
-    position: absolute;
-    bottom: 230px;
     margin-left: 43%;
     font-size: 40px;
     padding: 10px 20px;
