@@ -16,7 +16,7 @@ const LangSwitcher = ({
     <ul className={className}>
       {languages.map((el) => {
       return <li
-       key={el}
+      key={el}
 
       onClick={()=>changeLanguage(el)}>{el}</li>;
       })}
