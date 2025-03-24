@@ -16,8 +16,8 @@ const HeroSection = () => {
             src="/webp/board-home.webp"
             alt="board"
             fill={true}
-            // sizes="(max-width: 744px) 286px, (max-width: 1280px) 650px"
             sizes="(max-width: 743px) 154px, (max-width: 1279px) 286px, 650px"
+            priority
           />
         </figure>
         <figure className={styles.imgArrow}>
@@ -31,23 +31,25 @@ const HeroSection = () => {
             }
             alt="arrow"
             fill={true}
-            // sizes="(max-width: 744px) 258px, (max-width: 1280px) 330px"
             sizes="(max-width: 743px) 132px, (max-width: 806px) 258px, (max-width: 919px) 228px, (max-width: 1279px) 188px, 330px"
+            priority
           />
         </figure>
         <h2 className={`sectionTitle ${styles.title}`}>Boards</h2>
         <ul className={styles.textContainer}>
           <li>
-            Given the large number of manufacturers, we pay special attention to
-            the quality of our products.
+            With a highly competitive market, we set ourselves apart by
+            delivering exceptional quality.
           </li>
           <li>
-            That is why 100% of our products are exported to the United States,
-            Great Britain, Germany, the Netherlands, Denmark and France.
+            This commitment has earned us a strong global presence, with 100% of
+            our products exported to the United States, Great Britain, Germany,
+            the Netherlands, Denmark, and France.
           </li>
           <li>
-            In our production processes, we use the most modern machines and
-            equipment from leading world manufacturers.
+            Using state-of-the-art machinery from leading global manufacturers,
+            we ensure precision, efficiency, and uncompromising craftsmanship in
+            every product.
           </li>
         </ul>
         <ReviewBtn href="kitchen-boards" id={styles.btn} />
