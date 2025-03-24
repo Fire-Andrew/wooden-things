@@ -35,7 +35,7 @@ const TranslatorBtnBlock = ({ className }) => {
             {!isLoad && (
                 <LangSwitcher
                     changeLanguage={changeLanguage}
-                    currentLanguage={language}
+                    // currentLanguage={language}
                     className={className}
                 />
             )}
