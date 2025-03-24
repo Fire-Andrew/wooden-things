@@ -7,6 +7,7 @@ import { useWindowResize } from "@/hooks/windowResize";
 import { footerNavData } from "@/data/navigationData";
 import { SiteContext } from "@/context/SiteContext";
 import Navigation from "@/components/Navigation/Navigation";
+import SocLinks from "@/components/SocLinks/SocLinks";
 
 const CsrFooterSection = () => {
   const { isMobile } = useWindowResize();
@@ -43,12 +44,15 @@ const CsrFooterSection = () => {
             </table>
           </address>
           {isMobile && (
-            <p className={styles.abourUs}>
-              We welcome inquiries from wholesale buyers, distributors, and
-              retailers who are interested in premium wood products. Get in
-              touch with us for more information, pricing, and partnership
-              opportunities!
-            </p>
+            <>
+              <SocLinks />
+              <p className={styles.abourUs}>
+                We welcome inquiries from wholesale buyers, distributors, and
+                retailers who are interested in premium wood products. Get in
+                touch with us for more information, pricing, and partnership
+                opportunities!
+              </p>
+            </>
           )}
         </div>
         <div className={styles.content}>
@@ -70,11 +74,16 @@ const CsrFooterSection = () => {
         </div>
       </div>
       {!isMobile && (
-        <p className={styles.abourUs}>
-          We welcome inquiries from wholesale buyers, distributors, and
-          retailers who are interested in premium wood products. Get in touch
-          with us for more information, pricing, and partnership opportunities!
-        </p>
+        <>
+          <SocLinks />
+
+          <p className={styles.abourUs}>
+            We welcome inquiries from wholesale buyers, distributors, and
+            retailers who are interested in premium wood products. Get in touch
+            with us for more information, pricing, and partnership
+            opportunities!
+          </p>
+        </>
       )}
     </section>
   );
