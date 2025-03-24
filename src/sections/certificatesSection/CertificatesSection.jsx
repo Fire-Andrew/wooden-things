@@ -21,11 +21,10 @@ const CertificatesSection = () => {
                                 className={styles.image}
                                 src='/certificates/certificate_FSC.webp'
                                 alt='Додатково про документ'
-                                priority={true}
+                                priority
                                 fill={true}
                                 title='Перехід до документа'
-                                loading='eager'
-                                sizes='(max-width: 744px) 90vw, (max-width: 1280px) 85vw, 70vw'
+                                sizes='(max-width: 743px) 90vw, (max-width: 1279px) 85vw, 70vw'
                             />
                         </div>
                     </a>
@@ -43,9 +42,9 @@ const CertificatesSection = () => {
                                 src='/certificates/declaration_OSMO.webp'
                                 alt='Додатково про документ'
                                 fill={true}
-                                loading='eager'
+                                priority
                                 title='Перехід до документа'
-                                sizes='(max-width: 744px) 90vw, (max-width: 1280px) 45vw, 40vw'
+                                sizes='(max-width: 743px) 90vw, (max-width: 1279px) 45vw, 40vw'
                             />
                         </div>
                     </a>
@@ -62,9 +61,8 @@ const CertificatesSection = () => {
                                 src='/certificates/Zertifikat_OSMO.webp'
                                 alt='Додатково про документ'
                                 fill={true}
-                                loading='eager'
                                 title='Перехід до документа'
-                                sizes='(max-width: 744px) 90vw, (max-width: 1280px) 45vw, 40vw'
+                                sizes='(max-width: 743px) 90vw, (max-width: 1279px) 45vw, 40vw'
                             />
                         </div>
                     </a>
