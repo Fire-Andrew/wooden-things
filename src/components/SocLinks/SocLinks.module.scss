@@ -1,0 +1,25 @@
+@use "../../app/variables";
+
+.socLinks {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.socLinkItem {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  & img {
+    object-fit: contain;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    width: 32px;
+    height: 32px;
+  }
+}
