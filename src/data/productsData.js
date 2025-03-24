@@ -1,6 +1,7 @@
 export const productsData = [
     {
         slug: "1",
+        loading: "eager",
         priority: true,
         images: [
             {    
