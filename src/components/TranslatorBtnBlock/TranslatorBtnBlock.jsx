@@ -7,18 +7,18 @@ import LangSwitcher from "./LangSwitcher/LangSwitcher";
 
 
 
-const TranslatorBtnBlock = ({ className }) => {
+const TranslatorBtnBlock = ({ className, mobile }) => {
     const { i18n } = useTranslation();
     const [language, setLanguage] = useState(
-    //     // (prev) => !prev || prev === undefined ? languagesData.UA : prev
-        "ua"
+        // (prev) => !prev || prev === undefined ? languagesData.UA : prev
+        "en"
     );
 
     const [isLoad, setIsLoad] = useState(true);
 
     useEffect(() => {
         const lang = localStorage.getItem("i18nextLng");
-        setLanguage(() => (lang ? lang : "ua"));
+        setLanguage(() => (lang ? lang : "en"));
         setIsLoad(false);
     }, []);
 
@@ -38,6 +38,7 @@ const TranslatorBtnBlock = ({ className }) => {
                     changeLanguage={changeLanguage}
                     currentLanguage={language}
                     className={className}
+                    mobile={mobile}
                 />
             )}
         </div>

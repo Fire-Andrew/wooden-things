@@ -35,7 +35,7 @@ const MobileMenu = () => {
             : styles.content
         }
       >
-        {isMobile && <TranslatorBtnBlock className={styles.languages} />}
+        {isMobile && <TranslatorBtnBlock className={styles.languages} mobile={true} />}
 
         <Navigation
           className={styles.nav}

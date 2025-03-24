@@ -4,7 +4,7 @@ import React from "react";
 // import { v4 } from 'uuid';
 import { languagesData } from "@/data/languagesData";
 
-const LangSwitcher = ({ className, changeLanguage, currentLanguage }) => {
+const LangSwitcher = ({ className, changeLanguage, currentLanguage, mobile }) => {
 
 const sortedLanguages = [
     currentLanguage, 
@@ -13,12 +13,18 @@ const sortedLanguages = [
   
   return (
     <ul className={className}>
-      {sortedLanguages.map((el) => {
+      {!mobile ? (sortedLanguages.map((el) => {
       return <li 
       // key={v4()}
       key={el}
       onClick={()=>changeLanguage(el)}>{el}</li>;
-      })}
+      })) : 
+      (Object.values(languagesData).map((el) => {
+        return <li 
+        // key={v4()}
+        key={el}
+        onClick={()=>changeLanguage(el)}>{el}</li>;
+        }))}
     </ul>
   );
 };
