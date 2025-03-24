@@ -28,7 +28,7 @@ const ItemSlider = ({ images, customClass }) => {
     setItem(
       images.map((el, index) => {
         const imgLoading = index === 0 ? "eager" : "lazy";
-        const imgPriority = index === 0 ? true : false;
+        // const imgPriority = index === 0 ? true : false;
        
         return (
           <SwiperSlide key={index}>
@@ -38,7 +38,8 @@ const ItemSlider = ({ images, customClass }) => {
               fill={true}
               loading={imgLoading}
               sizes="(max-width: 743px) 95vw, (max-width: 1279px) 90vw, 636px"
-              priority={imgPriority}
+              // priority={imgPriority}
+              priority
             />
           </SwiperSlide>
         );

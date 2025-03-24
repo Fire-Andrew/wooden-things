@@ -25,7 +25,7 @@ const KitchenBoardsSection = () => {
                     sizes="(max-width: 743px) 95vw, (max-width: 1279px) 45vw, 580px"
                     width={703}
                     height={468}
-                    loading={product.loading || "lazy"}
+                    priority={product.priority || false}
                   />
               </div>      
 
