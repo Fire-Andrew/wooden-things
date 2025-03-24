@@ -18,11 +18,11 @@ const FireStartersSection = () => {
             decoding="async" />
         </figure>
         <div className={styles.descContainerIgnitor}>
-        <h3 className={styles.blockTitle}>Premium quality</h3>
           <ul className={styles.igniterPropertyList}>
-            <li>contain deeply refined wax - almost <span>no odor and smoke</span></li>
-            <li>inner hole provides <span>better combustion</span></li>
-            <li>have an attractive shape and design</li> 
+            <li>Clean, consistent flames.</li>
+            <li>Perfect for fireplaces, grills, barbecues, and campfires.</li>
+            <li>Refined Wax Formula – Minimal odor and smoke .</li>
+            <li>Innovative Inner Hole Design – Ensures better airflow and efficient combustion.</li>
           </ul>
         </div>
       </div>
@@ -33,9 +33,9 @@ const FireStartersSection = () => {
         </figure>
         <div className={styles.descContainerIgnitors}>
           <ul className={styles.igniterPropertyList}>
-            <li>no chips fall out</li>
-            <li>burning time - up to <span>8-10 minutes</span></li>
-            <li>not sticky</li> 
+            <li>Attractive & Practical – A sleek shape with no loose chips or mess.</li>
+            <li>Long Burn Time – Lasts 8–10 minutes.</li>
+            <li>Non-Sticky & Easy to Handle.</li> 
           </ul>
         </div>
       </div>
@@ -45,12 +45,8 @@ const FireStartersSection = () => {
           <Image  src="/images/lightersPacked-igniter-pg.webp" alt="fire starters in pack" fill={true} />
         </figure>
         <div className={styles.descContainerIgnitorsPack}>
-          <p className={styles.igniterPropertyText}><span>We offer</span> different types of packaging by the number of pieces in a package and by the type of packaging</p>
+          <p className={styles.igniterPropertyText}>We offer a variety of packaging options, customized by quantity and packaging type to suit your needs.</p>
         </div>
-      </div>
-
-      <div className={styles.igniterInfoBlock}>
-        <p>Made from <span>dry wood</span> shavings and purified wax, our chemical-free, eco-friendly fire starters burn for 8–10 minutes, ensuring strong, reliable ignition in any weather. We <span>hold patents</span> and utility model rights, securing exclusive, high-performance technology.</p>
       </div>
 
       </div>

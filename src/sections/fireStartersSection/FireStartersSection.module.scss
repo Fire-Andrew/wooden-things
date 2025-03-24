@@ -36,29 +36,6 @@
    }
 }
 
-.blockTitle {
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: 100px;
-  margin-bottom: 300px;
-  margin-left: 30px;
-  text-align: left;
-
-
-  @media screen and (min-width: variables.$tablet) {
-    font-size: 24px;
-    margin-bottom: 48px;
-    text-align: center;
-  }
-
-  @media screen and (min-width: variables.$laptop) {
-    font-size: 36px;
-    margin-bottom: 48px;
-  }
-}
-
-
 .productContainer {
   display: flex;
   flex-direction: column;
@@ -94,7 +71,7 @@
 
     &:nth-of-type(3) {
       gap: 114px;
-      margin-top: -200px;
+      margin-top: -130px;
     }
   } 
 }
@@ -135,7 +112,7 @@
 
 
 .igniterImg {
-    position: absolute;
+  position: relative;
     width: 258px;
     height: 417px;
     margin-top: -30px;
@@ -145,7 +122,6 @@
       object-fit: contain;
     }
     @media screen and (min-width: variables.$tablet) {
-      position: relative;
       width: 30%;
       margin-top: 0px;
       margin-bottom: 0px;
@@ -228,11 +204,6 @@
   @media screen and (min-width: variables.$laptop) {
     font-size: 22px;
   }
-}
-
-.igniterPropertyList span,
-.igniterPropertyText span {
-    color: variables.$accentColor;
 }
 
 .igniterPropertyList {
