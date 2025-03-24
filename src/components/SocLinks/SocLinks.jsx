@@ -9,14 +9,17 @@ const SocLinks = () => {
     <ul className={styles.socLinks}>
       {socLinks.map((el) => {
         return (
-          <Link key={el.title} href={el.href} className={styles.socLinkItem}>
-            <Image
-              src={el.icon}
-              fill
-              sizes="(max-width: 744px) 24px, 32px"
-              alt={el.title}
-            />
-          </Link>
+          <li key={el.title}>
+            <Link href={el.href} className={styles.socLinkItem}>
+              <Image
+                src={el.icon}
+                fill
+                sizes="(max-width: 744px) 24px, 32px"
+                alt={el.title}
+                className={styles[el.title]}
+              />
+            </Link>
+          </li>
         );
       })}
     </ul>
