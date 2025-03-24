@@ -10,7 +10,7 @@ const SocLinks = () => {
       {socLinks.map((el) => {
         return (
           <li key={el.title}>
-            <Link href={el.href} className={styles.socLinkItem}>
+            <a href={el.href} className={styles.socLinkItem} target="_blank">
               <Image
                 src={el.icon}
                 fill
@@ -18,7 +18,7 @@ const SocLinks = () => {
                 alt={el.title}
                 className={styles[el.title]}
               />
-            </Link>
+            </a>
           </li>
         );
       })}
