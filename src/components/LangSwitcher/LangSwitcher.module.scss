@@ -1,27 +1,27 @@
-@use "../../app/variables";
+// @use "../../app/variables";
 
 
-.langSwitch {
-  display: flex;
-  gap: 16px;
-  font-size: 14px;
+// .langSwitch {
+//   display: flex;
+//   gap: 16px;
+//   font-size: 14px;
 
 
-  @media screen and (min-width: $tablet) {
-    font-size: 16px;
-  }
-}
+//   @media screen and (min-width: $tablet) {
+//     font-size: 16px;
+//   }
+// }
 
-.langBtn {
-  cursor: pointer;
-}
+// .langBtn {
+//   cursor: pointer;
+// }
 
-.langBtn:hover {
-  background-color: transparent;
-}
+// .langBtn:hover {
+//   background-color: transparent;
+// }
 
 
-.active {
-  color: $accentColor;
-  background-color: $textColor;
-}
+// .active {
+//   color: $accentColor;
+//   background-color: $textColor;
+// }

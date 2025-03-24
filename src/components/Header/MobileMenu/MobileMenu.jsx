@@ -6,7 +6,7 @@ import styles from "./MobileMenu.module.scss";
 import { SiteContext } from "@/context/SiteContext";
 import Navigation from "@/components/Navigation/Navigation";
 import { useCloseMenu } from "@/hooks/closeMenu";
-import Languages from "@/components/Languages/Languages";
+import Languages from "@/components/TranslatorBtnBlock/LangSwitcher/LangSwitcher";
 import { useWindowResize } from "@/hooks/windowResize";
 import { navigationData } from "@/data/navigationData";
 
