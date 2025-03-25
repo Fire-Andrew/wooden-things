@@ -9,7 +9,7 @@ import TranslatorBtnBlock from "../TranslatorBtnBlock/TranslatorBtnBlock";
 import Navigation from "../Navigation/Navigation";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import { useCloseMenu } from "@/hooks/closeMenu";
-import Languages from "../Languages/Languages";
+// import Languages from "../Languages/Languages";
 import { navigationData } from "@/data/navigationData";
 
 const Header = () => {
