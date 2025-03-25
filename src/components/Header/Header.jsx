@@ -9,7 +9,7 @@ import TranslatorBtnBlock from "../TranslatorBtnBlock/TranslatorBtnBlock";
 import Navigation from "../Navigation/Navigation";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import { useCloseMenu } from "@/hooks/closeMenu";
-// import Languages from "../Languages/Languages";
+import Languages from "../Languages/Languages";
 import { navigationData } from "@/data/navigationData";
 // import Languages from "../Languages/Languages";
 
@@ -32,7 +32,7 @@ const Header = () => {
         )}
 
         {!isMobile && <TranslatorBtnBlock className={styles.langSwitch} />}
-        {/* {!isMobile && <Languages className={styles.langSwitch} */}
+        {/* {!isMobile && <Languages className={styles.langSwitch}/>} */}
 
         
 
