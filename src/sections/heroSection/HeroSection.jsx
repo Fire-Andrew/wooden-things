@@ -17,6 +17,7 @@ const HeroSection = () => {
             alt="board"
             fill={true}
             sizes="(max-width: 743px) 154px, (max-width: 1279px) 286px, 650px"
+            loading='eager'
             priority
           />
         </figure>
@@ -32,6 +33,7 @@ const HeroSection = () => {
             alt="arrow"
             fill={true}
             sizes="(max-width: 743px) 132px, (max-width: 806px) 258px, (max-width: 919px) 228px, (max-width: 1279px) 188px, 330px"
+            loading='eager'
             priority
           />
         </figure>
