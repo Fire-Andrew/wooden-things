@@ -21,7 +21,7 @@ const FireStartersSection = () => {
           <ul className={styles.igniterPropertyList}>
             <li>Clean, consistent flames.</li>
             <li>Perfect for fireplaces, grills, barbecues, and campfires.</li>
-            <li>Refined Wax Formula – Minimal odor and smoke .</li>
+            <li>Refined Wax Formula – Minimal odor and smoke.</li>
             <li>Innovative Inner Hole Design – Ensures better airflow and efficient combustion.</li>
           </ul>
         </div>
