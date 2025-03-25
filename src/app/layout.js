@@ -19,8 +19,8 @@ export const metadata = {
 
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="uk-UA">
+  return (    
+    <html lang="en-US">
       <body>
         <SiteProvider>
           <TranslatorProvider>
