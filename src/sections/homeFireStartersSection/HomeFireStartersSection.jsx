@@ -28,6 +28,7 @@ const HomeFireStartersSection = () => {
       </div>
     </section>
   );
+  
 };
 
 export default HomeFireStartersSection;
