@@ -5,11 +5,11 @@ import React from "react";
 import styles from "./Header.module.scss";
 import BurgerBtn from "../buttons/BurgerBtn/BurgerBtn";
 import Logo from "../Logo/Logo";
-import TranslatorBtnBlock from "../TranslatorBtnBlock/TranslatorBtnBlock";
+// import TranslatorBtnBlock from "../TranslatorBtnBlock/TranslatorBtnBlock";
 import Navigation from "../Navigation/Navigation";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import { useCloseMenu } from "@/hooks/closeMenu";
-// import Languages from "../Languages/Languages";
+import Languages from "../Languages/Languages";
 import { navigationData } from "@/data/navigationData";
 // import Languages from "../Languages/Languages";
 
@@ -31,8 +31,8 @@ const Header = () => {
           />
         )}
 
-        {!isMobile && <TranslatorBtnBlock className={styles.langSwitch} />}
-        {/* {!isMobile && <Languages className={styles.langSwitch}/>} */}
+        {/* {!isMobile && <TranslatorBtnBlock className={styles.langSwitch} />} */}
+        {!isMobile && <Languages className={styles.langSwitch}/>}
 
         
 
