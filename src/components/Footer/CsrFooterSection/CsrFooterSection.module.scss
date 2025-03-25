@@ -102,11 +102,15 @@ $mobileGap: 16px;
   }
 }
 
-.abourUs {
+.aboutUs {
   text-align: center;
   font-size: 14px;
 
   @media screen and (min-width: variables.$tablet) {
     font-size: 16px;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    font-size: 20px;
   }
 }
