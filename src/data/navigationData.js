@@ -26,7 +26,7 @@ export const navigationData = [
   {
     titleUa: "Контакти",
     titleDe: "Kontaktdaten",
-    titleEn: "Contacts",
+    titleEn: "Contact us",
     href: "/#contacts",
   },
 ];

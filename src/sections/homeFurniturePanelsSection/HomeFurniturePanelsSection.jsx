@@ -22,9 +22,12 @@ const HomeFurniturePanelsSection = () => {
             />
           </figure>
           <div>
-            <h3 className={styles.accentText}>
+            {/* <h3 className={styles.accentText}>
               High-quality and durable material
-            </h3>
+            </h3> */}
+            <p className={styles.text}>
+              High-quality and durable material.
+            </p>
             <p className={styles.text}>
               Premium & Durable – Built to last with exceptional strength.
             </p>

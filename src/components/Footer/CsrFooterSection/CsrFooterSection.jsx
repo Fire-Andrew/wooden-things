@@ -33,20 +33,20 @@ const CsrFooterSection = () => {
                   </td>
                 </tr>
 
-                <tr>
+                {/* <tr>
                   <th scope="row"></th>
                   <td>
                     {" "}
                     <a href="tel:+380674702618">+380 67 470 2618</a>
                   </td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </address>
           {isMobile && (
             <>
               <SocLinks />
-              <p className={styles.abourUs}>
+              <p className={styles.aboutUs}>
                 We welcome inquiries from wholesale buyers, distributors, and
                 retailers who are interested in premium wood products. Get in
                 touch with us for more information, pricing, and partnership
@@ -56,7 +56,7 @@ const CsrFooterSection = () => {
           )}
         </div>
         <div className={styles.content}>
-          <h3>Contacts</h3>
+          <h3>Contact us</h3>
           <p>Ukraine – Cherkasy region</p>
           <p>20251, Bahacheve</p>
           <p>3a Yevhena Ivanchenka St.</p>
@@ -77,7 +77,7 @@ const CsrFooterSection = () => {
         <>
           <SocLinks />
 
-          <p className={styles.abourUs}>
+          <p className={styles.aboutUs}>
             We welcome inquiries from wholesale buyers, distributors, and
             retailers who are interested in premium wood products. Get in touch
             with us for more information, pricing, and partnership
