@@ -24,7 +24,7 @@ const CertificatesSection = () => {
                                 priority
                                 fill={true}
                                 title='Перехід до документа'
-                                sizes='(max-width: 743px) 90vw, (max-width: 1279px) 85vw, 70vw'
+                                sizes='sizes=(min-width: 1660px) 1202px, (min-width: 760px) calc(70.23vw + 50px), 85.45vw'
                             />
                         </div>
                     </a>
@@ -44,7 +44,7 @@ const CertificatesSection = () => {
                                 fill={true}
                                 priority
                                 title='Перехід до документа'
-                                sizes='(max-width: 743px) 90vw, (max-width: 1279px) 45vw, 40vw'
+                                sizes='(min-width: 1660px) 586px, (min-width: 760px) calc(34.43vw + 21px), 85vw'
                             />
                         </div>
                     </a>
@@ -62,7 +62,7 @@ const CertificatesSection = () => {
                                 alt='Додатково про документ'
                                 fill={true}
                                 title='Перехід до документа'
-                                sizes='(max-width: 743px) 90vw, (max-width: 1279px) 45vw, 40vw'
+                                sizes='(min-width: 1660px) 586px, (min-width: 760px) calc(34.43vw + 21px), 85vw'
                             />
                         </div>
                     </a>
