@@ -27,8 +27,9 @@ const HomeFireStartersSection = () => {
         <ReviewBtn href="fire-starters" id={styles.btn} />
       </div>
     </section>
+    
   );
-  
+
 };
 
 export default HomeFireStartersSection;
