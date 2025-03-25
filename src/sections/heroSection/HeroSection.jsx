@@ -45,17 +45,17 @@ const HeroSection = () => {
           />
         </figure>
         <h2 className={`sectionTitle ${styles.title}`}>{!isLoad && t('Hero.Title')}</h2>
-        <ul className={styles.textContainer}>
+        {!isLoad && <ul className={styles.textContainer}>
           <li>
-            {!isLoad && t('Hero.Text1')}
+          {t('Hero.Text1')}
           </li>
           <li>
-          {!isLoad && t('Hero.Text2')}
+          {t('Hero.Text2')}
           </li>
           <li>
-          {!isLoad && t('Hero.Text3')}
+          {t('Hero.Text3')}
           </li>
-        </ul>
+        </ul>}
         <ReviewBtn href="kitchen-boards" id={styles.btn} />
       </div>
     </section>
