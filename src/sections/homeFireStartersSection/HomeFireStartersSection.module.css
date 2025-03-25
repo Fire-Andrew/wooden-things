@@ -1,0 +1,208 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  position: relative;
+  overflow: hidden;
+}
+.container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 91px;
+  left: -20px;
+  width: 96px;
+  height: 328px;
+  background-image: linear-gradient(rgba(11, 11, 13, 0.301), rgba(11, 11, 13, 0.301)), url("../../../public/webp/Lighter-home.webp");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: lazy;
+  box-shadow: inset 0px -34px 25px -10px rgba(11, 11, 13, 0.93);
+  animation: fadeIn 0.8s ease-in-out forwards;
+  z-index: -1;
+}
+@media screen and (min-width: 744px) {
+  .container::before {
+    bottom: 27px;
+    left: -12px;
+    width: 155px;
+    height: 529px;
+    background-image: url("../../../public/webp/Lighter-home.webp");
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container::before {
+    width: 229px;
+    height: 778px;
+    left: 45px;
+    bottom: 42px;
+  }
+}
+.container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 110px;
+  right: -20px;
+  width: 146px;
+  height: 231px;
+  background-image: linear-gradient(rgba(11, 11, 13, 0.301), rgba(11, 11, 13, 0.301)), url("../../../public/webp/LighterWithHand-home.webp");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: lazy;
+  animation: fadeIn 0.8s ease-in-out forwards;
+  z-index: -1;
+}
+@media screen and (min-width: 744px) {
+  .container::after {
+    bottom: 37px;
+    right: -32px;
+    width: 304px;
+    height: 449px;
+    background-image: url("../../../public/webp/LighterWithHand-home.webp");
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container::after {
+    width: 446px;
+    height: 705px;
+    bottom: 72px;
+    right: -32px;
+  }
+}
+
+.ignitersContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 744px) {
+  .ignitersContent {
+    align-items: flex-start;
+  }
+}
+.title {
+  width: 100%;
+  margin-bottom: 84px;
+}
+@media screen and (min-width: 1280px) {
+  .title {
+    margin-bottom: 133px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  row-gap: 72px;
+  margin-bottom: 32px;
+}
+.content li {
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 8%;
+}
+@media screen and (min-width: 375px) {
+  .content li {
+    width: 85%;
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 744px) {
+  .content li {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content li {
+    width: 45%;
+    margin-left: 10%;
+    font-size: 24px;
+  }
+}
+.content li:nth-child(2n) {
+  text-align: start;
+  margin-left: 15%;
+}
+@media screen and (min-width: 375px) {
+  .content li:nth-child(2n) {
+    margin-left: 10%;
+  }
+}
+@media screen and (min-width: 744px) {
+  .content li:nth-child(2n) {
+    margin-left: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content li:nth-child(2n) {
+    margin-left: 15%;
+  }
+}
+.content li:nth-child(3n) {
+  width: 60%;
+  text-align: center;
+}
+@media screen and (min-width: 744px) {
+  .content li:nth-child(3n) {
+    width: 80%;
+    margin-left: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content li:nth-child(3n) {
+    width: 100%;
+    text-align: start;
+    margin-top: 190px;
+    margin-left: 42px;
+  }
+}
+@media screen and (min-width: 744px) {
+  .content {
+    width: 65%;
+    row-gap: 104px;
+    margin: 0 0 107px 15%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content {
+    row-gap: 149px;
+    width: 100%;
+    margin: 0 0 97px 10%;
+  }
+}
+
+#btn {
+  margin-left: auto;
+  font-size: 24px;
+}
+@media screen and (min-width: 744px) {
+  #btn {
+    margin-left: 25%;
+    font-size: 32px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #btn {
+    margin-left: 43%;
+    font-size: 40px;
+    padding: 10px 20px;
+  }
+}/*# sourceMappingURL=HomeFireStartersSection.module.css.map */

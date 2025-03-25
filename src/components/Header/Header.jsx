@@ -9,9 +9,9 @@ import Logo from "../Logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import { useCloseMenu } from "@/hooks/closeMenu";
-import Languages from "../Languages/Languages";
-import { navigationData } from "@/data/navigationData";
 // import Languages from "../Languages/Languages";
+import { navigationData } from "@/data/navigationData";
+import Languages from "../Languages/Languages";
 
 const Header = () => {
   const { isMobile, isLaptop } = useWindowResize();

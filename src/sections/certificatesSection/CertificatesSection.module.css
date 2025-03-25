@@ -1,0 +1,123 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 68px;
+  padding-bottom: 32px;
+  background-image: url("../../../public/images/cetificatesBgImage.webp");
+  background-attachment: lazy;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+@media (min-width: 744px) {
+  .section {
+    padding-top: 112px;
+    padding-bottom: 48px;
+  }
+}
+@media (min-width: 1280px) {
+  .section {
+    padding-top: 144px;
+    padding-bottom: 108px;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.documentWrap {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 24px;
+  width: 85%;
+}
+@media (min-width: 744px) {
+  .documentWrap {
+    flex-wrap: wrap;
+    width: 77%;
+  }
+}
+@media (min-width: 1280px) {
+  .documentWrap {
+    margin-top: 95px;
+  }
+}
+
+.firstBox {
+  width: 100%;
+}
+
+.innerBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+@media (min-width: 744px) {
+  .innerBox {
+    flex-direction: row;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  .innerBox {
+    -moz-column-gap: 2%;
+         column-gap: 2%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.documentLink {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms;
+}
+.documentLink:hover, .documentLink:focus {
+  transform: scale(1.04);
+}
+
+.imageWrapFirst {
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 3.1/2.2;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1280px) {
+  .imageWrapFirst {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.imageWrap {
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 2.2/3;
+  width: 100%;
+  height: auto;
+}
+
+.image {
+  border: 1px solid #999999;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}/*# sourceMappingURL=CertificatesSection.module.css.map */

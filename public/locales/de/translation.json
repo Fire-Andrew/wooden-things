@@ -1,5 +1,20 @@
 {
   "Header": {
     "TopTitle": "Guten tack"
+  },
+  "Hero":{
+    "Title":"Bretter",
+    "Text1":"Wir heben uns in einem hart umkämpften Markt durch unsere außergewöhnliche Qualität ab.",
+    "Text2":"Dies hat uns eine starke globale Präsenz verschafft: 100% unserer Produkte werden in die USA, das Vereinigte Königreich, Deutschland, die Niederlande, Dänemark und Frankreich exportiert.",
+    "Text3":"Durch den Einsatz modernster Geräte von weltweit führenden Herstellern garantieren wir Präzision, Effizienz und kompromisslose Handwerkskunst bei jedem Produkt."
+  },
+  "HomeFireSection":{
+    "Title":"Feuerstarter",
+    "Text1":"Unsere chemiefreien, umweltfreundlichen Feueranzünder werden aus trockenen Holzspänen und gereinigtem Wachs hergestellt und sorgen bei jedem Wetter für eine starke, zuverlässige Entzündung.",
+    "Text2":"Wir verfügen über Patente und Gebrauchsmusterrechte, die uns eine exklusive und leistungsstarke Technologie sichern."
+  },
+  "Buttons":{
+    "More":"Mehr erfahren"
+    
   }
 }

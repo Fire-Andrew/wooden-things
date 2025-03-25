@@ -1,0 +1,256 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.sectionContainer {
+  max-width: 100%;
+  background-image: url("../../../public/images/fire-wood-ligters-bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 744px) {
+  .sectionContainer {
+    background-position: top center;
+  }
+}
+
+.contentWrapper {
+  margin: 0 auto;
+  padding: 68px 20px 24px;
+  max-width: 510px;
+}
+@media screen and (min-width: 744px) {
+  .contentWrapper {
+    padding-top: 110px;
+    padding-bottom: 40px;
+    max-width: 1024px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contentWrapper {
+    padding: 142px 60px 80px;
+    max-width: 1280px;
+  }
+}
+
+.sectionTitle {
+  text-align: center;
+}
+@media screen and (min-width: 744px) {
+  .sectionTitle {
+    margin-bottom: 36px;
+  }
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+}
+.productContainer:nth-of-type(3) {
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 744px) {
+  .productContainer {
+    flex-direction: row;
+  }
+  .productContainer:first-of-type {
+    margin-bottom: 32px;
+  }
+  .productContainer:nth-of-type(3) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 44px;
+    margin-top: -70px;
+  }
+  .productContainer:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .productContainer:first-of-type {
+    margin-bottom: 44px;
+    gap: 103px;
+  }
+  .productContainer:nth-of-type(3) {
+    gap: 114px;
+    margin-top: -130px;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .descContainerIgnitor {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    justify-content: center;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .descContainerIgnitors {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    margin-right: -50px;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .descContainerIgnitorsPack {
+    display: flex;
+    width: 45%;
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .descContainerIgnitorsPack {
+    width: 54%;
+    padding-bottom: 60px;
+  }
+}
+
+.igniterImg {
+  position: relative;
+  width: 258px;
+  height: 417px;
+  margin-top: -30px;
+  align-self: center;
+  margin-bottom: 32px;
+}
+.igniterImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 744px) {
+  .igniterImg {
+    width: 30%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .igniterImg {
+    width: 272px;
+    height: 497px;
+  }
+}
+
+.ignitersImg {
+  position: relative;
+  width: 337px;
+  height: 223px;
+  align-self: center;
+  margin-bottom: 32px;
+}
+.ignitersImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 744px) {
+  .ignitersImg {
+    width: 360px;
+    height: 239px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .ignitersImg {
+    width: 660px;
+    height: 436px;
+  }
+}
+
+.ignitersPackImg {
+  position: relative;
+  width: 249px;
+  height: 314px;
+  align-self: center;
+  margin-top: -32px;
+}
+.ignitersPackImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 744px) {
+  .ignitersPackImg {
+    width: 34%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .ignitersPackImg {
+    width: 380px;
+    height: 505px;
+  }
+}
+
+.igniterPropertyList,
+.igniterPropertyText {
+  justify-self: center;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 744px) {
+  .igniterPropertyList,
+  .igniterPropertyText {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .igniterPropertyList,
+  .igniterPropertyText {
+    font-size: 32px;
+  }
+}
+
+.igniterPropertyList li:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1280px) {
+  .igniterPropertyList li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.igniterPropertyList li::marker {
+  font-size: 12px;
+  vertical-align: top;
+}
+@media screen and (min-width: 744px) {
+  .igniterPropertyList li::marker {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .igniterPropertyList li::marker {
+    font-size: 22px;
+  }
+}
+
+.igniterPropertyList {
+  list-style-type: disc;
+  padding-left: 14px;
+}
+
+.igniterInfoBlock {
+  margin-top: 30px;
+  font-size: 12px;
+}
+.igniterInfoBlock span {
+  color: #a4d728;
+}
+@media screen and (min-width: 744px) {
+  .igniterInfoBlock {
+    font-size: 16px;
+    padding: 0 44px;
+    margin-top: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .igniterInfoBlock {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=FireStartersSection.module.css.map */

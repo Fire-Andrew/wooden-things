@@ -1,0 +1,58 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.socLinks {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+@media screen and (min-width: 744px) {
+  .socLinks {
+    margin-bottom: 32px;
+  }
+}
+
+.socLinkItem {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.socLinkItem img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.socLinkItem:focus, .socLinkItem:hover {
+  scale: 1.1;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.613);
+}
+@media screen and (min-width: 744px) {
+  .socLinkItem {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .socLinkItem {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.facebook {
+  filter: invert(23%) sepia(99%) saturate(2743%) hue-rotate(203deg) brightness(98%) contrast(102%);
+}
+
+.linkedIn {
+  filter: invert(16%) sepia(77%) saturate(3309%) hue-rotate(200deg) brightness(94%) contrast(99%);
+}
+
+.instagram {
+  filter: invert(30%) sepia(78%) saturate(632%) hue-rotate(314deg) brightness(97%) contrast(98%);
+}/*# sourceMappingURL=SocLinks.module.css.map */

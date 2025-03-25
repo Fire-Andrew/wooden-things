@@ -1,5 +1,21 @@
 {
   "Header": {
     "TopTitle": "Hello"
+  },
+  "Hero":{
+    "Title":"Boards",
+    "Text1":"With a highly competitive market, we set ourselves apart by delivering exceptional quality.",
+    "Text2":"This commitment has earned us a strong global presence, with 100% of our products exported to the United States, Great Britain, Germany, the Netherlands, Denmark, and France.",
+    "Text3":"Using state-of-the-art machinery from leading global manufacturers, we ensure precision, efficiency, and uncompromising craftsmanship in every product."
+  },
+  "HomeFireSection":{
+    "Title":"Fire Starters",
+    "Text1":"Made from dry wood shavings and purified wax, our chemical-free, eco-friendly fire starters provide a strong, reliable ignition in any weather.",
+    "Text2":"We hold patents and utility model rights, securing exclusive, high-performance technology."
+  },
+  "Buttons":{
+    "More":"Learn more"
+
   }
+
 }

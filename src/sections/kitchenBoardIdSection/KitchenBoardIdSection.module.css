@@ -1,0 +1,65 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section {
+  padding-top: 68px;
+}
+@media screen and (min-width: 744px) {
+  .section {
+    padding-top: 112px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 144px;
+  }
+}
+
+.backBtn {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 744px) {
+  .backBtn {
+    margin-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backBtn {
+    margin-bottom: 40px;
+  }
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+@media screen and (min-width: 744px) {
+  .contentWrapper {
+    row-gap: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contentWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 0px;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .description {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .description {
+    width: 500px;
+  }
+}/*# sourceMappingURL=KitchenBoardIdSection.module.css.map */
