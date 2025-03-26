@@ -1,15 +1,25 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import styles from './HomeFurniturePanelsSection.module.scss';
+import { useState,useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 const HomeFurniturePanelsSection = () => {
+ 
+  const{t}=useTranslation()
+ 
+ const[isLoading,setIsLoading]=useState(true)
+
+ useEffect(()=>{setIsLoading(false)},[])
+
   return (
     <section className={`section`}>
       <div className={`container`}>
-        <h2 className={`sectionTitle ${styles.title}`}>Furniture Panels</h2>
-        <p className={styles.subtitle}>
-          Its stunning natural wood texture makes it perfect for crafting
-          elegant, high-quality furniture.
+        <h2 className={`sectionTitle ${styles.title}`}>{!isLoading && t("HomeFurnitureSection.Title")}</h2>
+        {!isLoading && <><p className={styles.subtitle}>
+        {t("HomeFurnitureSection.Text1")}
         </p>
         <div className={styles.content}>
           <figure className={styles.imgContainers}>
@@ -26,18 +36,16 @@ const HomeFurniturePanelsSection = () => {
               High-quality and durable material
             </h3> */}
             <p className={styles.text}>
-              High-quality and durable material.
+            {t("HomeFurnitureSection.Text2")}
             </p>
             <p className={styles.text}>
-              Premium & Durable – Built to last with exceptional strength.
+            {t("HomeFurnitureSection.Text3")}
             </p>
             <p className={styles.text}>
-              Superior Adhesion – We exclusively use two-component German D4
-              Kleiberit 304.1 glue, ensuring permanent, ultra-strong bonds that
-              never separate.
+            {t("HomeFurnitureSection.Text4")}
             </p>
           </div>
-        </div>
+        </div></>}
       </div>
     </section>
   );
