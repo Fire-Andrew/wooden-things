@@ -13,6 +13,8 @@
     "Text1":"Made from dry wood shavings and purified wax, our chemical-free, eco-friendly fire starters provide a strong, reliable ignition in any weather.",
     "Text2":"We hold patents and utility model rights, securing exclusive, high-performance technology."
   },
+
+
   "HomeAboutUs":{
     
     "TitleSection":"About us",
@@ -56,6 +58,22 @@
   "KitchenBoardsSection":{
     "Title":"Kitchen Chopping Boards"
   },
+
+  "FooterSection":{
+    "Text1":"Website developed within the framework of international cooperation program «EU4Business: recovery, competitiveness and Internationalization of RCI» jointly funded by the European Union and by the German government and implemented by a German federal company Deutsche Gesellschaft für Internationale Zusammenarbeit",
+  "Text2":"GmbH. The program aims to support economic sustainability, restoration and growth of Ukraine, creation of better conditions for development Ukrainian Small and Medium Enterprises",
+  "Text3":"as well as support for innovation and export",
+  "Text4":"EU4Business is an initiative of the European Union that helps small and medium-sized enterprises in the Eastern Partnership countries. Details:",
+  "Text5":" The content of the website is solely the responsibility of the name of your enterprises and does not necessarily reflect the position of the European Union and the German government.",
+"FooterContactsText":"We welcome inquiries from wholesale buyers, distributors, and retailers who are interested in premium wood products. Get in touch with us for more information, pricing, and partnership opportunities!",
+"Phone":"Phone:",
+"ContactUs":"Contact us",
+"Region":"Ukraine – Cherkasy region",
+"City":"20251, Bahacheve",
+"Street":"3a Yevhena Ivanchenka St.",
+"Menu":"Menu"
+
+},
   
   "Buttons":{
     "More":"Learn more"
