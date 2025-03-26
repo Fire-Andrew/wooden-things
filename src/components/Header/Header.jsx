@@ -14,9 +14,10 @@ import { navigationData } from "@/data/navigationData";
 // import Languages from "../Languages/Languages";
 import { useState,useEffect } from "react";
 
+
 const Header = () => {
   const { isMobile, isLaptop } = useWindowResize();
-const[isLoad,setIsLoad]=useState(true)
+  const [isLoad, setIsLoad] = useState(true);
   const { handleClick } = useCloseMenu();
 useEffect(()=>{setIsLoad(false)},[])
   return (

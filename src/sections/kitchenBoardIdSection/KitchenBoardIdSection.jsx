@@ -1,9 +1,11 @@
 "use client";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useRouter } from "next/navigation";
+import { useTranslation } from 'react-i18next';
 import BreadCrumbs from '@/components/BreadCrumbs/BreadCrumbs';
 import ItemSlider from '@/components/ItemSlider/ItemSlider';
 import { productsData } from '@/data/productsData';
+import { languagesData } from '@/data/languagesData';
 import styles from './KitchenBoardIdSection.module.scss';
 
 
@@ -12,6 +14,10 @@ const KitchenBoardIdSection = () => {
   const product = productsData.find( product => product.slug === slug);
 
   const router = useRouter(); 
+  
+  const { i18n } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);  
+  useEffect(()=>{setIsLoading(false)},[]);
   
 
   return (
@@ -24,7 +30,8 @@ const KitchenBoardIdSection = () => {
         />
         <div className={styles.contentWrapper}>         
           <ItemSlider images={product?.images} customClass=''/> 
-          <p className={styles.description}>{product.longDescriptionEn}</p>
+          <p className={styles.description}>{!isLoading && ((i18n.language === languagesData.EN) && product.longDescriptionEn) || ((i18n.language === languagesData.DE) && product.longDescriptionDe) || product.longDescriptionUa}
+          </p>
         </div>
 
 

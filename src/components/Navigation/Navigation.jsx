@@ -1,16 +1,24 @@
 "use client";
 
 import { SiteContext } from "@/context/SiteContext";
+import { languagesData } from "@/data/languagesData";
 import { useActiveLinks } from "@/hooks/activeLinks";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
+
 
 const Navigation = ({ className, onClick, data }) => {
   const pathName = usePathname();
   const { setHash } = useContext(SiteContext);
 
   const { homeLinkClassName, pageLinkClassName } = useActiveLinks();
+
+  const { i18n } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);  
+  useEffect(()=>{setIsLoading(false)},[]);
+  
 
   return (
     <nav className={`${className}`}>
@@ -29,7 +37,8 @@ const Navigation = ({ className, onClick, data }) => {
               pathName === "/" ? homeLinkClassName(el) : pageLinkClassName(el)
             }
           >
-            {el.titleEn}
+            {/* {el.titleEn} */}
+            {!isLoading && ((i18n.language === languagesData.EN) && el.titleEn) || ((i18n.language === languagesData.DE) && el.titleDe) || el.titleUa}
           </Link>
         );
       })}

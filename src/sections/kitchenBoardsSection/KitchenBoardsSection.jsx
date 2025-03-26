@@ -1,12 +1,17 @@
 "use client";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 import ReviewBtn from '@/components/ReviewBtn/ReviewBtn';
 import { productsData } from '@/data/productsData';
+import { languagesData } from '@/data/languagesData';
 import styles from './KitchenBoardsSection.module.scss';
 
 
 const KitchenBoardsSection = () => {
+  const { i18n } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);  
+  useEffect(()=>{setIsLoading(false)},[]);
  
 
   return (
@@ -30,7 +35,7 @@ const KitchenBoardsSection = () => {
               </div>      
 
               <div className={styles.infoWrap}>
-                  <p className={styles.description}>{product.descriptionEn}</p>        
+                <p className={styles.description}>{!isLoading && ((i18n.language === languagesData.EN) && product.descriptionEn) || ((i18n.language === languagesData.DE) && product.descriptionDe) || product.descriptionUa}</p>        
                   <ReviewBtn href={`/kitchen-boards/${product.slug}`}/>
               </div>                   
           </li>)}
