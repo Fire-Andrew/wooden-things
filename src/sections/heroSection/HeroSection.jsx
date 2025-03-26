@@ -4,16 +4,9 @@ import Image from 'next/image';
 import { useWindowResize } from '@/hooks/windowResize';
 import ReviewBtn from '@/components/ReviewBtn/ReviewBtn';
 import styles from './HeroSection.module.scss';
-import { useTranslation } from 'react-i18next';
-import { useEffect, useState } from 'react';
 
 const HeroSection = () => {
   const { isTablet, isMobile } = useWindowResize();
-  const[isLoad,setIsLoad]=useState(true)
-  const {t}=useTranslation();
-
-  useEffect(()=>{ setIsLoad(false)},[])
-
   return (
     <section className={styles.hero} id="hero">
       <div className={styles.boardContainer}>
@@ -44,18 +37,23 @@ const HeroSection = () => {
             priority
           />
         </figure>
-        <h2 className={`sectionTitle ${styles.title}`}>{!isLoad && t('Hero.Title')}</h2>
-        {!isLoad && <ul className={styles.textContainer}>
+        <h2 className={`sectionTitle ${styles.title}`}>Boards</h2>
+        <ul className={styles.textContainer}>
           <li>
-          {t('Hero.Text1')}
+            With a highly competitive market, we set ourselves apart by
+            delivering exceptional quality.
           </li>
           <li>
-          {t('Hero.Text2')}
+            This commitment has earned us a strong global presence, with 100% of
+            our products exported to the United States, Great Britain, Germany,
+            the Netherlands, Denmark, and France.
           </li>
           <li>
-          {t('Hero.Text3')}
+            Using state-of-the-art machinery from leading global manufacturers,
+            we ensure precision, efficiency, and uncompromising craftsmanship in
+            every product.
           </li>
-        </ul>}
+        </ul>
         <ReviewBtn href="kitchen-boards" id={styles.btn} />
       </div>
     </section>
