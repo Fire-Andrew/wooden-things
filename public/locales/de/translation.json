@@ -54,7 +54,7 @@
   },
 
   "KitchenBoardsSection":{
-    "Title":"Küchenschneidebretter"
+    "Title":"Bretter"
   },
 
 "FooterSection":{
@@ -72,12 +72,10 @@
 "Menu":"Menü"
 },
 
-
 "Buttons":{
     "More":"Mehr erfahren",
     "BackBtn":"Zurück"
   },   
-
 
   "CertificatesPage": {
     "Title": "Zertifikate" 
