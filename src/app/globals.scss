@@ -117,17 +117,14 @@ footer {
   // padding: 16px 20px;
   padding: 32px 20px;
 
-
   @media screen and (min-width: variables.$tablet) {
     // padding: 32px;
     padding: 48px 64px;
-
   }
 
   @media screen and (min-width: variables.$laptop) {
     // padding: 40px 80px;
     padding: 80px 50px;
-
   }
 }
 

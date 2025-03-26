@@ -5,42 +5,39 @@ import styles from "./TranslatorBtnBlock.module.scss";
 import LangSwitcher from "./LangSwitcher/LangSwitcher";
 // import { languagesData } from "@/data/languagesData";
 
+const TranslatorBtnBlock = ({ className, isLaptop }) => {
+  const { i18n } = useTranslation();
+  const [language, setLanguage] = useState("en");
 
+  const [isLoad, setIsLoad] = useState(true);
 
-const TranslatorBtnBlock = ({ className , mobile}) => {
-    const { i18n } = useTranslation();
-    const [language, setLanguage] = useState("en");
+  useEffect(() => {
+    const lang = localStorage.getItem("i18nextLng");
+    setLanguage(() => (lang ? lang : "en"));
+    setIsLoad(false);
+  }, []);
 
-    const [isLoad, setIsLoad] = useState(true);
+  const changeLanguage = (languageUser) => {
+    localStorage.setItem("i18nextLng", languageUser);
+    // const language = localStorage.getItem("i18nextLng");
+    setLanguage(languageUser);
+    i18n.changeLanguage(languageUser);
+  };
 
-    useEffect(() => {
-        const lang = localStorage.getItem("i18nextLng");
-        setLanguage(() => (lang ? lang : "en"));
-        setIsLoad(false);
-    }, []);
-
-
-    const changeLanguage = (languageUser) => {
-        localStorage.setItem("i18nextLng", languageUser);
-        // const language = localStorage.getItem("i18nextLng");
-        setLanguage(languageUser);
-        i18n.changeLanguage(languageUser);
-    };
-
-
-    return (
-        <div className={styles.langswitch}>
-            {!isLoad && (
-                <LangSwitcher
-                    changeLanguage={changeLanguage}
-                    currentLanguage={language}
-                    className={className}
-                    mobile={mobile}
-                />
-            )}
-        </div>
-    );
+  return (
+    <div className={styles.langswitch}>
+      {!isLoad && (
+        <LangSwitcher
+          changeLanguage={changeLanguage}
+          currentLanguage={language}
+          className={className}
+          isLaptop={isLaptop}
+          language={language}
+          linkId={styles.active}
+        />
+      )}
+    </div>
+  );
 };
-
 
 export default TranslatorBtnBlock;
