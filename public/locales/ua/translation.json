@@ -73,9 +73,11 @@
 "Menu":"Меню"
 },
   
-  "Buttons":{
-    "More":"Дізнатися більше"
-  },
+
+"Buttons":{
+    "More":"Дізнатися більше",
+    "BackBtn":"Назад"},
+  
   "CertificatesPage": {
     "Title": "Сертифікати" 
   },

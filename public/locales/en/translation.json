@@ -75,8 +75,11 @@
 
 },
   
-  "Buttons":{
-    "More":"Learn more"
+
+"Buttons":{
+    "More":"Learn more",
+    "BackBtn":"Back"
+
   },
 
   "CertificatesPage": {

@@ -73,9 +73,11 @@
 },
 
 
-  "Buttons":{
-    "More":"Mehr erfahren"    
-  },
+"Buttons":{
+    "More":"Mehr erfahren",
+    "BackBtn":"Zurück"
+  },   
+
 
   "CertificatesPage": {
     "Title": "Zertifikate" 
@@ -92,4 +94,3 @@
     "Text-2-3":"Nicht klebend und leicht zu handhaben.",
     "Text-3":"Wir bieten eine Vielzahl von Verpackungsmöglichkeiten, die je nach Menge und Verpackungsart auf Ihre Bedürfnisse zugeschnitten sind."
   }
-}
