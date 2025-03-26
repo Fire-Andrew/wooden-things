@@ -35,13 +35,20 @@
   "Text10":"Gründung eines EU-Unternehmens - Verbesserung des Kundendienstes und der Geschäftstätigkeit in Europa.",
   "Text11":"Ausweitung des EU-Vertriebs - Einrichtung eines Lagers in Polen für schnellere, kostengünstige Lieferungen."
   },
-  "HomeFurnitureection":{
+
+  "HomeFurnitureSection":{
     "Title":"Möbel Paneele",
     "Text1":"Mit seiner beeindruckenden natürlichen Holzstruktur eignet es sich hervorragend für die Herstellung eleganter, hochwertiger Möbel.",
     "Text2":"Hochwertiges und langlebiges Material.",
     "Text3":"Hochwertig und langlebig - Für eine lange Lebensdauer mit außergewöhnlicher Festigkeit gebaut.",
     "Text4":"Hervorragende Haftung - Wir verwenden ausschließlich den deutschen Zweikomponenten-Kleber D4 Kleiberit 304.1, der eine dauerhafte, ultrastarke Verklebung gewährleistet, die sich niemals löst."
   },
+
+  "HomeOakParquetSection":{
+    "Title":"Eichenparkett",
+    "Text1":"Unser elegantes und strapazierfähiges Parkett wird aus hochwertiger Eiche gefertigt und vereint zeitlose Schönheit, Stärke und Präzision - perfekt für Wohn- und Geschäftsräume."
+  },
+
   "Buttons":{
     "More":"Mehr erfahren"
     
