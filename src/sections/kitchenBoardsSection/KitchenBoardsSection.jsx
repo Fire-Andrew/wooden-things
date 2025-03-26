@@ -9,7 +9,7 @@ import styles from './KitchenBoardsSection.module.scss';
 
 
 const KitchenBoardsSection = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);  
   useEffect(()=>{setIsLoading(false)},[]);
  
@@ -17,7 +17,7 @@ const KitchenBoardsSection = () => {
   return (
     <section className={`section ${styles.section}`}>
       <div className='container'>
-        <h2 className={`sectionTitle ${styles.title}`}>Kitchen Chopping Boards</h2>
+        <h2 className={`sectionTitle ${styles.title}`}>{!isLoading && t('KitchenBoardsSection.Title')}</h2>
 
         <ul>
           {productsData.map((product) =>
