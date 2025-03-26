@@ -1,0 +1,36 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.btn {
+  font-family: Montserrat-Light;
+  font-size: 32px;
+  color: #a4d728;
+  border: 1px solid #a4d728;
+  padding: 10px 10px;
+  transition: 0.3s;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+@media screen and (min-width: 744px) {
+  .btn {
+    padding: 10px 20px;
+  }
+}
+.btn:hover, .btn:focus {
+  background-color: #a4d728;
+  border: 1px solid #a4d728;
+  color: #0b0b0d;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=ReviewBtn.module.css.map */

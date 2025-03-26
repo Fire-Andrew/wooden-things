@@ -1,0 +1,15 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.logo {
+  position: relative;
+}
+.logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=Logo.module.css.map */

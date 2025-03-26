@@ -1,0 +1,77 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.mobMenu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 48px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 744px) {
+  .mobMenu {
+    top: 80px;
+  }
+}
+
+.mobMenuNone {
+  display: none;
+}
+
+.content {
+  font-size: 24px;
+  color: #0b0b0d;
+  background-color: #ffffff;
+  padding: 20px 20px 40px;
+  margin-left: auto;
+  height: 100%;
+  overflow-y: scroll;
+  transform: translateX(100%);
+  opacity: 0;
+}
+@media screen and (min-width: 500px) {
+  .content {
+    width: 80%;
+    max-width: 400px;
+  }
+}
+
+.contentVisible {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.languages {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
+}
+.languages li {
+  cursor: pointer;
+  color: #a4d728;
+  text-transform: uppercase;
+}
+.languages li:focus, .languages li:hover {
+  font-weight: 900;
+  text-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+}
+.nav a:hover, .nav a:focus {
+  padding-left: 54px;
+  font-weight: 900;
+  text-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=MobileMenu.module.css.map */

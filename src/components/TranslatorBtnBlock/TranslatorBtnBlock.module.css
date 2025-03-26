@@ -1,0 +1,46 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.langSwitch {
+  display: none;
+}
+@media screen and (min-width: 744px) {
+  .langSwitch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 72px;
+    height: 40px;
+    padding: 10px;
+    color: #a4d728;
+    font-size: 16px;
+    border: 1px solid #a4d728;
+    border-radius: 24px;
+    overflow: hidden;
+    position: absolute;
+    top: 24px;
+    right: 90px;
+    transition-timing-function: ease-in-out;
+  }
+  .langSwitch:focus, .langSwitch:hover {
+    height: 128px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .langSwitch {
+    right: 0px;
+  }
+}
+.langSwitch li {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.langSwitch li:hover, .langSwitch li:focus {
+  -webkit-text-stroke: 1px #a4d728;
+}/*# sourceMappingURL=TranslatorBtnBlock.module.css.map */
