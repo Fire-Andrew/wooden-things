@@ -57,5 +57,21 @@
 
   "Buttons":{
     "More":"Mehr erfahren"    
+  },
+
+  "CertificatesPage": {
+    "Title": "Zertifikate" 
+  },
+  
+  "FireStartersPage": {
+    "Title": "Feuerstarter",
+    "Text-1-1":"Saubere, gleichmäßige Flammen.",
+    "Text-1-2":"Perfekt für Kamine, Grills, Barbecues und Lagerfeuer.",
+    "Text-1-3":"Raffinierte Wachsformel - Minimaler Geruch und Rauch.",
+    "Text-1-4":"Innovatives Design der Innenlöcher - Sorgt für einen besseren Luftstrom und eine effiziente Verbrennung.",
+    "Text-2-1":"Attraktiv und praktisch - Eine schlanke Form ohne lose Späne oder Unordnung.",
+    "Text-2-2":"Lange Brenndauer - Hält 8-10 Minuten an.",
+    "Text-2-3":"Nicht klebend und leicht zu handhaben.",
+    "Text-3":"Wir bieten eine Vielzahl von Verpackungsmöglichkeiten, die je nach Menge und Verpackungsart auf Ihre Bedürfnisse zugeschnitten sind."
   }
 }

@@ -1,13 +1,20 @@
-import React from 'react'
+"use client";
+import React, { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import styles from './FireStartersSection.module.scss';
 
 
 const FireStartersSection = () => {
+  const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(()=>{ setIsLoading(false)},[]);
+
+
   return (
     <section className={styles.sectionContainer}>
       <div className={styles.contentWrapper}>
-      <h2 className={`sectionTitle ${styles.sectionTitle}`}>Fire Starters</h2>
+        <h2 className={`sectionTitle ${styles.sectionTitle}`}>{!isLoading && t('FireStartersPage.Title')}</h2>
 
       <div className={styles.productContainer}>
         <figure className={styles.igniterImg}>
@@ -19,10 +26,10 @@ const FireStartersSection = () => {
         </figure>
         <div className={styles.descContainerIgnitor}>
           <ul className={styles.igniterPropertyList}>
-            <li>Clean, consistent flames.</li>
-            <li>Perfect for fireplaces, grills, barbecues, and campfires.</li>
-            <li>Refined Wax Formula – Minimal odor and smoke.</li>
-            <li>Innovative Inner Hole Design – Ensures better airflow and efficient combustion.</li>
+            <li>{!isLoading && t('FireStartersPage.Text-1-1')}</li>
+            <li>{!isLoading && t('FireStartersPage.Text-1-2')}</li>
+            <li>{!isLoading && t('FireStartersPage.Text-1-3')}</li>
+            <li>{!isLoading && t('FireStartersPage.Text-1-4')}</li>
           </ul>
         </div>
       </div>
@@ -33,9 +40,9 @@ const FireStartersSection = () => {
         </figure>
         <div className={styles.descContainerIgnitors}>
           <ul className={styles.igniterPropertyList}>
-            <li>Attractive & Practical – A sleek shape with no loose chips or mess.</li>
-            <li>Long Burn Time – Lasts 8–10 minutes.</li>
-            <li>Non-Sticky & Easy to Handle.</li> 
+            <li>{!isLoading && t('FireStartersPage.Text-2-1')}</li>
+            <li>{!isLoading && t('FireStartersPage.Text-2-2')}</li>
+            <li>{!isLoading && t('FireStartersPage.Text-2-3')}</li> 
           </ul>
         </div>
       </div>
@@ -45,7 +52,7 @@ const FireStartersSection = () => {
           <Image  src="/images/lightersPacked-igniter-pg.webp" alt="fire starters in pack" fill={true} />
         </figure>
         <div className={styles.descContainerIgnitorsPack}>
-          <p className={styles.igniterPropertyText}>We offer a variety of packaging options, customized by quantity and packaging type to suit your needs.</p>
+          <p className={styles.igniterPropertyText}>{!isLoading && t('FireStartersPage.Text-3')}</p>
         </div>
       </div>
 
