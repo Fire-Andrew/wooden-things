@@ -30,12 +30,12 @@
 
   "Title3":"Nachhaltigkeit und Wachstum",
 
-  "Text9":"Wir beziehen Holz aus FSC-zertifizierten Wäldern, um eine umweltfreundliche Produktion und eine verantwortungsvolle Forstwirtschaft zu gewährleisten.",
+  "Text8":"Wir beziehen Holz aus FSC-zertifizierten Wäldern, um eine umweltfreundliche Produktion und eine verantwortungsvolle Forstwirtschaft zu gewährleisten.",
   
   "Title4":"Um die globale Logistik zu verbessern, sind wir:",
 
-  "Text10":"Gründung eines EU-Unternehmens - Verbesserung des Kundendienstes und der Geschäftstätigkeit in Europa.",
-  "Text11":"Ausweitung des EU-Vertriebs - Einrichtung eines Lagers in Polen für schnellere, kostengünstige Lieferungen."
+  "Text9":"Gründung eines EU-Unternehmens - Verbesserung des Kundendienstes und der Geschäftstätigkeit in Europa.",
+  "Text10":"Ausweitung des EU-Vertriebs - Einrichtung eines Lagers in Polen für schnellere, kostengünstige Lieferungen."
   },
 
   "HomeFurnitureSection":{
@@ -56,7 +56,6 @@
   },
 
   "Buttons":{
-    "More":"Mehr erfahren"
-    
+    "More":"Mehr erfahren"    
   }
 }
