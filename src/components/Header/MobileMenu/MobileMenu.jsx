@@ -9,11 +9,12 @@ import Navigation from "@/components/Navigation/Navigation";
 import { useCloseMenu } from "@/hooks/closeMenu";
 import { useWindowResize } from "@/hooks/windowResize";
 import { navigationData } from "@/data/navigationData";
+import { useTranslation } from "react-i18next";
 
 const MobileMenu = () => {
   const { mobileMenu, mobileMenuContent } = useContext(SiteContext);
   const { handleClick } = useCloseMenu();
-  const { isMobile } = useWindowResize();
+  const { isMobile, isLaptop } = useWindowResize();
 
   useEffect(() => {
     if (window !== undefined && mobileMenu) {
@@ -34,7 +35,12 @@ const MobileMenu = () => {
             : styles.content
         }
       >
-        {isMobile && <TranslatorBtnBlock className={styles.languages} mobile={isMobile} />}
+        {!isLaptop && (
+          <TranslatorBtnBlock
+            className={styles.languages}
+            isLaptop={isLaptop}
+          />
+        )}
 
         <Navigation
           className={styles.nav}

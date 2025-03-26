@@ -9,17 +9,16 @@ import TranslatorBtnBlock from "../TranslatorBtnBlock/TranslatorBtnBlock";
 import Navigation from "../Navigation/Navigation";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import { useCloseMenu } from "@/hooks/closeMenu";
-// import Languages from "../Languages/Languages";
 import { navigationData } from "@/data/navigationData";
-// import Languages from "../Languages/Languages";
-import { useState,useEffect } from "react";
-
+import { useState, useEffect } from "react";
 
 const Header = () => {
-  const { isMobile, isLaptop } = useWindowResize();
+  const { isLaptop } = useWindowResize();
   const [isLoad, setIsLoad] = useState(true);
   const { handleClick } = useCloseMenu();
-useEffect(()=>{setIsLoad(false)},[])
+  useEffect(() => {
+    setIsLoad(false);
+  }, []);
   return (
     <header className={styles.header}>
       <div className={`container ${styles.container}`}>
@@ -33,15 +32,18 @@ useEffect(()=>{setIsLoad(false)},[])
           />
         )}
 
-        {!isLoad && !isMobile && <TranslatorBtnBlock className={styles.langSwitch} />}
+        {!isLoad && isLaptop && (
+          <TranslatorBtnBlock
+            className={styles.langSwitch}
+            isLaptop={isLaptop}
+          />
+        )}
         {/* {!isMobile && <Languages className={styles.langSwitch}/>} */}
-
-        
 
         {!isLaptop && <BurgerBtn />}
       </div>
 
-      {!isLoad && (!isLaptop && <MobileMenu />)}
+      {!isLoad && !isLaptop && <MobileMenu />}
     </header>
   );
 };
