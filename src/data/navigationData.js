@@ -13,7 +13,7 @@ export const navigationData = [
   },
   {
     titleUa: "Сертифікати",
-    titleDe: "Bescheinigungen",
+    titleDe: "Zertifikate",
     titleEn: "Certificates",
     href: "/certificates",
   },

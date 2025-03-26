@@ -16,7 +16,7 @@
   "HomeAboutUs":{
     
     "TitleSection":"About us",
-    "Title1:":"Excellence in Woodcraft",
+    "Title1":"Excellence in Woodcraft",    
 
     "Text1":"We are committed to innovation, quality, and sustainability, crafting premium wood products with precision and expertise. We export 100% of our products to the U.S., U.K., Germany and other markets.",
     "Text2":"From fire starters to kitchen chopping boards and wooden furniture panels, our products are designed for durability, functionality, and eco-friendliness, serving both homes and businesses worldwide.",
@@ -59,7 +59,5 @@
   
   "Buttons":{
     "More":"Learn more"
-
   }
-
 }
