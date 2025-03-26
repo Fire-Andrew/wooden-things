@@ -5,12 +5,11 @@ import { useTranslation } from "react-i18next";
 import styles from "./HomeAboutUsSection.module.scss";
 
 const HomeAboutUsSection = () => {
-
-  const [isLoad,setIsLoad]=useState(true)
+  const [isLoad, setIsLoad] = useState(true);
 
   useEffect(() => setIsLoad(false), []);
 
-  const {t}=useTranslation()
+  const { t } = useTranslation();
 
   // const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
@@ -29,9 +28,11 @@ const HomeAboutUsSection = () => {
   // };
 
   return (
-    <section className={`section ${styles.sectionAboutUs}`} id="about-us">
-      <div className="container">
-        <h2 className={`sectionTitle ${styles.aboutUsTitle}`}>{!isLoad && t('HomeAboutUs.TitleSection')}</h2>
+    <section className={`section ${styles.sectionAboutUs}`}>
+      <div className="container" id="about-us">
+        <h2 className={`sectionTitle ${styles.aboutUsTitle}`}>
+          {!isLoad && t("HomeAboutUs.TitleSection")}
+        </h2>
         {/* <div className={styles.videoWrapper}>
           {!isVideoLoaded ? (
             <div
@@ -63,45 +64,33 @@ const HomeAboutUsSection = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         />
-        {!isLoad && <><h3 className={styles.aboutUsSubTitle}>
-          GALEN 1: {t('HomeAboutUs.Title1')}
-        </h3>
-        <p className={styles.aboutUsText}>
-        {t('HomeAboutUs.Text1')}
-        </p>
-        <p className={styles.aboutUsText}>
-        {t('HomeAboutUs.Text2')}
-        </p>
-        <h3 className={styles.aboutUsSubTitle}>{t('HomeAboutUs.Title2')}</h3>
-        <p className={styles.aboutUsText}>
-        {t('HomeAboutUs.Text3')}
-        </p>
-        <p className={styles.aboutUsText}>
-        {t('HomeAboutUs.Text4')}
-        </p>
-        <p className={styles.aboutUsText}>
-        {t('HomeAboutUs.Text5')}
-        </p>
-        <p className={styles.aboutUsText}>
-        {t('HomeAboutUs.Text6')}
-        </p>
-        <p className={styles.aboutUsText}>
-        {t('HomeAboutUs.Text7')}
-        </p>
+        {!isLoad && (
+          <>
+            <h3 className={styles.aboutUsSubTitle}>
+              GALEN 1: {t("HomeAboutUs.Title1")}
+            </h3>
+            <p className={styles.aboutUsText}>{t("HomeAboutUs.Text1")}</p>
+            <p className={styles.aboutUsText}>{t("HomeAboutUs.Text2")}</p>
+            <h3 className={styles.aboutUsSubTitle}>
+              {t("HomeAboutUs.Title2")}
+            </h3>
+            <p className={styles.aboutUsText}>{t("HomeAboutUs.Text3")}</p>
+            <p className={styles.aboutUsText}>{t("HomeAboutUs.Text4")}</p>
+            <p className={styles.aboutUsText}>{t("HomeAboutUs.Text5")}</p>
+            <p className={styles.aboutUsText}>{t("HomeAboutUs.Text6")}</p>
+            <p className={styles.aboutUsText}>{t("HomeAboutUs.Text7")}</p>
 
-        <h3 className={styles.aboutUsSubTitle}>{t('HomeAboutUs.Title3')}</h3>
-        <p className={styles.aboutUsText}>
-        {t('HomeAboutUs.Text8')}
-        </p>
-        <h3 className={styles.aboutUsSubTitle}>
-        {t('HomeAboutUs.Title4')}
-        </h3>
-        <p className={styles.aboutUsText}>
-        {t('HomeAboutUs.Text9')}
-        </p>
-        <p className={styles.aboutUsText}>
-        {t('HomeAboutUs.Text10')}
-        </p></>}
+            <h3 className={styles.aboutUsSubTitle}>
+              {t("HomeAboutUs.Title3")}
+            </h3>
+            <p className={styles.aboutUsText}>{t("HomeAboutUs.Text8")}</p>
+            <h3 className={styles.aboutUsSubTitle}>
+              {t("HomeAboutUs.Title4")}
+            </h3>
+            <p className={styles.aboutUsText}>{t("HomeAboutUs.Text9")}</p>
+            <p className={styles.aboutUsText}>{t("HomeAboutUs.Text10")}</p>
+          </>
+        )}
       </div>
     </section>
   );

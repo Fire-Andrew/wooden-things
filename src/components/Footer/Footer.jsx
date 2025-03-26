@@ -1,24 +1,25 @@
-"use client"
+"use client";
 import React from "react";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Footer.module.scss";
 import { useTranslation } from "react-i18next";
 import CsrFooterSection from "./CsrFooterSection/CsrFooterSection";
 import Image from "next/image";
 
 const Footer = () => {
+  const [isLoading, setIsLoading] = useState(true);
 
-  const[isLoading,setIsLoading]=useState(true)
+  const { t } = useTranslation();
 
-const {t}=useTranslation()
-
-useEffect(()=>{setIsLoading(false)},[])
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contacts">
       {!isLoading && <CsrFooterSection t={t} />}
 
-      <section className={`container ${styles.ssrSection}`} id="contacts">
+      <section className={`container ${styles.ssrSection}`}>
         <h3 className={styles.allRights}>
           © All rights reserved by{" "}
           <a href="https://www.webevery.dev/">Webevery.dev</a> 2025
@@ -32,35 +33,37 @@ useEffect(()=>{setIsLoading(false)},[])
           />
         </div>
         <article className={styles.aboutSponsors}>
-        {!isLoading && <><p>
-            { t('FooterSection.Text1')}
-            <abbr
-              title="Deutsche Gesellschaft für Internationale Zusammenarbeit"
-              translate="yes"
-            >
-              (GIZ)
-            </abbr>{" "}
-            {t('FooterSection.Text2')}
-            <abbr title="малих і середніх підприємств" translate="yes">
-              {" "}
-              (SME)
-            </abbr>
-            , {t('FooterSection.Text3')}
-          </p>
+          {!isLoading && (
+            <>
+              <p>
+                {t("FooterSection.Text1")}
+                <abbr
+                  title="Deutsche Gesellschaft für Internationale Zusammenarbeit"
+                  translate="yes"
+                >
+                  (GIZ)
+                </abbr>{" "}
+                {t("FooterSection.Text2")}
+                <abbr title="малих і середніх підприємств" translate="yes">
+                  {" "}
+                  (SME)
+                </abbr>
+                , {t("FooterSection.Text3")}
+              </p>
 
-          <p>
-          {t('FooterSection.Text4')}{" "}
-            <a
-              href="http://www.eu4business.org.ua"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.eu4business.org.ua
-            </a>{" "}
-          </p>
-          <p>
-          {t('FooterSection.Text5')}
-          </p></>}
+              <p>
+                {t("FooterSection.Text4")}{" "}
+                <a
+                  href="http://www.eu4business.org.ua"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  www.eu4business.org.ua
+                </a>{" "}
+              </p>
+              <p>{t("FooterSection.Text5")}</p>
+            </>
+          )}
         </article>
       </section>
     </footer>
