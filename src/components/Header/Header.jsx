@@ -41,7 +41,7 @@ useEffect(()=>{setIsLoad(false)},[])
         {!isLaptop && <BurgerBtn />}
       </div>
 
-      {!isLoad && (!isLaptop && <MobileMenu />)}
+      {!isLaptop && <MobileMenu />}
     </header>
   );
 };
