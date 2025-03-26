@@ -37,6 +37,19 @@
     "Text11":"Expanding EU Distribution - Setting up a warehouse in Poland for faster, cost-effective deliveries."
 
   },
+
+  "HomeFurnitureSection":{
+    "Title":"Furniture Panels",
+    "Text1":"Its stunning natural wood texture makes it perfect for crafting elegant, high-quality furniture.",
+    "Text2":"High-quality and durable material.",
+    "Text3":"Premium & Durable – Built to last with exceptional strength.",
+    "Text4":"Superior Adhesion – We exclusively use two-component German D4 Kleiberit 304.1 glue, ensuring permanent, ultra-strong bonds that never separate."
+  },
+
+  "HomeOakParquetSection":{
+    "Title":"Oak parquet",
+    "Text1":"Crafted from high-quality oak, our elegant and durable parquet flooring combines timeless beauty, strength, and precision—perfect for homes and commercial spaces."
+  },
   "Buttons":{
     "More":"Learn more"
 
