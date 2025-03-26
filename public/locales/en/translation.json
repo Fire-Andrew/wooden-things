@@ -15,8 +15,15 @@
   },
   "HomeAboutUs":{
     "TitleSection":"About us",
-    "Title:":"Excellence in Woodcraft",
-    "Text":""
+    "Title1:":"Excellence in Woodcraft",
+    "Text1":"We are committed to innovation, quality, and sustainability, crafting premium wood products with precision and expertise. We export 100% of our products to the U.S., U.K., Germany and other markets.",
+    "Text2":"From fire starters to kitchen chopping boards and wooden furniture panels, our products are designed for durability, functionality, and eco-friendliness, serving both homes and businesses worldwide.",
+    "Text3":"1999 – Founded in Cherkasy, specializing in high-quality wooden parquet.",
+     "Text4":"2013 – Expanded into solid wood furniture panels for premium surfaces.",
+  "Text5":"2019 – Launched eco-friendly wood wool fire starters, now internationally popular.",
+  "Text6":"2024 – Introduced oak kitchen chopping boards, blending durability with timeless design.",
+  "Text7":"2013 - Ausweitung auf Massivholzmöbelplatten für hochwertige Oberflächen."
+
   },
   "Buttons":{
     "More":"Learn more"
