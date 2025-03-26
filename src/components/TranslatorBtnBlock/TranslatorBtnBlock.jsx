@@ -7,9 +7,9 @@ import LangSwitcher from "./LangSwitcher/LangSwitcher";
 
 
 
-const TranslatorBtnBlock = ({ className, mobile }) => {
+const TranslatorBtnBlock = ({ className , mobile}) => {
     const { i18n } = useTranslation();
-    const [language, setLanguage] = useState(()=> "en");
+    const [language, setLanguage] = useState("en");
 
     const [isLoad, setIsLoad] = useState(true);
 
