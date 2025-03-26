@@ -9,7 +9,7 @@ import { SiteContext } from "@/context/SiteContext";
 import Navigation from "@/components/Navigation/Navigation";
 import SocLinks from "@/components/SocLinks/SocLinks";
 
-const CsrFooterSection = () => {
+const CsrFooterSection = ({t}) => {
   const { isMobile } = useWindowResize();
   const { setHash } = useContext(SiteContext);
 
@@ -25,7 +25,7 @@ const CsrFooterSection = () => {
               <tbody>
                 <tr>
                   <th scope="row" className={styles.tel}>
-                    Phone:{" "}
+                    {t('FooterSection.Phone')}{" "}
                   </th>
                   <td>
                     {" "}
@@ -47,22 +47,19 @@ const CsrFooterSection = () => {
             <>
               <SocLinks />
               <p className={styles.aboutUs}>
-                We welcome inquiries from wholesale buyers, distributors, and
-                retailers who are interested in premium wood products. Get in
-                touch with us for more information, pricing, and partnership
-                opportunities!
+                {}
               </p>
             </>
           )}
         </div>
         <div className={styles.content}>
-          <h3>Contact us</h3>
-          <p>Ukraine – Cherkasy region</p>
-          <p>20251, Bahacheve</p>
-          <p>3a Yevhena Ivanchenka St.</p>
+          <h3>{t('FooterSection.ContactUs')}</h3>
+          <p>{t('FooterSection.Region')}</p>
+          <p>{t('FooterSection.City')}</p>
+          <p>{t('FooterSection.Street')}</p>
         </div>
         <div className={styles.content}>
-          <h3>Menu</h3>
+          <h3>{t('FooterSection.Menu')}</h3>
 
           <Navigation
             className={styles.nav}
@@ -78,10 +75,7 @@ const CsrFooterSection = () => {
           <SocLinks />
 
           <p className={styles.aboutUs}>
-            We welcome inquiries from wholesale buyers, distributors, and
-            retailers who are interested in premium wood products. Get in touch
-            with us for more information, pricing, and partnership
-            opportunities!
+            {t("FooterSection.FooterContactsText")}
           </p>
         </>
       )}
