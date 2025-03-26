@@ -76,6 +76,7 @@
 },
   
   "Buttons":{
-    "More":"Learn more"
+    "More":"Learn more",
+    "BackBtn":"Back"
   }
 }

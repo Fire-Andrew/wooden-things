@@ -15,7 +15,7 @@ const KitchenBoardIdSection = () => {
 
   const router = useRouter(); 
   
-  const { i18n } = useTranslation();
+  const { i18n,t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);  
   useEffect(()=>{setIsLoading(false)},[]);
   
@@ -25,7 +25,7 @@ const KitchenBoardIdSection = () => {
       <div className="container">
         <BreadCrumbs 
           onClick={() => router.back()}
-          title='Back' 
+          title={!isLoading && t('Buttons.BackBtn')}
           externalClass={styles.backBtn}
         />
         <div className={styles.contentWrapper}>         
