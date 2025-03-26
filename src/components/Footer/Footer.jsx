@@ -1,9 +1,19 @@
+"use client"
 import React from "react";
+import { useState,useEffect } from "react";
 import styles from "./Footer.module.scss";
+import { useTranslation } from "react-i18next";
 import CsrFooterSection from "./CsrFooterSection/CsrFooterSection";
 import Image from "next/image";
 
 const Footer = () => {
+
+  const[isLoading,setIsLoading]=useState(true)
+
+const {t}=useTranslation()
+
+useEffect(()=>{setIsLoading(false)},[])
+
   return (
     <footer className={styles.footer}>
       <CsrFooterSection />
@@ -22,32 +32,24 @@ const Footer = () => {
           />
         </div>
         <article className={styles.aboutSponsors}>
-          <p>
-            Website developed within the framework of international cooperation
-            program "EU4Business: recovery, competitiveness and
-            Internationalization of RCI" jointly funded by the European Union
-            and by the German government and implemented by a German federal
-            company Deutsche Gesellschaft für Internationale Zusammenarbeit
+        {!isLoading && <><p>
+            { t('FooterSection.Text1')}
             <abbr
               title="Deutsche Gesellschaft für Internationale Zusammenarbeit"
               translate="yes"
             >
               (GIZ)
             </abbr>{" "}
-            GmbH. The program aims to support economic sustainability,
-            restoration and growth of Ukraine, creation of better conditions for
-            development Ukrainian Small and Medium Enterprises
+            {t('FooterSection.Text2')}
             <abbr title="малих і середніх підприємств" translate="yes">
               {" "}
               (SME)
             </abbr>
-            , as well as support for innovation and export
+            , {t('FooterSection.Text3')}
           </p>
 
           <p>
-            EU4Business is an initiative of the European Union that helps small
-            and medium-sized enterprises in the Eastern Partnership countries.
-            Details:{" "}
+          {t('FooterSection.Text4')}{" "}
             <a
               href="http://www.eu4business.org.ua"
               target="_blank"
@@ -57,10 +59,8 @@ const Footer = () => {
             </a>{" "}
           </p>
           <p>
-            The content of the website is solely the responsibility of the name
-            of your enterprises and does not necessarily reflect the position of
-            the European Union and the German government.
-          </p>
+          {t('FooterSection.Text5')}
+          </p></>}
         </article>
       </section>
     </footer>

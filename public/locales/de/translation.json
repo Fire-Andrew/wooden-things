@@ -55,6 +55,14 @@
     "Title":"Küchenschneidebretter"
   },
 
+"FooterSection":{
+    "Text1":"Diese Website wurde im Rahmen des internationalen Kooperationsprogramms «EU4Business: recovery, competitiveness and Internationalization of RCI» entwickelt, das gemeinsam von der Europäischen Union und der deutschen Regierung finanziert und von der Deutschen Gesellschaft für Internationale Zusammenarbeit umgesetzt wird.",
+  "Text2":"GmbH. Das Programm zielt darauf ab, die wirtschaftliche Nachhaltigkeit, die Wiederherstellung und das Wachstum der Ukraine zu unterstützen und bessere Bedingungen für die Entwicklung ukrainischer kleiner und mittlerer Unternehmen zu schaffen.",
+  "Text3":"sowie die Unterstützung von Innovation und Export",
+  "Text4":"EU4Business ist eine Initiative der Europäischen Union, die kleinen und mittleren Unternehmen in den Ländern der Östlichen Partnerschaft hilft. Details:",
+  "Text5":"  Für den Inhalt der Website ist ausschließlich der Name Ihres Unternehmens verantwortlich und spiegelt nicht unbedingt die Position der Europäischen Union und der deutschen Regierung wider."
+},
+
   "Buttons":{
     "More":"Mehr erfahren"    
   }
