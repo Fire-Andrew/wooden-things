@@ -1,10 +1,16 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import styles from "./HomeAboutUsSection.module.scss";
 
 const HomeAboutUsSection = () => {
-  // useEffect(() => setIsLoading(false), []);
+
+  const [isLoad,setIsLoad]=useState(true)
+
+  useEffect(() => setIsLoad(false), []);
+
+  const {t}=useTranslation()
 
   // const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
@@ -25,7 +31,7 @@ const HomeAboutUsSection = () => {
   return (
     <section className={`section ${styles.sectionAboutUs}`} id="about-us">
       <div className="container">
-        <h2 className={`sectionTitle ${styles.aboutUsTitle}`}>About us</h2>
+        <h2 className={`sectionTitle ${styles.aboutUsTitle}`}>{!isLoad && t('HomeAboutUs.TitleSection')}</h2>
         {/* <div className={styles.videoWrapper}>
           {!isVideoLoaded ? (
             <div
@@ -57,56 +63,45 @@ const HomeAboutUsSection = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         />
-        <h3 className={styles.aboutUsSubTitle}>
-          GALEN 1: Excellence in Woodcraft
+        {!isLoad && <><h3 className={styles.aboutUsSubTitle}>
+          GALEN 1: {t('HomeAboutUs.Title1')}
         </h3>
         <p className={styles.aboutUsText}>
-          We are committed to innovation, quality, and sustainability, crafting
-          premium wood products with precision and expertise. We export 100% of
-          our products to the U.S., U.K., Germany and other markets.
+        {t('HomeAboutUs.Text1')}
         </p>
         <p className={styles.aboutUsText}>
-          From fire starters to kitchen chopping boards and wooden furniture
-          panels, our products are designed for durability, functionality, and
-          eco-friendliness, serving both homes and businesses worldwide.
+        {t('HomeAboutUs.Text2')}
         </p>
-        <h3 className={styles.aboutUsSubTitle}>Our Journey</h3>
+        <h3 className={styles.aboutUsSubTitle}>{t('HomeAboutUs.Title2')}</h3>
         <p className={styles.aboutUsText}>
-          1999 – Founded in Cherkasy, specializing in high-quality wooden
-          parquet.
+        {t('HomeAboutUs.Text3')}
         </p>
         <p className={styles.aboutUsText}>
-          2013 – Expanded into solid wood furniture panels for premium surfaces.
+        {t('HomeAboutUs.Text4')}
         </p>
         <p className={styles.aboutUsText}>
-          2019 – Launched eco-friendly wood wool fire starters, now
-          internationally popular.
+        {t('HomeAboutUs.Text5')}
         </p>
         <p className={styles.aboutUsText}>
-          2024 – Introduced oak kitchen chopping boards, blending durability
-          with timeless design.
+        {t('HomeAboutUs.Text6')}
         </p>
         <p className={styles.aboutUsText}>
-          We continue to expand and innovate, ensuring top-tier craftsmanship in
-          every product.
+        {t('HomeAboutUs.Text7')}
         </p>
 
-        <h3 className={styles.aboutUsSubTitle}>Sustainability & Growth</h3>
+        <h3 className={styles.aboutUsSubTitle}>{t('HomeAboutUs.Title3')}</h3>
         <p className={styles.aboutUsText}>
-          We source wood from FSC-certified forests, ensuring eco-friendly
-          production and responsible forestry.
+        {t('HomeAboutUs.Text8')}
         </p>
         <h3 className={styles.aboutUsSubTitle}>
-          To enhance global logistics, we are:
+        {t('HomeAboutUs.Title4')}
         </h3>
         <p className={styles.aboutUsText}>
-          Establishing an EU Company - Improving customer service and operations
-          within Europe.
+        {t('HomeAboutUs.Text9')}
         </p>
         <p className={styles.aboutUsText}>
-          Expanding EU Distribution - Setting up a warehouse in Poland for
-          faster, cost-effective deliveries.
-        </p>
+        {t('HomeAboutUs.Text10')}
+        </p></>}
       </div>
     </section>
   );
