@@ -9,7 +9,6 @@ import Navigation from "@/components/Navigation/Navigation";
 import { useCloseMenu } from "@/hooks/closeMenu";
 import { useWindowResize } from "@/hooks/windowResize";
 import { navigationData } from "@/data/navigationData";
-import { useTranslation } from "react-i18next";
 
 const MobileMenu = () => {
   const { mobileMenu, mobileMenuContent } = useContext(SiteContext);
