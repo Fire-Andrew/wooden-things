@@ -23,23 +23,19 @@
 }
 
 .subtitle {
-  width: 80%;
   font-family: Montserrat-Regular;
   font-size: 14px;
-  text-align: center;
+  text-align: end;
   color: variables.$navLinksColor;
-  margin: 0 auto 32px auto;
+  margin: 0 0 32px auto;
 
   @media screen and (min-width: variables.$tablet) {
-    width: 60%;
     font-size: 18px;
-    margin: 0 auto 64px auto;
+    margin: 0 0 64px auto;
   }
   @media screen and (min-width: variables.$laptop) {
     width: 70%;
     font-size: 24px;
-    text-align: right;
-
     margin: 0 0 55px auto;
   }
 }
@@ -83,40 +79,7 @@
   }
 }
 
-// .accentText {
-//   font-family: Montserrat-SemiBold;
-//   font-size: 16px;
-//   color: variables.$navLinksColor;
-//   margin-bottom: 18px;
-//   @media screen and (min-width: variables.$tablet) {
-//     font-size: 16px;
-//     text-align: right;
-//     margin-bottom: 46px;
-//   }
-//   @media screen and (min-width: variables.$laptop) {
-//     font-size: 24px;
-//     margin-bottom: 68px;
-//     text-align: left;
-//   }
-// }
-
-// .text {
-//   font-family: Montserrat-Light;
-//   font-size: 14px;
-//   color: variables.$navLinksColor;
-
-//   &:not(:last-child) {
-//     margin-bottom: 18px;
-//   }
-
-//   @media screen and (min-width: variables.$laptop) {
-//     width: 85%;
-//     font-size: 16px;
-//   }
-// }
-
 .text {
-  // font-family: Montserrat-Light;
   font-size: 14px;
   color: variables.$navLinksColor;
 
