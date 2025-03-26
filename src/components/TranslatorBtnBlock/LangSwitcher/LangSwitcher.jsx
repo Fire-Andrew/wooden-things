@@ -4,7 +4,7 @@ import React from "react";
 // import { v4 } from 'uuid';
 import { languagesData } from "@/data/languagesData";
 
-const LangSwitcher = ({ className, changeLanguage, currentLanguage, mobile }) => {
+const LangSwitcher = ({ className, changeLanguage, currentLanguage, mobile} ) => {
 
 const sortedLanguages = [
     currentLanguage, 
