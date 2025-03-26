@@ -16,7 +16,7 @@ useEffect(()=>{setIsLoading(false)},[])
 
   return (
     <footer className={styles.footer}>
-      <CsrFooterSection />
+      {!isLoading && <CsrFooterSection t={t} />}
 
       <section className={`container ${styles.ssrSection}`} id="contacts">
         <h3 className={styles.allRights}>
