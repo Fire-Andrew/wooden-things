@@ -39,17 +39,19 @@ import Image from 'next/image';
 
 const HomeOakParquetSection = () => {
 
+  const[isLoad,setisLoad]=useState(true)
+
+  useEffect(()=>{setisLoad(false)},[])
+
   const{t}=useTranslation()
 
   return (
     <section className={`section`}>
       <div className="container">
-        <h2 className={`sectionTitle ${styles.title}`}>Oak parquet</h2>
+        <h2 className={`sectionTitle ${styles.title}`}>{!isLoad && t('HomeOakParquetSection.Title')}</h2>
         <div className={styles.content}>
           <p className={styles.textContainer}>
-            Crafted from high-quality oak, our elegant and durable parquet
-            flooring combines timeless beauty, strength, and precision—perfect
-            for homes and commercial spaces.
+            {!isLoad && t('HomeOakParquetSection.Text1')}
           </p>
           <figure className={styles.imgContainer}>
             <Image
