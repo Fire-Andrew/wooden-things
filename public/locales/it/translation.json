@@ -1,85 +1,85 @@
 {
-  "Hero":{
-    "Title":"Boards",
-    "Text1":"With a highly competitive market, we set ourselves apart by delivering exceptional quality.",
-    "Text2":"This commitment has earned us a strong global presence, with 100% of our products exported to the United States, Great Britain, Germany, the Netherlands, Denmark, and France.",
-    "Text3":"Using state-of-the-art machinery from leading global manufacturers, we ensure precision, efficiency, and uncompromising craftsmanship in every product."
+  "Hero": {
+    "Title": "Taglieri",
+    "Text1": "In un mercato altamente competitivo, ci distinguiamo offrendo una qualità eccezionale.",
+    "Text2": "Questo impegno ci ha permesso di avere una forte presenza globale, esportando il 100% dei nostri prodotti negli Stati Uniti, Gran Bretagna, Germania, Paesi Bassi, Danimarca e Francia.",
+    "Text3": "Utilizzando macchinari all'avanguardia dei principali produttori mondiali, garantiamo precisione, efficienza e un'artigianalità senza compromessi in ogni prodotto."
   },
 
-  "HomeFireSection":{
-    "Title":"Fire Starters",
-    "Text1":"Made from dry wood shavings and purified wax, our chemical-free, eco-friendly fire starters provide a strong, reliable ignition in any weather.",
-    "Text2":"We hold patents and utility model rights, securing exclusive, high-performance technology."
+  "HomeFireSection": {
+    "Title": "Accendifuoco",
+    "Text1": "Realizzati con trucioli di legno secco e cera purificata, i nostri accendifuoco ecologici e privi di sostanze chimiche garantiscono un'accensione forte e affidabile in qualsiasi condizione atmosferica.",
+    "Text2": "Possediamo brevetti e diritti di modello di utilità, garantendo una tecnologia esclusiva e ad alte prestazioni."
   },
   
-  "HomeAboutUs":{    
-    "TitleSection":"About us",
-    "Title1":"Excellence in Woodcraft",   
-    "Text1":"We are committed to innovation, quality, and sustainability, crafting premium wood products with precision and expertise. We export 100% of our products to the U.S., U.K., Germany and other markets.",
-    "Text2":"From fire starters to kitchen chopping boards and wooden furniture panels, our products are designed for durability, functionality, and eco-friendliness, serving both homes and businesses worldwide.",    
-    "Title2":"Our Journey",
-    "Text3":"1999 – Founded in Cherkasy, specializing in high-quality wooden parquet.",
-    "Text4":"2013 – Expanded into solid wood furniture panels for premium surfaces.",
-    "Text5":"2019 – Launched eco-friendly wood wool fire starters, now internationally popular.",
-    "Text6":"2024 – Introduced oak kitchen chopping boards, blending durability with timeless design.",
-    "Text7":"We continue to expand and innovate, ensuring top-tier craftsmanship in every product.",
-    "Title3":"Sustainability & Growth",
-    "Text8":"We source wood from FSC-certified forests, ensuring eco-friendly production and responsible forestry.",    
-    "Title4":"To enhance global logistics, we are:",
-    "Text9":"Establishing an EU Company - Improving customer service and operations within Europe.",
-    "Text10":"Expanding EU Distribution - Setting up a warehouse in Poland for faster, cost-effective deliveries."
+  "HomeAboutUs": {    
+    "TitleSection": "Chi siamo",
+    "Title1": "Eccellenza nella lavorazione del legno",   
+    "Text1": "Ci impegniamo per l'innovazione, la qualità e la sostenibilità, realizzando prodotti in legno di alta qualità con precisione e competenza. Esportiamo il 100% dei nostri prodotti negli Stati Uniti, Regno Unito, Germania e altri mercati.",
+    "Text2": "Dagli accendifuoco ai taglieri da cucina e ai pannelli in legno per mobili, i nostri prodotti sono progettati per essere durevoli, funzionali ed ecologici, servendo sia le case che le aziende in tutto il mondo.",    
+    "Title2": "Il nostro percorso",
+    "Text3": "1999 – Fondata a Cherkasy, specializzata in parquet in legno di alta qualità.",
+    "Text4": "2013 – Espansione nella produzione di pannelli in legno massello per superfici di alta gamma.",
+    "Text5": "2019 – Lancio degli accendifuoco ecologici in lana di legno, ora popolari a livello internazionale.",
+    "Text6": "2024 – Introduzione di taglieri da cucina in rovere, che combinano durata e design senza tempo.",
+    "Text7": "Continuiamo a espanderci e innovare, garantendo un'artigianalità di altissimo livello in ogni prodotto.",
+    "Title3": "Sostenibilità e crescita",
+    "Text8": "Utilizziamo legno proveniente da foreste certificate FSC, garantendo una produzione ecosostenibile e una gestione responsabile delle risorse forestali.",    
+    "Title4": "Per migliorare la logistica globale, stiamo:",
+    "Text9": "Creando un'azienda nell'UE - Migliorando il servizio clienti e le operazioni in Europa.",
+    "Text10": "Espandendo la distribuzione nell'UE - Creando un magazzino in Polonia per consegne più rapide ed economiche."
   },
 
-  "HomeFurnitureSection":{
-    "Title":"Furniture Panels",
-    "Text1":"Its stunning natural wood texture makes it perfect for crafting elegant, high-quality furniture.",
-    "Text2":"High-quality and durable material.",
-    "Text3":"Premium & Durable – Built to last with exceptional strength.",
-    "Text4":"Superior Adhesion – We exclusively use two-component German D4 Kleiberit 304.1 glue, ensuring permanent, ultra-strong bonds that never separate."
+  "HomeFurnitureSection": {
+    "Title": "Pannelli per mobili",
+    "Text1": "La sua splendida texture naturale del legno lo rende perfetto per la creazione di mobili eleganti e di alta qualità.",
+    "Text2": "Materiale di alta qualità e durevole.",
+    "Text3": "Premium e resistente – Progettato per durare con una resistenza eccezionale.",
+    "Text4": "Adesione superiore – Utilizziamo esclusivamente colla bicomponente tedesca D4 Kleiberit 304.1, garantendo legami ultra resistenti e permanenti che non si separano mai."
   },
 
-  "HomeOakParquetSection":{
-    "Title":"Oak parquet",
-    "Text1":"Crafted from high-quality oak, our elegant and durable parquet flooring combines timeless beauty, strength, and precision—perfect for homes and commercial spaces."
+  "HomeOakParquetSection": {
+    "Title": "Parquet in rovere",
+    "Text1": "Realizzato con rovere di alta qualità, il nostro elegante e resistente parquet combina bellezza senza tempo, forza e precisione, perfetto per case e spazi commerciali."
   },
   
-  "KitchenBoardsSection":{
-    "Title":"Boards"
+  "KitchenBoardsSection": {
+    "Title": "Taglieri"
   },
 
-  "FooterSection":{
-    "Text1":"Website developed within the framework of international cooperation program «EU4Business: recovery, competitiveness and Internationalization of RCI» jointly funded by the European Union and by the German government and implemented by a German federal company Deutsche Gesellschaft für Internationale Zusammenarbeit",
-  "Text2":"GmbH. The program aims to support economic sustainability, restoration and growth of Ukraine, creation of better conditions for development Ukrainian Small and Medium Enterprises",
-  "Text3":"as well as support for innovation and export",
-  "Text4":"EU4Business is an initiative of the European Union that helps small and medium-sized enterprises in the Eastern Partnership countries. Details:",
-  "Text5":" The content of the website is solely the responsibility of the name of your enterprises and does not necessarily reflect the position of the European Union and the German government.",
-"FooterContactsText":"We welcome inquiries from wholesale buyers, distributors, and retailers who are interested in premium wood products. Get in touch with us for more information, pricing, and partnership opportunities!",
-"Phone":"Phone:",
-"ContactUs":"Contact us",
-"Region":"Ukraine – Cherkasy region",
-"City":"20251, Bahacheve",
-"Street":"3a Yevhena Ivanchenka St.",
-"Menu":"Menu"
-},
+  "FooterSection": {
+    "Text1": "Sito web sviluppato nell'ambito del programma di cooperazione internazionale «EU4Business: ripresa, competitività e internazionalizzazione di RCI», cofinanziato dall'Unione Europea e dal governo tedesco e implementato dalla società federale tedesca Deutsche Gesellschaft für Internationale Zusammenarbeit.",
+    "Text2": "GmbH. Il programma mira a sostenere la sostenibilità economica, la ripresa e la crescita dell'Ucraina, creando migliori condizioni per lo sviluppo delle piccole e medie imprese ucraine.",
+    "Text3": "nonché il sostegno all'innovazione e all'esportazione.",
+    "Text4": "EU4Business è un'iniziativa dell'Unione Europea che aiuta le piccole e medie imprese nei paesi del Partenariato orientale. Dettagli:",
+    "Text5": "Il contenuto del sito web è di esclusiva responsabilità del nome della vostra azienda e non riflette necessariamente la posizione dell'Unione Europea e del governo tedesco.",
+    "FooterContactsText": "Accogliamo con piacere richieste da parte di acquirenti all'ingrosso, distributori e rivenditori interessati a prodotti in legno di alta qualità. Contattaci per maggiori informazioni, prezzi e opportunità di collaborazione!",
+    "Phone": "Telefono:",
+    "ContactUs": "Contattaci",
+    "Region": "Ucraina – Regione di Cherkasy",
+    "City": "20251, Bahacheve",
+    "Street": "3a, Via Yevhena Ivanchenka",
+    "Menu": "Menu"
+  },
   
-"Buttons":{
-    "More":"Learn more",
-    "BackBtn":"Back"
+  "Buttons": {
+    "More": "Scopri di più",
+    "BackBtn": "Indietro"
   },
 
-"CertificatesPage": {
-    "Title": "Certificates" 
+  "CertificatesPage": {
+    "Title": "Certificati"
   },
   
   "FireStartersPage": {
-    "Title": "Fire Starters",
-    "Text-1-1":"Clean, consistent flames.",
-    "Text-1-2":"Perfect for fireplaces, grills, barbecues, and campfires.",
-    "Text-1-3":"Refined Wax Formula – Minimal odor and smoke.",
-    "Text-1-4":"Innovative Inner Hole Design – Ensures better airflow and efficient combustion.",
-    "Text-2-1":"Attractive & Practical – A sleek shape with no loose chips or mess.",
-    "Text-2-2":"Long Burn Time – Lasts 8–10 minutes.",
-    "Text-2-3":"Non-Sticky & Easy to Handle.",
-    "Text-3":"We offer a variety of packaging options, customized by quantity and packaging type to suit your needs."
+    "Title": "Accendifuoco",
+    "Text-1-1": "Fiamme pulite e costanti.",
+    "Text-1-2": "Perfetti per caminetti, barbecue, griglie e falò.",
+    "Text-1-3": "Formula di cera raffinata – Minimo odore e fumo.",
+    "Text-1-4": "Design innovativo con foro interno – Garantisce un migliore flusso d'aria e una combustione efficiente.",
+    "Text-2-1": "Attraente e pratico – Forma elegante senza schegge o residui.",
+    "Text-2-2": "Lunga durata di combustione – Dura tra 8 e 10 minuti.",
+    "Text-2-3": "Non appiccicoso e facile da maneggiare.",
+    "Text-3": "Offriamo una varietà di opzioni di confezionamento, personalizzate per quantità e tipologia di imballaggio per soddisfare le vostre esigenze."
   }
 }
