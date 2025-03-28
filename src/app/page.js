@@ -20,7 +20,7 @@ export default function Home() {
   };
   return (
     <>
-    <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
@@ -28,7 +28,7 @@ export default function Home() {
       <HomeFireStartersSection />
       <HomeAboutUsSection />
       <HomeFurniturePanelsSection />
-      <HomeOakParquetSection/>
+      <HomeOakParquetSection />
     </>
   );
 }
