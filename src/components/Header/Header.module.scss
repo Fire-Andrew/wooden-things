@@ -97,6 +97,11 @@
 
   @media screen and (min-width: variables.$laptop) {
     right: 0px;
+
+    &:focus,
+    &:hover {
+    height: 260px;
+    }
   }
 
   & li {
