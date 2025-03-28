@@ -1,14 +1,14 @@
 {
   "Hero":{
-    "Title":"Tableros",
+    "Title":"Tablas",
     "Text1":"Con un mercado altamente competitivo, nos diferenciamos al ofrecer una calidad excepcional.",
     "Text2":"Este compromiso nos ha permitido tener una fuerte presencia global, con el 100% de nuestros productos exportados a los Estados Unidos, Gran Bretaña, Alemania, los Países Bajos, Dinamarca y Francia.",
     "Text3":"Utilizando maquinaria de vanguardia de los principales fabricantes globales, garantizamos precisión, eficiencia y una artesanía intransigente en cada producto."
   },
 
   "HomeFireSection":{
-    "Title":"Encendedores de fuego",
-    "Text1":"Hechos de virutas de madera seca y cera purificada, nuestros encendedores ecológicos y libres de productos químicos proporcionan una ignición fuerte y confiable en cualquier clima.",
+    "Title":"Iniciadores de fuego",
+    "Text1":"Hechos de virutas de madera seca y cera purificada, nuestros iniciadores de fuego ecológicos y libres de productos químicos proporcionan una ignición fuerte y confiable en cualquier clima.",
     "Text2":"Mantenemos patentes y derechos de modelo de utilidad, asegurando tecnología exclusiva y de alto rendimiento."
   },
   
@@ -37,7 +37,6 @@
     "Text3":"Premium y duradero – Construido para durar con una fuerza excepcional.",
     "Text4":"Adhesión Superior – Exclusivamente utilizamos pegamento alemán D4 Kleiberit 304.1 de dos componentes, asegurando uniones permanentes y ultra resistentes que nunca se separan."
   },
-
  
     "HomeOakParquetSection": {
       "Title": "Parquet de roble",
@@ -45,7 +44,7 @@
     },
   
     "KitchenBoardsSection": {
-      "Title": "Tableros"
+      "Title": "Tablas"
     },
   
     "FooterSection": {
@@ -73,7 +72,7 @@
     },
   
     "FireStartersPage": {
-      "Title": "Encendedores",
+      "Title": "Iniciadores de fuego",
       "Text-1-1": "Llamas limpias y consistentes.",
       "Text-1-2": "Perfecto para chimeneas, parrillas, barbacoas y fogatas.",
       "Text-1-3": "Fórmula refinada de cera: olor y humo mínimos.",
@@ -82,6 +81,5 @@
       "Text-2-2": "Larga duración: dura 8–10 minutos.",
       "Text-2-3": "No pegajoso y fácil de manejar.",
       "Text-3": "Ofrecemos una variedad de opciones de empaquetado, personalizadas según cantidad y tipo de empaquetado para adaptarse a tus necesidades."
-    }
-  
+    }  
 }
