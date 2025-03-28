@@ -1,45 +1,33 @@
 {
-  "Header": {
-    "TopTitle": "Hello"
-  },
   "Hero":{
     "Title":"Boards",
     "Text1":"With a highly competitive market, we set ourselves apart by delivering exceptional quality.",
     "Text2":"This commitment has earned us a strong global presence, with 100% of our products exported to the United States, Great Britain, Germany, the Netherlands, Denmark, and France.",
     "Text3":"Using state-of-the-art machinery from leading global manufacturers, we ensure precision, efficiency, and uncompromising craftsmanship in every product."
   },
+
   "HomeFireSection":{
     "Title":"Fire Starters",
     "Text1":"Made from dry wood shavings and purified wax, our chemical-free, eco-friendly fire starters provide a strong, reliable ignition in any weather.",
     "Text2":"We hold patents and utility model rights, securing exclusive, high-performance technology."
   },
-
-
-  "HomeAboutUs":{
-    
+  
+  "HomeAboutUs":{    
     "TitleSection":"About us",
-    "Title1":"Excellence in Woodcraft",    
-
+    "Title1":"Excellence in Woodcraft",   
     "Text1":"We are committed to innovation, quality, and sustainability, crafting premium wood products with precision and expertise. We export 100% of our products to the U.S., U.K., Germany and other markets.",
-    "Text2":"From fire starters to kitchen chopping boards and wooden furniture panels, our products are designed for durability, functionality, and eco-friendliness, serving both homes and businesses worldwide.",
-    
+    "Text2":"From fire starters to kitchen chopping boards and wooden furniture panels, our products are designed for durability, functionality, and eco-friendliness, serving both homes and businesses worldwide.",    
     "Title2":"Our Journey",
-
     "Text3":"1999 – Founded in Cherkasy, specializing in high-quality wooden parquet.",
     "Text4":"2013 – Expanded into solid wood furniture panels for premium surfaces.",
     "Text5":"2019 – Launched eco-friendly wood wool fire starters, now internationally popular.",
     "Text6":"2024 – Introduced oak kitchen chopping boards, blending durability with timeless design.",
     "Text7":"We continue to expand and innovate, ensuring top-tier craftsmanship in every product.",
-
     "Title3":"Sustainability & Growth",
-
-    "Text8":"We source wood from FSC-certified forests, ensuring eco-friendly production and responsible forestry.",
-    
+    "Text8":"We source wood from FSC-certified forests, ensuring eco-friendly production and responsible forestry.",    
     "Title4":"To enhance global logistics, we are:",
-
     "Text9":"Establishing an EU Company - Improving customer service and operations within Europe.",
     "Text10":"Expanding EU Distribution - Setting up a warehouse in Poland for faster, cost-effective deliveries."
-
   },
 
   "HomeFurnitureSection":{
@@ -72,16 +60,14 @@
 "City":"20251, Bahacheve",
 "Street":"3a Yevhena Ivanchenka St.",
 "Menu":"Menu"
-
 },
   
 "Buttons":{
     "More":"Learn more",
     "BackBtn":"Back"
-
   },
 
-  "CertificatesPage": {
+"CertificatesPage": {
     "Title": "Certificates" 
   },
   

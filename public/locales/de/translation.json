@@ -1,47 +1,37 @@
-{
-  "Header": {
-    "TopTitle": "Guten tack"
-  },
+{  
   "Hero":{
     "Title":"Bretter",
     "Text1":"Wir heben uns in einem hart umkämpften Markt durch unsere außergewöhnliche Qualität ab.",
-    "Text2":"Dies hat uns eine starke globale Präsenz verschafft: 100% unserer Produkte werden in die USA, das Vereinigte Königreich, Deutschland, die Niederlande, Dänemark und Frankreich exportiert.",
+    "Text2":"Dies hat uns eine starke globale Präsenz verschafft: 100% unserer Produkte werden in die USA, Großbritannien, Deutschland, die Niederlande, Dänemark und Frankreich exportiert.",
     "Text3":"Durch den Einsatz modernster Geräte von weltweit führenden Herstellern garantieren wir Präzision, Effizienz und kompromisslose Handwerkskunst bei jedem Produkt."
   },
+
   "HomeFireSection":{
-    "Title":"Feuerstarter",
-    "Text1":"Unsere chemiefreien, umweltfreundlichen Feueranzünder werden aus trockenen Holzspänen und gereinigtem Wachs hergestellt und sorgen bei jedem Wetter für eine starke, zuverlässige Entzündung.",
+    "Title":"Anzünder",
+    "Text1":"Unsere chemiefreien, umweltfreundlichen Feueranzünder aus trockenen Holzspänen und gereinigtem Wachs ermöglichen ein einfaches und zuverlässiges Antzünden – bei jedem Wetter.",
     "Text2":"Wir verfügen über Patente und Gebrauchsmusterrechte, die uns eine exklusive und leistungsstarke Technologie sichern."
   },
-
 
   "HomeAboutUs":{
     "TitleSection":"Über uns",
     "Title1":"Exzellenz im Holzhandwerk",
-
     "Text1":"Wir engagieren uns für Innovation, Qualität und Nachhaltigkeit und stellen hochwertige Holzprodukte mit Präzision und Fachwissen her. Wir exportieren 100 % unserer Produkte in die USA, nach Großbritannien, Deutschland und andere Märkte.",
-  "Text2":"Von Feueranzündern über Küchenschneidebretter bis hin zu Holzmöbeln sind unsere Produkte auf Langlebigkeit, Funktionalität und Umweltfreundlichkeit ausgelegt und werden sowohl in Privathaushalten als auch in Unternehmen weltweit eingesetzt.",
-  
-"Title2":"Unsere Reise",
-
-  "Text3":"1999 - Gründung in Cherkasy, Spezialisierung auf hochwertiges Holzparkett",
+  "Text2":"Von Feueranzündern über Küchenschneidebretter bis hin zu Möbelplatten sind unsere Produkte auf Langlebigkeit, Funktionalität und Umweltfreundlichkeit ausgelegt und werden sowohl in Privathaushalten als auch in Unternehmen weltweit eingesetzt.",
+  "Title2":"Unsere Reise",
+  "Text3":"1999 - Gründung in Cherkasy, mit Fokus auf hochwertiges Holzparkett",
   "Text4":"2013 - Ausweitung auf Massivholzmöbelplatten für hochwertige Oberflächen.",
   "Text5":"2019 - Einführung von umweltfreundlichen Anzündern aus Holzwolle, die sich mittlerweile weltweit großer Beliebtheit erfreuen.",
   "Text6":"2024 - Einführung von Schneidebrettern aus Eichenholz, die Haltbarkeit mit zeitlosem Design vereinen.",
-  "Text7":"Wir expandieren und innovieren weiter und gewährleisten bei jedem Produkt erstklassige Handwerkskunst.",
-
+  "Text7":"Wir wachsen kontinuierlich weiter, setzen auf Innovation und garantieren erstklassige Handwerkskunst in jedem Produkt.",
   "Title3":"Nachhaltigkeit und Wachstum",
-
-  "Text8":"Wir beziehen Holz aus FSC-zertifizierten Wäldern, um eine umweltfreundliche Produktion und eine verantwortungsvolle Forstwirtschaft zu gewährleisten.",
-  
-  "Title4":"Um die globale Logistik zu verbessern, sind wir:",
-
-  "Text9":"Gründung eines EU-Unternehmens - Verbesserung des Kundendienstes und der Geschäftstätigkeit in Europa.",
+  "Text8":"Wir beziehen Holz aus FSC-zertifizierten Wäldern, um eine umweltfreundliche Produktion und eine verantwortungsvolle Forstwirtschaft zu gewährleisten.",  
+  "Title4":"Zur Optimierung der globalen Logistik:",
+  "Text9":"Gründung eines EU-Unternehmens – Verbesserung des Kundenservice in Europa.",
   "Text10":"Ausweitung des EU-Vertriebs - Einrichtung eines Lagers in Polen für schnellere, kostengünstige Lieferungen."
   },
 
   "HomeFurnitureSection":{
-    "Title":"Möbel Paneele",
+    "Title":"Holzplatten",
     "Text1":"Mit seiner beeindruckenden natürlichen Holzstruktur eignet es sich hervorragend für die Herstellung eleganter, hochwertiger Möbel.",
     "Text2":"Hochwertiges und langlebiges Material.",
     "Text3":"Hochwertig und langlebig - Für eine lange Lebensdauer mit außergewöhnlicher Festigkeit gebaut.",
@@ -82,12 +72,12 @@
   },
   
   "FireStartersPage": {
-    "Title": "Feuerstarter",
+    "Title": "Anzünder",
     "Text-1-1":"Saubere, gleichmäßige Flammen.",
     "Text-1-2":"Perfekt für Kamine, Grills, Barbecues und Lagerfeuer.",
     "Text-1-3":"Raffinierte Wachsformel - Minimaler Geruch und Rauch.",
-    "Text-1-4":"Innovatives Design der Innenlöcher - Sorgt für einen besseren Luftstrom und eine effiziente Verbrennung.",
-    "Text-2-1":"Attraktiv und praktisch - Eine schlanke Form ohne lose Späne oder Unordnung.",
+    "Text-1-4":"Innovatives Design mit Innenloch Sorgt für einen besseren Luftstrom und eine effiziente Verbrennung.",
+    "Text-2-1":"Attraktiv und praktisch - Eine optimale Form ohne lose Späne.",
     "Text-2-2":"Lange Brenndauer - Hält 8-10 Minuten an.",
     "Text-2-3":"Nicht klebend und leicht zu handhaben.",
     "Text-3":"Wir bieten eine Vielzahl von Verpackungsmöglichkeiten, die je nach Menge und Verpackungsart auf Ihre Bedürfnisse zugeschnitten sind."

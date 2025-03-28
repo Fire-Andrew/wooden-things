@@ -7,7 +7,7 @@ export const navigationData = [
   },
   {
     titleUa: "Розпалювачі",
-    titleDe: "Feuerstarter",
+    titleDe: "Anzünder",
     titleEn: "Fire Starters",
     href: "/fire-starters",
   },
