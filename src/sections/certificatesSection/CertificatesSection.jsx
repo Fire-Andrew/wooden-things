@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 
@@ -44,7 +42,6 @@ const CertificatesSection = () => {
                                 src='/certificates/declaration_OSMO.webp'
                                 alt='Додатково про документ'
                                 fill={true}
-                                priority
                                 title='Перехід до документа'
                                 sizes='(min-width: 1660px) 586px, (min-width: 760px) calc(34.43vw + 21px), 85vw'
                             />
@@ -63,6 +60,7 @@ const CertificatesSection = () => {
                                 src='/certificates/Zertifikat_OSMO.webp'
                                 alt='Додатково про документ'
                                 fill={true}
+                                loading='lazy'
                                 title='Перехід до документа'
                                 sizes='(min-width: 1660px) 586px, (min-width: 760px) calc(34.43vw + 21px), 85vw'
                             />

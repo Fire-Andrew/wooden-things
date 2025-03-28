@@ -5,15 +5,15 @@
     flex-direction: column;
     padding-top: variables.$pageSectionTopPaddingMobile;
     padding-bottom: 32px;
-    background-image: url("../../../public/images/cetificatesBgImage.webp");
-    background-attachment: scroll;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
 
     @media (min-width: variables.$tablet) {
         padding-top: variables.$pageSectionTopPaddingTablet;
         padding-bottom: 48px;
+        background-image: url("../../../public/images/cetificatesBgImage.webp");
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
     }
     @media (min-width: variables.$laptop) {
         padding-top: variables.$pageSectionTopPaddingLaptop;
@@ -97,7 +97,7 @@
 .imageWrapFirst {
     overflow: hidden;
     position: relative;
-    aspect-ratio: 3.1 / 2.2;
+    aspect-ratio: 31 / 22;
     width: 100%;
 
     @media (min-width: variables.$laptop) {
@@ -110,7 +110,7 @@
 .imageWrap {
     overflow: hidden;
     position: relative;
-    aspect-ratio: 2.2 / 3;
+    aspect-ratio: 22 / 30;
     width: 100%;
 }
 
