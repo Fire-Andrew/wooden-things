@@ -44,7 +44,8 @@
   }
 
   @media screen and (min-width: variables.$laptop) {
-    margin-right: 200px;
+    // margin-right: 200px;
+    margin-right: 80px;
   }
 
   & a:hover,

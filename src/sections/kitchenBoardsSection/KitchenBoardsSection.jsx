@@ -35,7 +35,7 @@ const KitchenBoardsSection = () => {
               </div>      
 
               <div className={styles.infoWrap}>
-                <p className={styles.description}>{!isLoading && ((i18n.language === languagesData.EN) && product.descriptionEn) || ((i18n.language === languagesData.DE) && product.descriptionDe) || product.descriptionUa}</p>        
+                <p className={styles.description}>{!isLoading && ((i18n.language === languagesData.DE) && product.descriptionDe) || ((i18n.language === languagesData.EN) && product.descriptionEn) || ((i18n.language === languagesData.ES) && product.descriptionEs) || ((i18n.language === languagesData.FR) && product.descriptionFr) || ((i18n.language === languagesData.IT) && product.descriptionIt) || product.descriptionUa}</p>        
                   <ReviewBtn href={`/kitchen-boards/${product.slug}`}/>
               </div>                   
           </li>)}

@@ -38,7 +38,7 @@ const Navigation = ({ className, onClick, data }) => {
             }
           >
             {/* {el.titleEn} */}
-            {!isLoading && ((i18n.language === languagesData.EN) && el.titleEn) || ((i18n.language === languagesData.DE) && el.titleDe) || el.titleUa}
+            {!isLoading && ((i18n.language === languagesData.DE) && el.titleDe) || ((i18n.language === languagesData.EN) && el.titleEn) || ((i18n.language === languagesData.ES) && el.titleEs) || ((i18n.language === languagesData.FR) && el.titleFr) || ((i18n.language === languagesData.IT) && el.titleIt) || el.titleUa}
           </Link>
         );
       })}

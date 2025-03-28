@@ -18,9 +18,11 @@ const FireStartersSection = () => {
 
       <div className={styles.productContainer}>
         <figure className={styles.igniterImg}>
-          <Image src="/images/lighter-igniter-pg.webp" 
+          <Image          
+            src="/images/lighter-igniter-pg.webp" 
             alt="fire starter"
-            layout="fill"
+            // layout="fill"
+            fill={true}
             priority
             decoding="async" />
         </figure>
@@ -36,7 +38,11 @@ const FireStartersSection = () => {
 
       <div className={styles.productContainer}>
         <figure className={styles.ignitersImg}>
-          <Image src="/images/lighters-igniter-pg.webp" alt="fire starters" fill={true} />
+          <Image 
+          src="/images/lighters-igniter-pg.webp" 
+          alt="fire starters" 
+          fill={true} 
+          />
         </figure>
         <div className={styles.descContainerIgnitors}>
           <ul className={styles.igniterPropertyList}>
@@ -49,7 +55,11 @@ const FireStartersSection = () => {
 
       <div className={styles.productContainer}>
         <figure className={styles.ignitersPackImg}>
-          <Image  src="/images/lightersPacked-igniter-pg.webp" alt="fire starters in pack" fill={true} />
+          <Image  
+          src="/images/lightersPacked-igniter-pg.webp" 
+          alt="fire starters in pack" 
+          fill={true} 
+          />
         </figure>
         <div className={styles.descContainerIgnitorsPack}>
           <p className={styles.igniterPropertyText}>{!isLoading && t('FireStartersPage.Text-3')}</p>
