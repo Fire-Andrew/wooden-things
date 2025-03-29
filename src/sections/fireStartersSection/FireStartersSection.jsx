@@ -8,7 +8,7 @@ import styles from './FireStartersSection.module.scss';
 const FireStartersSection = () => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
-  useEffect(()=>{ setIsLoading(false)},[]);
+  useEffect(()=>{setIsLoading(false)}, []);
 
 
   return (
@@ -23,6 +23,7 @@ const FireStartersSection = () => {
             alt="fire starter"
             // layout="fill"
             fill={true}
+            sizes="(max-width: 743px) 258px, (max-width: 1279px) 30vw, 272px"  
             priority
             decoding="async" />
         </figure>
@@ -42,6 +43,7 @@ const FireStartersSection = () => {
           src="/images/lighters-igniter-pg.webp" 
           alt="fire starters" 
           fill={true} 
+          sizes="(max-width: 743px) 337px, (max-width: 1279px) 360px, 644px"  
           />
         </figure>
         <div className={styles.descContainerIgnitors}>
@@ -59,16 +61,17 @@ const FireStartersSection = () => {
           src="/images/lightersPacked-igniter-pg.webp" 
           alt="fire starters in pack" 
           fill={true} 
+          sizes="(max-width: 743px) 249px, (max-width: 1279px) 33vw, 380px"    
           />
         </figure>
         <div className={styles.descContainerIgnitorsPack}>
           <p className={styles.igniterPropertyText}>{!isLoading && t('FireStartersPage.Text-3')}</p>
         </div>
       </div>
-
       </div>
     </section>
   )
 }
+
 
 export default FireStartersSection;
