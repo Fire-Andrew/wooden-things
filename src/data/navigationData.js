@@ -12,7 +12,7 @@ export const navigationData = [
     titleDe: "Anzünder",
     titleEn: "Fire Starters",
     titleEs: "Iniciadores de fuego",
-    titleFr: "Allume-feu",
+    titleFr: "Allume-feux",
     titleIt: "Accendifuoco",
     titleUa: "Розпалювачі",
     href: "/fire-starters",

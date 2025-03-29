@@ -30,15 +30,13 @@ const KitchenBoardIdSection = () => {
         />
         <div className={styles.contentWrapper}>         
           <ItemSlider images={product?.images} customClass=''/> 
-          <p className={styles.description}>{!isLoading && ((i18n.language === languagesData.DE) && product.longDescriptionDe) || ((i18n.language === languagesData.EN) && product.longDescriptionEn) || ((i18n.language === languagesData.ES) && product.longDescriptionEs) || ((i18n.language === languagesData.FR) && product.longDescriptionFr) || ((i18n.language === languagesData.IT) && product.longDescriptionIt) || product.longDescriptionUa}
+          <p className={styles.description}>{!isLoading && (((i18n.language === languagesData.DE) && product.longDescriptionDe) || ((i18n.language === languagesData.EN) && product.longDescriptionEn) || ((i18n.language === languagesData.ES) && product.longDescriptionEs) || ((i18n.language === languagesData.FR) && product.longDescriptionFr) || ((i18n.language === languagesData.IT) && product.longDescriptionIt) || product.longDescriptionUa)}
           </p>
         </div>
-
-
       </div>
     </section>
   )
 }
 
 
-export default KitchenBoardIdSection
+export default KitchenBoardIdSection;
