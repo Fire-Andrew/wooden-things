@@ -8,8 +8,7 @@ import { SiteContext } from "@/context/SiteContext";
 import { useCloseMenu } from "@/hooks/closeMenu";
 
 const Logo = ({ onClick, className }) => {
-  const { hash, setHash } = useContext(SiteContext);
-  const { mobileMenu, mobileMenuContent } = useContext(SiteContext);
+  const { mobileMenu, setCurrentHash } = useContext(SiteContext);
 
   const { handleClick } = useCloseMenu();
 
@@ -18,7 +17,7 @@ const Logo = ({ onClick, className }) => {
       href="/"
       className={`${styles.logo} ${className}`}
       onClick={() => {
-        setHash("/");
+        setCurrentHash("");
         if (mobileMenu) {
           handleClick();
         }

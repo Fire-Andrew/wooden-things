@@ -47,12 +47,6 @@
     // margin-right: 200px;
     margin-right: 80px;
   }
-
-  & a:hover,
-  & a:focus {
-    color: variables.$accentColor;
-    -webkit-text-stroke: 1px variables.$accentColor;
-  }
 }
 
 .langSwitch {
@@ -101,7 +95,7 @@
 
     &:focus,
     &:hover {
-    height: 260px;
+      height: 260px;
     }
   }
 
